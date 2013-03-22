@@ -12,32 +12,163 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+
+
 
         <!-- Additional CSS classes -->
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/helpers.css">
-        <link rel="stylesheet" href="css/margins.css">
-        <link rel="stylesheet" href="css/padding.css">
-        <link rel="stylesheet" href="css/positioning.css">
-		<link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/margins.css">
+        <link rel="stylesheet" href="./css/padding.css">
+        <link rel="stylesheet" href="./css/positioning.css">
+        <link rel="stylesheet" href="./css/buttons.css">
+		<link rel="stylesheet" href="./css/mobile-grid.css">        
+        <link rel="stylesheet" href="./css/helpers.css">
 
+        <!-- Google Font Face -->
+        <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+
+        <!-- Font Awesome -->    
+        <link rel="stylesheet" href="./css/font-awesome.css">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+        <![endif]-->
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 
+        <style type="text/css">
+            .c3 .box > div {
+                background: #fff;
+                padding: 1em;
+            }
+
+            .c5 .box > div {
+                background: #fff;
+                padding: 1em;
+            }
+            .c1 .box > div {
+                background: #fff;
+                padding: 1em;
+            }
+
+        </style>
+
     </head>
    
-		 <body>
+		 <body class="text-center transition">
 
-        <!-- Add your site or application content here -->
-        <p>
-        	Front End Guide
 
-            <script src="https://gist.github.com/mantone/5207352.js"></script>
-        </p>
 
+            <div class="wrapper">
+
+                <div class="c3">
+
+                    <div class="box">
+                        <div class="bordered m-15">1</div>
+                    </div>
+                    <div class="box">
+                        <div class="bordered m-15">2</div>
+                    </div>
+                    <div class="box">
+                        <div class="bordered m-15">3</div>
+                    </div>
+
+                </div>
+
+                <div class="c1">
+                    <div class="box">
+                        <div class="m-25">                            
+    
+                            
+                            <h2 class="serif-regular">
+                                <strong>STYLE > SIZE > ACTION > POSITION > PROPERTIES</strong>    
+                            </h2>
+
+                            <p>                                                                
+                                Prototype elements using modular class definitions.
+                            </p>
+
+                            <p class="w100 rel-center text-left">
+                                There are several school of thoughs on using non-semantic class names.
+                                From a prototyping stand point, translating style properties to class
+                                names allow for the quick application of styles to elements without
+                                having to write css rules to specific divs.
+                            </p>
+
+                            <p class="w100 rel-center text-left">
+                                Performance arguments could be made against this approach, but unless
+                                your site and buisness requires the most effiecient usage of markup
+                                and performance it doesn't make much sense to not employ 
+                                fast prototyping techniques. Especially if you are working on unproven
+                                business models or a a design/interface team that changes the game plan
+                                at regular intervals.
+                            </p>
+
+                            <p class="w100 rel-center text-left">
+                                For most small business sites or low traffic sites it just doesn't makes
+                                sense. You can consolidate and optimze css rules and markup down the road
+                                when there is a finianical reason to do it.
+                            </p>
+
+                            <div class="w100 rel-center text-left">
+
+                            <h3>Basic Buttons</h3>
+                            <div class="bg-light xsmall cta mb-15"> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-light small cta mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-solid medium cta mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark large cta mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark xlarge cta mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+
+                            <h3>Basic Buttons + Rounded Borders</h3>
+                            <div class="bg-light xsmall rounded cta mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-light small rounded cta mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-solid medium rounded cta mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark large rounded cta mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark xlarge rounded cta mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            <h3>Basic Buttons + Rounded Borders + Border Width</h3>
+                            <div class="bg-light xsmall rounded cta bordered mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-light small rounded cta bordered mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-solid medium rounded cta bordered mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark large rounded cta bordered mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark xlarge rounded cta bordered mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            <h3>Basic Buttons + Rounded Borders + Border Width + Text Shadow</h3>
+                            <div class="bg-light xsmall rounded cta bordered text-shadow mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-light small rounded cta bordered text-shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-solid medium rounded cta bordered text-shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark large rounded cta bordered text-shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark xlarge rounded cta bordered text-shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            <h3>Gradient Buttons + Rounded Borders + Border Width + Text Shadow</h3>
+                            <div class="bg-light-gradient xsmall rounded cta bordered text-shadow mb-15"> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-light-gradient small rounded cta bordered text-shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-solid-gradient medium rounded cta bordered text-shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark-gradient large rounded cta bordered text-shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark-gradient xlarge rounded cta bordered text-shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            <h3>Gradient Buttons + Rounded Borders + Border Width + Text Shadow + Global Shadow</h3>
+                            <div class="bg-light-gradient xsmall rounded cta bordered text-shadow shadow mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-light-gradient small rounded cta bordered text-shadow shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-solid-gradient medium rounded cta bordered text-shadow shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark-gradient large rounded cta bordered text-shadow shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                            <div class="bg-dark-gradient xlarge rounded cta bordered text-shadow shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        <!-- END OF PAGE SCRIPT --> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>

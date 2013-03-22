@@ -1,0 +1,280 @@
+/*
+	-------
+	WIDTH
+	-------
+*/
+.w100, .cta.w100 {
+	width: 100%;
+}
+.w90, .cta.w90 {
+	width: 100%;
+}
+.w80, .cta.w80 {
+	width: 80%;
+}
+.w75, .cta.w75 {
+	width: 75%;
+}
+.w60, .cta.w60 {
+	width: 60%;
+}
+.w50, .cta.w50 {
+	width: 50%;
+}
+.w40, .cta.w40 {
+	width: 40%;
+}
+.w25, .cta.w25 {
+	width: 25%;
+}
+.w20, .cta.w20 {
+	width: 20%;
+}
+
+
+/*
+    -------
+    DISPLAY
+    -------
+*/
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.static {
+    display: static;
+}
+
+
+/*
+    -------
+    POINTER
+    -------
+*/
+.pointer {
+    cursor: pointer;
+}
+.no-pointer {
+    cursor: default !important;
+}
+.pointer:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+
+/*
+    -----------
+    LINE HEIGHT
+    -----------
+*/
+.lhx5 {
+    line-height: .5em;
+}
+.lh1{
+    line-height: 1em;
+}
+.lh1x2 {
+    line-height: 1.2em;
+}
+.lh1x5 {
+    line-height: 1.5em;
+}
+.lh2 {
+    line-height: 2em;
+}
+.lh2x5 {
+    line-height: 2.5em;
+}
+.lh3{
+    line-height: 3em;
+}
+
+/*
+    -----------
+    TRANSITION
+    -----------
+*/
+.transition, .transition *
+{
+    -webkit-transition-duration: 350ms;
+    -moz-transition-duration: 350ms;
+    -o-transition-duration: 350ms;
+    -ms-transition-duration: 350ms;
+    transition-duration: 350ms;
+}
+.fast-transition, .fast-transition * {
+    -webkit-transition-duration: 150ms;
+    -moz-transition-duration: 150ms;
+    -o-transition-duration: 150ms;
+    -ms-transition-duration: 150ms;
+    transition-duration: !50ms;
+}
+.no-transition, .no-transition * {
+    -webkit-transition-duration: 0ms;
+    -moz-transition-duration: 0ms;
+    -o-transition-duration: 0ms;
+    -ms-transition-duration: 0ms;
+    transition-duration: 0ms;
+}
+
+/*
+    ----------
+    TEXT COLOR
+    ----------
+*/
+.light.text {
+    color: #ffffff;
+}
+.solid.text {
+    color: #d61d65;
+}
+.dark.text {
+    color: #000000;
+}
+
+
+/*
+    ----------------------
+    BACKGROUND STYLES
+    ----------------------
+*/
+.bg-light {
+	color: #7e5480;
+	background: #f0f0f0;
+}
+.bg-light-gradient {
+	color: #7e5480;
+	background-color: #f0f0f0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#c0c0c0)); /* Chrome, Safari 4+ */
+	background-image: -webkit-linear-gradient(top, #f0f0f0, #c0c0c0); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	background-image:    -moz-linear-gradient(top, #f0f0f0, #c0c0c0); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #f0f0f0, #c0c0c0); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #f0f0f0, #c0c0c0); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+}
+.bg-solid {
+    background: #7e5480;
+    color: #c0c0c0;
+}
+.bg-solid-gradient {
+	background-color: #7e5480;
+	color: #c0c0c0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#7e5480), to(#4d274f)); /* Chrome, Safari 4+ */
+	background-image: -webkit-linear-gradient(top, #7e5480, #4d274f); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	background-image:    -moz-linear-gradient(top, #7e5480, #4d274f); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #7e5480, #4d274f); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #7e5480, #4d274f); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+}
+.bg-dark {
+    color: #fff;
+    background: #333333;
+}
+.bg-dark-gradient {
+	color: #fff;			
+	background-color: #333333;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111)); /* Chrome, Safari 4+ */
+	background-image: -webkit-linear-gradient(top, #333333, #111111); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	background-image:    -moz-linear-gradient(top, #333333, #111111); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #333333, #111111); /* Opera 11.10-12.00 */
+	background-image:         linear-gradient(to bottom, #333333, #111111); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+}
+.bg-facebook {
+    border:0px;
+    color: #fff !important;
+    background: #4c66a4 !important;
+    font-family: Tahoma, san-serif;
+    font-weight: normal;
+}
+
+/*
+    --------------
+    TEXT ALIGNMENT
+    --------------
+*/
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+
+/*
+    --------------
+    ROUNDED BORDERS
+    --------------
+*/
+.rounded {
+	/* useful if you don't want a bg color from leaking outside the border: */
+  	-webkit-background-clip: padding-box; 
+  	background-clip: padding-box;
+}
+.xsmall.rounded {
+	border-radius: 1px;
+}
+.small.rounded {
+	border-radius: 2px;
+}
+.medium.rounded {
+	border-radius: 3px;
+}
+.large.rounded {
+	border-radius: 4px;
+}
+.xlarge.rounded {
+	border-radius: 6px;
+}
+.xxlarge.rounded {
+	border-radius: 8px;
+}
+
+/*
+    -------
+    BORDERS
+    -------
+*/
+.bordered {
+	border: 1px solid #d0d0d0;
+}
+.bg-light.bordered, .bg-light-gradient.bordered {
+	border: 1px solid #d0d0d0;
+}
+.bg-solid.bordered {
+	border: 1px solid #413040;
+}
+.bg-dark.bordered {
+	border: 1px solid #413040;
+}
+
+/*
+	-----------
+	TEXT SHADOW
+	-----------
+*/
+.bg-light.text-shadow, .bg-light-gradient.text-shadow {
+	text-shadow: 0px 1px 1px #d0d0d0;
+}
+.bg-solid.text-shadow, .bg-solid-gradient.text-shadow {
+	text-shadow: 0px 1px 1px #413040;
+}
+.bg-dark.text-shadow, .bg-dark-gradient.text-shadow {
+	text-shadow: 0px 1px 1px #d0d0d0;
+}
+
+
+/*
+	-------------
+	GLOBAL SHADOW
+	-------------
+*/
+.shadow {
+	-moz-box-shadow: 0px 3px 10px #888;
+	-webkit-box-shadow: 0px 3px 10px #888;
+	box-shadow: 0px 3px 10px #888;
+}
+
+
