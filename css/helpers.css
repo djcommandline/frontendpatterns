@@ -1,35 +1,17 @@
 /*
-	-------
-	WIDTH
-	-------
+    ----------------
+    TABLE OF CONTENT
+    ----------------
+
+    01. DISPLAY CLASS
+    02. CURSOR POINTERS
+    03. LINE HEIGHT
+    04. CSS TRANSITIONS
+    05. TEXT COLOR
+    06. BACK GROUND STYLES
+    07. TEXT ALIGNMENT
+
 */
-.w100, .cta.w100 {
-	width: 100%;
-}
-.w90, .cta.w90 {
-	width: 100%;
-}
-.w80, .cta.w80 {
-	width: 80%;
-}
-.w75, .cta.w75 {
-	width: 75%;
-}
-.w60, .cta.w60 {
-	width: 60%;
-}
-.w50, .cta.w50 {
-	width: 50%;
-}
-.w40, .cta.w40 {
-	width: 40%;
-}
-.w25, .cta.w25 {
-	width: 25%;
-}
-.w20, .cta.w20 {
-	width: 20%;
-}
 
 
 /*
@@ -128,7 +110,7 @@
     color: #ffffff;
 }
 .solid.text {
-    color: #d61d65;
+    color: #7e5480;
 }
 .dark.text {
     color: #000000;
@@ -243,10 +225,10 @@
 .bg-light.bordered, .bg-light-gradient.bordered {
 	border: 1px solid #d0d0d0;
 }
-.bg-solid.bordered {
+.bg-solid.bordered, .bg-solid-gradient.bordered {
 	border: 1px solid #413040;
 }
-.bg-dark.bordered {
+.bg-dark.bordered, .bg-dark-gradient.bordered {
 	border: 1px solid #413040;
 }
 
@@ -275,6 +257,19 @@
 	-moz-box-shadow: 0px 3px 10px #888;
 	-webkit-box-shadow: 0px 3px 10px #888;
 	box-shadow: 0px 3px 10px #888;
+}
+
+.inset-shadow {
+    
+}
+
+/*
+	---------------
+	OVERFLOW HIDDEN
+	---------------
+*/
+.o-hidden {
+	overflow: hidden;
 }
 
 

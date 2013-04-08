@@ -303,10 +303,15 @@ dd {
  * Address paddings set differently in IE 6/7.
  */
 
-menu,
-ol,
-ul {
+menu.styled,
+ol.styled,
+ul.styled {
     padding: 0 0 0 40px;
+}
+
+menu, ul, ol {
+  padding: 0;
+  list-style: none;
 }
 
 /**

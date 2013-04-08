@@ -1,0 +1,130 @@
+/*
+	-------
+	WIDTH
+	-------
+*/
+.w100, .cta.w100 {
+	width: 100%;
+}
+.w98, .cta.w98 {
+	width: 98%;
+}
+.w90, .cta.w90 {
+	width: 100%;
+}
+.w80, .cta.w80 {
+	width: 80%;
+}
+.w75, .cta.w75 {
+	width: 75%;
+}
+.w60, .cta.w60 {
+	width: 60%;
+}
+.w50, .cta.w50 {
+	width: 50%;
+}
+.w40, .cta.w40 {
+	width: 40%;
+}
+.w25, .cta.w25 {
+	width: 25%;
+}
+.w20, .cta.w20 {
+	width: 20%;
+}
+
+
+/*
+	--------------------
+	DEFAULT COLUMN WIDTH
+	--------------------
+*/
+.c1 > .box,
+.c2 > .box,
+.c3 > .box,
+.c4 > .box,
+.c5 > .box,
+.c6 > .box,
+.c7 > .box,
+.c8 > .box {
+    width: 100%;
+    float: left;
+}
+
+
+
+
+
+
+@media (max-width: 320px) {
+/* code for mobile only */
+}
+
+
+
+@media (min-width: 320px) and (max-width: 720px) {
+
+	.c5 > .box,
+	.c6 > .box,
+	.c7 > .box,
+	.c8 > .box {
+	    width: 33%;
+	    float: left;
+	}
+
+	.cw400 {
+		width: 320px !important;
+	}
+
+
+}
+
+
+@media (min-width: 720px) {
+/* all other code if its not mobile or tablet */
+
+	/*
+		-----------------
+		MOBILE FIRST GRID
+		-----------------
+	*/
+	.c1 > .box {
+	    width: 100%;
+	    float: left;
+	}
+	.c2 > .box {
+	    width: 50%;
+	    float: left;
+	}
+	.c3 > .box {
+	    width: 33.3333333%;
+	    float: left;
+	}
+	.c4 > .box {
+	    width: 25%;
+	    float: left;
+	}
+	.c5 > .box {
+	    width: 20%;
+	    float: left;
+	}
+	.c6 > .box {
+	    width: 16.6666666%;
+	    float: left;
+	}
+	.c7 > .box {
+	    width: 14.2857142857143%;
+	    float: left;
+	}
+	.c8 > .box {
+	    width: 12.5%;
+	    float: left;
+	}
+
+
+	.cw400 {
+		width: 400px !important;
+	}
+}
+
