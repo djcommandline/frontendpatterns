@@ -1,14 +1,26 @@
 /*
+    --------------------------
+    POSITIONING HELPERS T.O.C.
+    --------------------------
+    FLOATS 
+    RELATIVE POSITING
+    ABSOLUTE POSITING
+*/
+
+
+/*
     ------------------------------
     STYLE HELPERS =  FLOAT + CLEAR
     ------------------------------
 */
-.set-left{
+.set-left, .float-left{
     float: left;
 }
-.set-right {
+.set-right, .float-right {
     float: right;
 }
+
+
 
 /*
     --------------------
@@ -61,3 +73,7 @@
     bottom: 0px;
     right: 0px;
 }
+
+
+
+

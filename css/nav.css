@@ -33,23 +33,32 @@ input[type="search"] {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol {
+#header a, #nav   a {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+#header h1, 
+#header h2, 
+#header h3, 
+#header h4, 
+#header h5,
+#header h6, 
+#header p{
   margin: 0;
 }
 
-
-
-.block {
+#nav .block, #header .block {
   position: relative;
   margin: 0 auto;
   padding: 1.5em 1.25em;
   max-width: 60em;
 }
 
-
-
-
-
+#main .block {
+  max-width: 1020px;
+  margin: 0 auto; 
+}
 
 .nav-btn {
   display: block;
@@ -58,25 +67,20 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding: 0;
   border: 0;
   outline: none;
-  background: #333333 url("../canvas-menu/img/nav-icon.svg") left center no-repeat;
   background-size: 1.875em 1.5em;
   overflow: hidden;
   white-space: nowrap;
-  text-indent: 100%;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .no-svg .nav-btn {
-  background-image: url("../canvas-menu/img/nav-icon.png");
+  background-image: url("../img/nav-icon.png");
 }
 .nav-btn:hover, .nav-btn:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-
-
-
 
 .close-btn {
   display: block;
@@ -85,28 +89,23 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding: 0;
   border: 0;
   outline: none;
-  background: #333333 url("../canvas-menu/img/close-btn.svg") left center no-repeat;
-  background-size: 1.875em 1.875em;
+
   overflow: hidden;
   white-space: nowrap;
-  text-indent: 100%;
+  
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  color: #fff;
 }
 .no-svg .close-btn {
-  background-image: url("../canvas-menu/img/close-btn.png");
+  background-image: url("../img/close-btn.png");
 }
 .close-btn:focus, .close-btn:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-
-
-
-
-
-
 
 #outer-wrap {
   position: relative;
@@ -118,8 +117,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   position: relative;
   width: 100%;
 }
-
-
 
     #header {
       z-index: 100;
@@ -136,11 +133,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     }
     #header .nav-btn {
       position: absolute;
-      top: 1.5em;
-      left: 1.875em;
+      top: 0.7em;
+      left: 0em;
+      font-size: 2em;
     }
-
-
 
     #nav {
       z-index: 200;
@@ -198,17 +194,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
       color: #fff;
     }
 
-
-
-
     #main {
       background: #fff;
     }
-    #main .block {
-      padding: 2.625em 1.875em;
-    }
-
-
 
     footer[role="contentinfo"] {
       background: #ddd;
@@ -217,7 +205,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 
 
-@media screen and (min-width: 45.0625em) {
+
+
+
+
+
+
+
+
+@media screen and ( min-width: 45.0625em ) {
   #header .nav-btn {
     border: 0;
     clip: rect(0 0 0 0);
@@ -273,7 +269,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   #nav {
     position: absolute;
     top: 0;
-    padding-top: 5.25em;
+    padding-top: 0;
   }
   #nav:not(:target) {
     z-index: 1;
@@ -283,13 +279,19 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     display: block;
   }
   #nav .close-btn {
-    position: absolute;
-    top: -3.75em;
-    left: 1.875em;
+    left: 0;
+    font-size: 2em;
+    top: 0;
+    position: relative;
+    height: 2.8em;
+    line-height: 2.9em;
   }
   #nav .block {
     position: relative;
     padding: 0;
+  }
+  #nav ul {
+    margin: 0;
   }
   #nav li {
     position: relative;
@@ -316,14 +318,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 
 
-
-
-
-
-
-
-
- 
   .js-ready #nav {
     height: 100%;
     width: 70%;
@@ -339,6 +333,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     display: block;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7;
+    width: 100%;
+    text-align: left;
+    text-indent: 0.35em;
   }
   .js-ready #nav .close-btn:focus, .js-ready #nav .close-btn:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -355,12 +352,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   .js-nav #inner-wrap {
     left: 70%;
   }
-
-
-
-
-
-
 
 
 
@@ -433,12 +424,4 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     transform: translate3d(0, 0, 0);
   }
 }
-
-
-
-
-
-
-
-
 
