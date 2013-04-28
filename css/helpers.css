@@ -79,6 +79,48 @@
 }
 
 /*
+    ----------
+    MIN HEIGHT
+    ----------
+*/
+.mh-10 {
+    min-height: 10em !important;
+}   
+.mh-11 {
+   min-height: 11em !important; 
+}  
+.mh-12 {
+   min-height: 12em !important; 
+}  
+.mh-13 {
+   min-height: 13em !important; 
+}  
+.mh-14 {
+   min-height: 14em !important; 
+}  
+.mh-15 {
+   min-height: 15em !important; 
+}  
+.mh-16 {
+   min-height: 16em !important; 
+}  
+.mh-17 {
+   min-height: 17em !important;     
+}  
+.mh-18 {
+   min-height: 18em !important;     
+}  
+.mh-19 {
+   min-height: 19em !important;     
+}    
+.mh-20 {
+   min-height: 19em !important;     
+}  
+
+
+
+
+/*
     -----------
     TRANSITION
     -----------
@@ -127,6 +169,13 @@
     BACKGROUND STYLES
     ----------------------
 */
+.bg-white {
+    color: #7e5480;
+    background: #ffffff;
+}
+.bg-white-gradient {
+        
+}
 .bg-light {
 	color: #7e5480;
 	background: #f0f0f0;
@@ -227,8 +276,11 @@
 .bordered {
 	border: 1px solid #d0d0d0;
 }
+.bg-white.bordered, .bg-white-gradient.bordered {
+    border: 1px solid #d0d0d0;
+}
 .bg-light.bordered, .bg-light-gradient.bordered {
-	border: 1px solid #d0d0d0;
+    border: 1px solid #d0d0d0;
 }
 .bg-solid.bordered, .bg-solid-gradient.bordered {
 	border: 1px solid #413040;
