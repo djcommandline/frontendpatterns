@@ -134,7 +134,7 @@ body {
 #nav .close-btn {
   display: none;
 }
-#nav .block-title {
+#nav .title {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -186,7 +186,7 @@ body {
   color: #fff;
   background: #333333;
 }
-#header .block-title {
+#header .title {
   margin: 0;
   font-size: 1.875em;
   line-height: 1.2em;
@@ -231,7 +231,7 @@ footer[role="contentinfo"] {
   position: absolute;
   width: 1px;
 }
-#nav .block-title {
+#nav .title {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;

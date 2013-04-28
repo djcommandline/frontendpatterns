@@ -45,26 +45,25 @@
 
 
         <style type="text/css">
-            .c3 .box > div {
-                background: #fff;
+            .c5 .box.padded > div,
+            .c4 .box.padded > div,
+            .c3 .box.padded > div,
+            .c2 .box.padded > div,
+            .c1 .box.padded > div {
                 padding: 1em;
             }
-            .c5 .box > div {
-                background: #fff;
-                padding: 1em;
-            }
-            .c1 .box > div {
-                background: #fff;
-                padding: 1em;
-            }
-            .cw {
-                width: 400px !important;
-            }    
+
             .navbar ul li {
                 list-style-type: none;
             }
             #main {
                 overflow: hidden;
+            }
+
+
+            a {
+                color: #999;
+                text-decoration: none;
             }
         </style>
 
@@ -75,44 +74,50 @@
         <div id="outer-wrap">
         <div id="inner-wrap">
 
+
+            <!-- THE PAGE TITLE -->
             <header id="header" role="banner">
                 <div class="block">
-                    <h1 class="title">PATTERNS™</h1>
+                    <h1 class="title text-left"><span>PATTERNS™</span></h1>
                     <a class="nav-btn" id="nav-open-btn" href="#nav"><i class="icon-reorder"></i></a>
                 </div>
             </header>
 
+
+            <!-- THE NAVIGATION -->
             <nav id="nav" role="navigation" class="text-left">
                 <div class="block">
 
                     <!-- TITLE -->
-                    <h2 class="block-title">Title</h2>
+                    <h2 class="title">Title</h2>
                     <a class="close-btn" id="nav-close-btn" href="#header"><i class="icon-reorder"></i> PATTERNS™</a>
- 
+
+
+                    <!-- MENU --> 
                     <ul>
                         <li class="is-active">
-                            <a href="#"><i class="icon-user"></i> PROFILE</a>
+                            <a href="#"><i class="icon-user"></i>PROFILE</a>
                         </li>
                         <li>
-                            <a href="#"><i class="icon-cog"></i> SETTINGS</a>
+                            <a href="#"><i class="icon-cog"></i>SETTINGS</a>
                         </li>
                         <li>
-                            <a href="#"><i class="icon-comment"></i> COMMENTS</a>
+                            <a href="#"><i class="icon-comment"></i>COMMENTS</a>
                         </li>
                         <li>
-                            <a href="#"><i class="icon-envelope"></i> INBOX</a>
+                            <a href="#"><i class="icon-envelope"></i>INBOX</a>
                         </li>
                         <li>
-                            <a href="#"><i class="icon-search"></i> SEARCH</a>
+                            <a href="#"><i class="icon-search"></i>SEARCH</a>
                         </li>
                         <li>
-                            <a href="#"><i class="icon-credit-card"></i> PAYMENT INFO</a>
+                            <a href="#"><i class="icon-credit-card"></i>PAYMENT INFO</a>
                         </li>
                         <li>
-                            <a href="#"><i class="icon-mobile-phone"></i> CONTACT</a>
+                            <a href="#"><i class="icon-mobile-phone"></i>CONTACT</a>
                         </li>
                         <li>
-                            <a href="#"><i class="icon-truck"></i> SHIPPING</a>
+                            <a href="#"><i class="icon-truck"></i>SHIPPING</a>
                         </li>
                     </ul>
 
@@ -120,17 +125,23 @@
                 </div>
             </nav>
 
-            <div id="main" role="main">
-                <article class="block prose">
 
 
-                <!-- UI COMPONTENT - SIGNUP FORM --> 
-                <div class="c1 bg-light rel-center" role="sign-up">
-                    <div class="box">
-                        <div class="bg-light rel-center">
 
-                            <div class="w100">                    
-                                <form class="form-signin o-hidden text-left transition">
+            <!-- THE MAIN PORTION OF THE PAGE -->
+            <div id="main" role="main" class="bg-light">
+
+
+
+
+                <!-- UI COMPONENT - BLOCK WRAPPER--> 
+                <div class="block">
+                    <div class="c1 rel-center pb-25 pt-25" role="sign-up">
+                        <div class="box padded">    
+                            <div class="rel-center mobile-100" style="width: 45.0625em;">
+
+                                <!-- UI COMPONENT - SIGNUP FORM -->  
+                                <form class="form-signin o-hidden text-left transition bg-white p-25 m-15 mb-0 bordered large rounded">
                                     <h2 class="form-signin-heading">Please sign in</h2>
                                     
                                     <div class="input-wrap small rounded">
@@ -145,42 +156,64 @@
                                     
                                     <button class="bg-solid-gradient large cta rel-center rounded bordered w100 mb-25" type="submit">Sign in</button>
                                     
-                                    <label class="checkbox set-right">
-                                        Remember me
-                                        <input type="checkbox" value="remember-me"> 
+                                    <label class="checkbox w100 set-right text-right">                                        
+                                        <input type="checkbox" value="remember-me" class="wauto mr-5"><span>remember me</span>
                                     </label>
                                 </form>
-                            </div>
 
+
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+
+                <!-- UI COMPONENT - 3COLUMN EXAMPLE --> 
+                <div class="block"> 
+                    <div class="c3 rel-center mh-10">
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white mh-15">                                
+                                <i class="icon-cloud-download w100 set-left font-8em"></i>     
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
+                            </div>
+                        </div>
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white mh-15">
+                                <i class="icon-cloud-download w100 set-left font-8em"></i>   
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
+                            </div>
+                        </div>
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white mh-15">
+                                <i class="icon-cloud-download w100 set-left font-8em"></i>   
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, a, qui, labore, voluptate provident deleniti incidunt aliquam sed pariatur eaque dolorem obcaecati quaerat eveniet modi porro laboriosam facere. Laboriosam, error!
+                            </div>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="wrapper">
-
-                    <div class="c3">
-
-                        <div class="box">
-                            <div class="bordered m-15">1</div>
+                <!-- UI COMPONENT - 2COLUMN EXAMPLE --> 
+                <div class="block"> 
+                    <div class="c2 rel-center">
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
+                            </div>
                         </div>
-                        <div class="box">
-                            <div class="bordered m-15">2</div>
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
+                            </div>
                         </div>
-                        <div class="box">
-                            <div class="bordered m-15">3</div>
-                        </div>
-
                     </div>
+                </div>
 
-                    <div class="c1">
-                        <div class="box">
-                            <div class="m-25">                        
+                <!-- UI COMPONENT - 1COLUMN EXAMPLE -->
+                <div class="block">    
+                    <div class="c1 rel-center">
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white">                        
                                 
                                 <h2 class="serif-regular">
                                     <strong>STYLE > SIZE > ACTION > POSITION > PROPERTIES</strong>    
                                 </h2>
-
 
                                 <p>                                                                
                                     Prototype elements using modular class definitions.
@@ -208,63 +241,123 @@
                                     when there is a finianical reason to do it.
                                 </p>
 
-                                <div class="w100 rel-center text-left">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <h3 class="padded">Basic Buttons</h3>
-                                    <div class="bg-light xsmall cta mb-15"> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-light small cta mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-solid medium cta mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark large cta mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark xlarge cta mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+                <div class="block">
+                    <div class="c1 o-hidden bg-light">
+                        <div class="box padded">
+                            <div class="bordered bg-white m-15">
 
-
-                                    <h3>Basic Buttons + Rounded Borders</h3>
-                                    <div class="bg-light xsmall rounded cta mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-light small rounded cta mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-solid medium rounded cta mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark large rounded cta mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark xlarge rounded cta mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                                    <h3>Basic Buttons + Rounded Borders + Border Width</h3>
-                                    <div class="bg-light xsmall rounded cta bordered mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-light small rounded cta bordered mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-solid medium rounded cta bordered mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark large rounded cta bordered mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark xlarge rounded cta bordered mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                                    <h3>Basic Buttons + Rounded Borders + Border Width + Text Shadow</h3>
-                                    <div class="bg-light xsmall rounded cta bordered text-shadow mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-light small rounded cta bordered text-shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-solid medium rounded cta bordered text-shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark large rounded cta bordered text-shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark xlarge rounded cta bordered text-shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                                    <h3>Gradient Buttons + Rounded Borders + Border Width + Text Shadow</h3>
-                                    <div class="bg-light-gradient xsmall rounded cta bordered text-shadow mb-15"> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-light-gradient small rounded cta bordered text-shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-solid-gradient medium rounded cta bordered text-shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark-gradient large rounded cta bordered text-shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark-gradient xlarge rounded cta bordered text-shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                                    <h3>Gradient Buttons + Rounded Borders + Border Width + Text Shadow + Global Shadow</h3>
-                                    <div class="bg-light-gradient xsmall rounded cta bordered text-shadow shadow mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-light-gradient small rounded cta bordered text-shadow shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-solid-gradient medium rounded cta bordered text-shadow shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark-gradient large rounded cta bordered text-shadow shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                    <div class="bg-dark-gradient xlarge rounded cta bordered text-shadow shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                                </div>
+                                <h3 class="padded">Basic Buttons</h3>
+                                <div class="bg-light xsmall cta mb-15"> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-light small cta mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-solid medium cta mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark large cta mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark xlarge cta mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
 
                             </div>
                         </div>
                     </div>
-
                 </div>
 
 
-                </article>
+                <div class="block">
+                    <div class="c1 rel-center bg-light">
+                        <div class="box padded">
+                            <div class="bordered bg-white m-15">
+
+                                <h3>Basic Buttons + Rounded Borders</h3>
+                                <div class="bg-light xsmall rounded cta mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-light small rounded cta mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-solid medium rounded cta mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark large rounded cta mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark xlarge rounded cta mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="block">
+                    <div class="c1 bg-light rel-center">
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white">
+
+                                <h3>Basic Buttons + Rounded Borders + Border Width</h3>
+                                <div class="bg-light xsmall rounded cta bordered mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-light small rounded cta bordered mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-solid medium rounded cta bordered mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark large rounded cta bordered mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark xlarge rounded cta bordered mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            </div>
+                        </div>
+                    </div> 
+                </div>                                
+
+                <div class="block">
+                    <div class="c1 bg-light rel-center">
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white">
+
+                                <h3>Basic Buttons + Rounded Borders + Border Width + Text Shadow</h3>
+                                <div class="bg-light xsmall rounded cta bordered text-shadow mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-light small rounded cta bordered text-shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-solid medium rounded cta bordered text-shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark large rounded cta bordered text-shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark xlarge rounded cta bordered text-shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="block">
+                    <div class="c1 bg-light rel-center">
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white">
+
+                                <h3>Gradient Buttons + Rounded Borders + Border Width + Text Shadow</h3>
+                                <div class="bg-light-gradient xsmall rounded cta bordered text-shadow mb-15"> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-light-gradient small rounded cta bordered text-shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-solid-gradient medium rounded cta bordered text-shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark-gradient large rounded cta bordered text-shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark-gradient xlarge rounded cta bordered text-shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="block">
+                    <div class="c1 bg-light rel-center">
+                        <div class="box padded">
+                            <div class="bordered m-15 bg-white">
+
+                                <h3>Gradient Buttons + Rounded Borders + Border Width + Text Shadow + Global Shadow</h3>
+                                <div class="bg-light-gradient xsmall rounded cta bordered text-shadow shadow mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-light-gradient small rounded cta bordered text-shadow shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-solid-gradient medium rounded cta bordered text-shadow shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark-gradient large rounded cta bordered text-shadow shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
+                                <div class="bg-dark-gradient xlarge rounded cta bordered text-shadow shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
+
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+
+
+
             </div>
 
+
+
+            <!-- FOOTER -->
             <footer role="contentinfo">
                 <div class="block prose">
                     <p class="small"><a href="http://ota.ahds.ac.uk/desc/5730">Text distributed by the University of Oxford under a Creative Commons Attribution-ShareAlike 3.0 Unported License</a></p>
