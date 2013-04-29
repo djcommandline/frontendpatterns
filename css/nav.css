@@ -167,7 +167,8 @@ input[type="search"] {
   z-index: 100;
   position: relative;
   color: #fff;
-  background: #333333;
+  background: #95A5A6;
+
 }
 #header .title {
   margin: 0;
@@ -201,6 +202,15 @@ input[type="search"] {
   overflow: hidden;
   width: 100%;
   color: #fff;
+  
+  background-color: ##7F8C8D;
+  border: 1px #ffffff;
+  border-style: none none solid none;
+  
+
+
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 #nav .close-btn {
   display: none;
@@ -261,6 +271,10 @@ input[type="search"] {
   margin: 0 auto; 
 }
 
+#footer .block {
+  max-width: 1020px;
+  margin: 0 auto;
+}
 
 
 
