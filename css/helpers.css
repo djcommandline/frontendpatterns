@@ -1,4 +1,4 @@
-/*
+ 
     ----------------
     TABLE OF CONTENTS
 
@@ -317,6 +317,18 @@
 }
 .inset-shadow {
     
+}
+
+/*
+    ---------------
+    DROP SHADOW
+    ---------------
+*/
+
+.drop-shadow {
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,.15), 0 0 3px rgba(0,0,0,.1);
+       -moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,.15), 0 0 3px rgba(0,0,0,.1);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,.15), 0 0 3px rgba(0,0,0,.1); 
 }
 
 /*

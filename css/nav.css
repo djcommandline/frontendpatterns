@@ -182,9 +182,13 @@ input[type="search"] {
 }
 #header .nav-btn { 
   position: absolute;
-  top: 0.75em;
+  top: 0;
   left: 0em;
   font-size: 2em;
+  height: 2.7em;
+  text-align: center;
+  line-height: 2.7em;
+  cursor: pointer;
 }
 
 
@@ -203,12 +207,10 @@ input[type="search"] {
   width: 100%;
   color: #fff;
   
-  background-color: ##7F8C8D;
+  background-color: #7F8C8D;
   border: 1px #ffffff;
   border-style: none none solid none;
-  
-
-
+ 
   padding-top: .5em;
   padding-bottom: .5em;
 }
