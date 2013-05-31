@@ -1,21 +1,26 @@
- 
-    ----------------
+ /*
+    -----------------
     TABLE OF CONTENTS
+    -----------------
 
-    ----------------
-
-    01. DISPLAY CLASS
-    02. CURSOR POINTERS
-    03. LINE HEIGHT
-    04. CSS TRANSITIONS
-    05. TEXT COLOR
-    06. BACK GROUND STYLES
-    07. TEXT ALIGNMENT
-    08. ROUNDED BORDERS
-    09. BORDERS
-    10. TEXT SHADOWS
-    11. GLOBAL SHADOW
-    12. OVERFLOW HIDDEN
+    - DISPLAY CLASS
+    - INLINE MENUS
+    - OVERFLOW HIDDEN
+    - CURSORS
+    - LINE HEIGHT
+    - MIN HEIGHT
+    - CSS TRANSITIONS
+    - TEXT ALIGNMENT
+    - TEXT COLOR
+    - TEXT SHADOWS
+    - ARROWS
+    - ROUNDED BORDERS
+    - BORDERS
+    - GLOBAL SHADOWS
+    - DROP SHADOWS
+    - OVERFLOW HIDDEN
+    - ARROWS
+    - HTML5BP HELPERS 
 */
 
 
@@ -34,10 +39,35 @@
     display: static;
 }
 
+/* 
+    ---------
+    INLINE UL
+    ---------
+*/
+.inline-menu {
+    margin: 0;
+    padding: 0;
+}
+.inline-menu .li {
+    float: left;
+    display: block;
+}
+
+
+
+/*
+    ---------------
+    OVERFLOW HIDDEN
+    ---------------
+*/
+.o-hidden {
+    overflow: hidden;
+}
+
 
 /*
     -------
-    POINTER
+    CURSORS
     -------
 */
 .pointer {
@@ -118,8 +148,6 @@
 }  
 
 
-
-
 /*
     -----------
     TRANSITION
@@ -148,80 +176,6 @@
     transition-duration: 0ms;
 }
 
-/*
-    ----------
-    TEXT COLOR
-    ----------
-*/
-.light.text {
-    color: #ffffff;
-}
-.solid.text {
-    color: #7e5480;
-}
-.dark.text {
-    color: #000000;
-}
-
-
-/*
-    ----------------------
-    BACKGROUND STYLES
-    ----------------------
-*/
-.bg-white {
-    color: #7e5480;
-    background: #ffffff;
-}
-.bg-white-gradient {
-        
-}
-.bg-light {
-	color: #7e5480;
-	background: #f0f0f0;
-}
-.bg-light-gradient {
-	color: #7e5480;
-	background-color: #f0f0f0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#c0c0c0)); /* Chrome, Safari 4+ */
-	background-image: -webkit-linear-gradient(top, #f0f0f0, #c0c0c0); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-	background-image:    -moz-linear-gradient(top, #f0f0f0, #c0c0c0); /* Firefox 3.6-15 */
-	background-image:      -o-linear-gradient(top, #f0f0f0, #c0c0c0); /* Opera 11.10-12.00 */
-	background-image:         linear-gradient(to bottom, #f0f0f0, #c0c0c0); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-}
-.bg-solid {
-    background: #7e5480;
-    color: #c0c0c0;
-}
-.bg-solid-gradient {
-	background-color: #7e5480;
-	color: #c0c0c0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#7e5480), to(#4d274f)); /* Chrome, Safari 4+ */
-	background-image: -webkit-linear-gradient(top, #7e5480, #4d274f); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-	background-image:    -moz-linear-gradient(top, #7e5480, #4d274f); /* Firefox 3.6-15 */
-	background-image:      -o-linear-gradient(top, #7e5480, #4d274f); /* Opera 11.10-12.00 */
-	background-image:         linear-gradient(to bottom, #7e5480, #4d274f); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-}
-.bg-dark {
-    color: #fff;
-    background: #333333;
-}
-.bg-dark-gradient {
-	color: #fff;			
-	background-color: #333333;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111)); /* Chrome, Safari 4+ */
-	background-image: -webkit-linear-gradient(top, #333333, #111111); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-	background-image:    -moz-linear-gradient(top, #333333, #111111); /* Firefox 3.6-15 */
-	background-image:      -o-linear-gradient(top, #333333, #111111); /* Opera 11.10-12.00 */
-	background-image:         linear-gradient(to bottom, #333333, #111111); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-}
-.bg-facebook {
-    border:0px;
-    color: #fff !important;
-    background: #4c66a4 !important;
-    font-family: Tahoma, san-serif;
-    font-weight: normal;
-}
 
 /*
     --------------
@@ -238,6 +192,79 @@
     text-align: right;
 }
 
+/*
+    -----------
+    TEXT SHADOW
+    -----------
+*/
+.bg-light.text-shadow, .bg-light-gradient.text-shadow {
+    text-shadow: 0px 1px 1px #d0d0d0;
+}
+.bg-solid.text-shadow, .bg-solid-gradient.text-shadow {
+    text-shadow: 0px 1px 1px #413040;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25)
+}
+.bg-dark.text-shadow, .bg-dark-gradient.text-shadow {
+    text-shadow: 0px 1px 1px #d0d0d0;
+}
+
+
+
+
+/*
+    ----------
+    TEXT COLOR
+    ----------
+*/
+.light.text {
+    color: #ffffff;
+}
+.solid.text {
+    color: #15b4d3;
+}
+.dark.text {
+    color: #000000;
+}
+
+
+/*
+    ---------------
+    ARROWS
+    ---------------
+*/
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;    
+    border-bottom: 5px solid black;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;    
+    border-top: 5px solid black;
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black;
+}
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-right:5px solid black; 
+}
+
 
 /*
     --------------
@@ -245,27 +272,27 @@
     --------------
 */
 .rounded {
-	/* useful if you don't want a bg color from leaking outside the border: */
-  	-webkit-background-clip: padding-box; 
-  	background-clip: padding-box;
+    /* useful if you don't want a bg color from leaking outside the border: */
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box;
 }
 .xsmall.rounded {
-	border-radius: 1px;
+    border-radius: 1px;
 }
 .small.rounded {
-	border-radius: 2px;
+    border-radius: 2px;
 }
 .medium.rounded {
-	border-radius: 3px;
+    border-radius: 3px;
 }
 .large.rounded {
-	border-radius: 4px;
+    border-radius: 4px;
 }
 .xlarge.rounded {
-	border-radius: 6px;
+    border-radius: 6px;
 }
 .xxlarge.rounded {
-	border-radius: 8px;
+    border-radius: 8px;
 }
 
 /*
@@ -274,7 +301,7 @@
     -------
 */
 .bordered {
-	border: 1px solid #d0d0d0;
+    border: 1px solid #d0d0d0;
 }
 .bg-white.bordered, .bg-white-gradient.bordered {
     border: 1px solid #d0d0d0;
@@ -283,37 +310,48 @@
     border: 1px solid #d0d0d0;
 }
 .bg-solid.bordered, .bg-solid-gradient.bordered {
-	border: 1px solid #413040;
+    border: 1px solid #413040;
 }
 .bg-dark.bordered, .bg-dark-gradient.bordered {
-	border: 1px solid #413040;
+    border: 1px solid #413040;
 }
+.trbl-borders {
+    border: 1px solid #000;
+    border-style: solid solid solid solid;
+}
+.trl-borders {
+    border: 1px solid #000;
+    border-style: solid solid none;
+}
+.rbl-borders {
+    border: 1px solid #000;
+    border-style: none solid solid;
+}
+.lr-borders {
+    border: 1px solid #000;
+    border-style: none solid;
+}
+.lrb-borders {
+    border: 1px solid #000;
+    border-style: none solid solid;
+}
+.tb-borders {
+    border: 1px solid #000;
+    border-style: none solid;
+}
+
+
+
 
 /*
-	-----------
-	TEXT SHADOW
-	-----------
-*/
-.bg-light.text-shadow, .bg-light-gradient.text-shadow {
-	text-shadow: 0px 1px 1px #d0d0d0;
-}
-.bg-solid.text-shadow, .bg-solid-gradient.text-shadow {
-	text-shadow: 0px 1px 1px #413040;
-}
-.bg-dark.text-shadow, .bg-dark-gradient.text-shadow {
-	text-shadow: 0px 1px 1px #d0d0d0;
-}
-
-
-/*
-	-------------
-	GLOBAL SHADOW
-	-------------
+    -------------
+    GLOBAL SHADOW
+    -------------
 */
 .shadow {
-	-moz-box-shadow: 0px 3px 10px #888;
-	-webkit-box-shadow: 0px 3px 10px #888;
-	box-shadow: 0px 3px 10px #888;
+    -moz-box-shadow: 0px 3px 10px #888;
+    -webkit-box-shadow: 0px 3px 10px #888;
+    box-shadow: 0px 3px 10px #888;
 }
 .inset-shadow {
     
@@ -325,19 +363,227 @@
     ---------------
 */
 
-.drop-shadow {
+.global-shadow {
+    
+}
+
+.i-drop-shadow {
     -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,.15), 0 0 3px rgba(0,0,0,.1);
        -moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,.15), 0 0 3px rgba(0,0,0,.1);
             box-shadow: inset 0 0 0 1px rgba(255,255,255,.15), 0 0 3px rgba(0,0,0,.1); 
 }
 
-/*
-	---------------
-	OVERFLOW HIDDEN
-	---------------
-*/
-.o-hidden {
-	overflow: hidden;
+.drop-shadow {
+    
+}
+
+.drop-shadow-t {
+    
+}
+
+.drop-shadow-l {
+    
+}
+
+.drop-shadow-b {
+    
+}
+
+.drop-shadow-r {
+    
 }
 
 
+
+
+
+
+
+
+
+
+/*  ------------------------------
+    htmlbp helpers
+    ------------------------------ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+body {
+}
