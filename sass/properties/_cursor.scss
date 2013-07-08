@@ -1,0 +1,10 @@
+.pointer {
+    cursor: pointer;
+}
+.no-pointer {
+    cursor: default !important;
+}
+.pointer:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}

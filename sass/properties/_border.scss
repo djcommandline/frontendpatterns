@@ -1,0 +1,69 @@
+.trbl-borders {
+    border: 1px solid #000;
+    border-style: solid solid solid solid;
+}
+.trl-borders {
+    border: 1px solid #000;
+    border-style: solid solid none;
+}
+.rbl-borders {
+    border: 1px solid #000;
+    border-style: none solid solid;
+}
+.lr-borders {
+    border: 1px solid #000;
+    border-style: none solid;
+}
+.lrb-borders {
+    border: 1px solid #000;
+    border-style: none solid solid;
+}
+.tb-borders {
+    border: 1px solid #000;
+    border-style: none solid;
+}
+
+/*
+    -------
+    BORDERS
+    -------
+*/
+.bordered {
+    border: 1px solid #d0d0d0;
+}
+.bg-white.bordered, .bg-white-gradient.bordered {
+    border: 1px solid #d0d0d0;
+}
+.bg-light.bordered, .bg-light-gradient.bordered {
+    border: 1px solid #d0d0d0;
+}
+.bg-solid.bordered, .bg-solid-gradient.bordered {
+    border: 1px solid #413040;
+}
+.bg-dark.bordered, .bg-dark-gradient.bordered {
+    border: 1px solid #413040;
+}
+.trbl-borders {
+    border: 1px solid #000;
+    border-style: solid solid solid solid;
+}
+.trl-borders {
+    border: 1px solid #000;
+    border-style: solid solid none;
+}
+.rbl-borders {
+    border: 1px solid #000;
+    border-style: none solid solid;
+}
+.lr-borders {
+    border: 1px solid #000;
+    border-style: none solid;
+}
+.lrb-borders {
+    border: 1px solid #000;
+    border-style: none solid solid;
+}
+.tb-borders {
+    border: 1px solid #000;
+    border-style: none solid;
+}

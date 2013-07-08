@@ -16,11 +16,26 @@
 .set-left, .float-left{
     float: left;
 }
+
+.set-left img, .float-left img{
+    float: left;
+    margin-right: 10px;
+}
+
 .set-right, .float-right {
     float: right;
 }
 
 
+.set-right img, .float-right img {
+    float: right;
+    margin-left: 10px;
+}
+
+.set-center {
+    float: none !important;
+    margin: 0 auto !important;    
+}
 
 /*
     --------------------
@@ -53,6 +68,14 @@
     ABSOLUTE POSITIONING
     --------------------
 */
+.abs-t {
+    position: absolute;
+    top: 0px;
+}
+.abs-b {
+    position: absolute;
+    bottom: 0px;
+}
 .abs-tl {
     position: absolute;
     top: 0px;
@@ -73,6 +96,8 @@
     bottom: 0px;
     right: 0px;
 }
+
+
 
 
 

@@ -1,0 +1,85 @@
+.ribbon {     
+    background: #ba89b6;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0.4em 2em 0.4em 0em;
+    margin-left: -1em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.abs-t .ribbon, 
+.abs-b .ribbon {
+    margin-left: -2em;
+}
+.ribbon:before, 
+.ribbon:after {
+    border: 1.5em solid #986794;
+    bottom: -1em;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+.ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+.ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+.ribbon .ribbon-text:before,
+.abs-tl .ribbon .ribbon-text:before, 
+.abs-bl .ribbon .ribbon-text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #804f7c transparent transparent transparent;
+    bottom: -0.95em;                                    
+}
+.ribbon .ribbon-text:after,
+.abs-tr .ribbon .ribbon-text:after, 
+.abs-br .ribbon .ribbon-text:after  {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #804f7c transparent transparent transparent;
+    bottom: -0.95em;
+}
+.ribbon .ribbon-text:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-text:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+.abs-bl .ribbon .ribbon-text:after, 
+.abs-tl .ribbon .ribbon-text:after {
+    border-width: 0em 0em 0em 0em;
+}
+.abs-br .ribbon .ribbon-text:before, 
+.abs-tr .ribbon .ribbon-text:before {
+    border-width: 0em 0em 0em 0em;
+}
+.abs-bl .ribbon .ribbon-text:before,
+.abs-b .ribbon .ribbon-text:before {
+    left: 0;
+    border-color: transparent transparent #804f7c transparent;
+    border-width: 0em 0em 1em 1em;
+    bottom: auto;
+    top: -.95em;
+}
+.abs-br .ribbon .ribbon-text:after,
+.abs-b .ribbon .ribbon-text:after {
+    right: 0;
+    border-color: transparent transparent #804f7c transparent;
+    border-width: 0em 1em 1em 0em;
+    bottom: auto;
+    top: -.95em;
+}

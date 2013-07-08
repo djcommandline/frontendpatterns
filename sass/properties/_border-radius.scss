@@ -1,0 +1,23 @@
+.rounded {
+    /* useful if you don't want a bg color from leaking outside the border: */
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+}
+.xsmall.rounded {
+    border-radius: 1px;
+}
+.small.rounded {
+    border-radius: 2px;
+}
+.medium.rounded {
+    border-radius: 3px;
+}
+.large.rounded {
+    border-radius: 4px;
+}
+.xlarge.rounded {
+    border-radius: 6px;
+}
+.xxlarge.rounded {
+    border-radius: 8px;
+}

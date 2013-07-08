@@ -25,18 +25,8 @@
         <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
 
         <!-- css -->
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/fonts.css">
-        <link rel="stylesheet" href="./css/margins.css">
-        <link rel="stylesheet" href="./css/padding.css">
-        <link rel="stylesheet" href="./css/position.css">
-        <link rel="stylesheet" href="./css/buttons.css">
-        <link rel="stylesheet" href="./css/helpers.css">
-        <link rel="stylesheet" href="./css/borders.css">
-        <link rel="stylesheet" href="./css/form.css">
-        <link rel="stylesheet" href="./css/background.css">
-        <link rel="stylesheet" href="./css/mobile-first-grid.css">    
-        <link rel="stylesheet" href="./css/layout.css">    
+        <link rel="stylesheet" href="./css/style.css">
+   
 
 
         <!--[if (gt IE 8) | (IEMobile)]><!-->        
@@ -69,14 +59,14 @@
 
     </head>
    
-    <body>
+    <body ng-app>
 
         <div id="outer-wrap">
         <div id="inner-wrap">
 
 
-            <!-- LEFT LOGO - RIGHT MENU LIST-->
-            <header id="header" class="" role="banner">
+            <!-- LEFT LOGO -->
+            <header id="header" class="left-layout" role="banner">
                 <div class="block cf">                    
                     <a class="nav-btn" id="nav-open-btn"><i class="icon-reorder"></i></a>
                     <h1 class="title text-left"><span>PATTERNS™</span></h1>
@@ -94,7 +84,7 @@
             </header>
 
             <!-- RIGHT LOGO -->
-            <header id="header" class="" role="banner">
+            <header id="header" class="hide right-layout" role="banner">
                 <div class="block cf">                    
                     <a class="nav-btn" id="nav-open-btn"><i class="icon-reorder"></i></a>
                     <h1 class="title text-right"><span>PATTERNS™</span></h1>
@@ -111,8 +101,8 @@
                 </div>
             </header>
 
-            <!-- THE PAGE TITLE -->
-            <header id="header" class="center-layout" role="banner">
+            <!-- CENTER -->
+            <header id="header" class="hide center-layout" role="banner">
                 <div class="block cf">                    
                     <a class="nav-btn" id="nav-open-btn"><i class="icon-reorder"></i></a>
                     <h1 class="title text-left"><span>PATTERNS™</span></h1>
@@ -129,9 +119,8 @@
                 </div>
             </header>
 
-
             <!-- THE RESPONSIVE NAVIGATION -->
-            <nav id="nav" role="navigation" class="text-left">
+            <nav id="nav" role="navigation" class="left-layout text-left">
                 <div class="block">
 
                     <!-- TITLE -->
@@ -169,9 +158,8 @@
                 </div>
             </nav>
 
-
             <!-- THE RESPONSIVE NAVIGATION -->
-            <nav id="nav" role="navigation" class="text-left">
+            <nav id="nav" role="navigation" class="hide right-layout text-left">
                 <div class="block">
 
                     <!-- TITLE -->
@@ -212,21 +200,35 @@
             <!-- THE MAIN PORTION OF THE PAGE -->
             <div id="main" role="main" class="bg-light">
 
+
+                <!-- UI COMPONENT - BUTTON STATES -->
+                <div class="block">
+                    <div class="c1 rel-center p25">
+                        <div class="box padded">
+                            <div class="m-25 bg-white">
+                            <div class="bg-primary cta large">primary cta button</div>
+                            <div class="bg-warning cta large">warning cta button</div>
+                            <div class="bg-default cta large">default cta button</div>
+                            <div class="bg-danger cta large">danger cta button</div>
+                            <div class="bg-success cta large">success cta button</div>
+                            <div class="bg-inverse cta large">inverse cta button</div>
+                            <div class="bg-info cta large">info cta button</div>
+                            <div class="bg-disabled cta large">disabled cta button</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- UI COMPONENT - BLOCK WRAPPER--> 
                 <div class="block">
                     <div class="c1 rel-center pb-25 pt-25" role="sign-up">
                         <div class="box padded">    
                             <div class="rel-center mobile-100 cf" style="width: 45.0625em;">
 
-
-
-
-
                                 <!-- UI COMPONENT - SIGNUP FORM -->  
                                 <form class="form-signin o-hidden text-left transition bg-white p-25 m-15 mb-0 bordered large rounded">
-                                    <h2 class="form-signin-heading">Please sign in</h2>
-
-
+                                    <h2 class="form-signin-heading">Please sign in {{name}}</h2>
 
                                     <div class="whatever abs-tl">
                                         <div>
@@ -234,17 +236,15 @@
                                         </div>
                                     </div>
 
-
                                     <div class="whatever abs-tr">
                                         <div>
                                             PIN TOP RIGHT
                                         </div>
                                     </div>
-
                                     
                                     <div class="input-wrap small rounded">
-                                        <label for="email"><span class="default">Enter</span> <span class="prompt">Use any Characters</span> </label>
-                                        <input id="email" class="w100" type="text" class="input-block-level" placeholder="Email address"> 
+                                        <label for="email"><span class="default">Enter</span> <span class="prompt">Use any Characters for your Email Address</span> </label>
+                                        <input ng-model="name" id="email" class="w100" type="text" class="input-block-level" placeholder="Email address"> 
                                     </div>
 
                                     <div class="input-wrap small rounded">
@@ -258,7 +258,6 @@
                                         <input type="checkbox" value="remember-me" class="wauto mr-5"><span>remember me</span>
                                     </label>
 
-
                                     <div class="whatever abs-bl">
                                         <div>
                                             PIN BOTTOM LEFT
@@ -271,8 +270,6 @@
                                             PIN BOTTOM RIGHT
                                         </div>
                                     </div>
-
-
 
                                 </form>
 
@@ -293,26 +290,28 @@
                             <div class="bordered m-15 bg-white mh-15"> 
 
 
-                                <div class="whatever abs-tl">
+                                <div class="abs-tl">
                                     <div>
-                                        TL
+                                        <div class="ribbon"><div class="ribbon-text">top left</div></div>
                                     </div>
                                 </div>
-                                <div class="whatever abs-tr">
-                                    <div>
-                                        TR
+                                <div class="abs-tr">
+                                    <div>                                        
+                                        <div class="ribbon"><div class="ribbon-text">top right</div></div>
                                     </div>
                                 </div>
-                                <div class="whatever abs-bl">
-                                    <div>
-                                        BL
+                                <div class="abs-bl">
+                                    <div>                                       
+                                        <div class="ribbon"><div class="ribbon-text">bot left</div></div>
                                     </div>
                                 </div>
-                                <div class="whatever abs-br">
-                                    <div>
-                                        BR
+                                <div class="abs-br">
+                                    <div>                                        
+                                        <div class="ribbon"><div class="ribbon-text">bot right</div></div>
                                     </div>
                                 </div>
+
+
 
 
                                 <i class="icon-cloud-download w100 set-left font-8em"></i>     
@@ -321,6 +320,20 @@
                         </div>
                         <div class="box padded">
                             <div class="bordered m-15 bg-white mh-15">
+
+                                <div class="abs-t w100">
+                                    <div>
+                                        <div class="ribbon"><div class="ribbon-text">top</div></div>
+                                    </div>
+                                </div>
+
+                                <div class="abs-b w100">
+                                    <div>
+                                        <div class="ribbon"><div class="ribbon-text">bottom</div></div>
+                                    </div>
+                                </div>
+
+
                                 <i class="icon-cloud-download w100 set-left font-8em"></i>   
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
                             </div>
@@ -389,110 +402,6 @@
                     </div>
                 </div>
 
-                <div class="block">
-                    <div class="c1 o-hidden bg-light">
-                        <div class="box padded">
-                            <div class="bordered bg-white m-15">
-
-                                <h3 class="padded">Basic Buttons</h3>
-                                <div class="bg-light xsmall cta mb-15"> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-light small cta mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-solid medium cta mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark large cta mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark xlarge cta mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="block">
-                    <div class="c1 rel-center bg-light">
-                        <div class="box padded">
-                            <div class="bordered bg-white m-15">
-
-                                <h3>Basic Buttons + Rounded Borders</h3>
-                                <div class="bg-light xsmall rounded cta mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-light small rounded cta mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-solid medium rounded cta mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark large rounded cta mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark xlarge rounded cta mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="block">
-                    <div class="c1 bg-light rel-center">
-                        <div class="box padded">
-                            <div class="bordered m-15 bg-white">
-
-                                <h3>Basic Buttons + Rounded Borders + Border Width</h3>
-                                <div class="bg-light xsmall rounded cta bordered mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-light small rounded cta bordered mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-solid medium rounded cta bordered mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark large rounded cta bordered mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark xlarge rounded cta bordered mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                            </div>
-                        </div>
-                    </div> 
-                </div>                                
-
-                <div class="block">
-                    <div class="c1 bg-light rel-center">
-                        <div class="box padded">
-                            <div class="bordered m-15 bg-white">
-
-                                <h3>Basic Buttons + Rounded Borders + Border Width + Text Shadow</h3>
-                                <div class="bg-light xsmall rounded cta bordered text-shadow mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-light small rounded cta bordered text-shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-solid medium rounded cta bordered text-shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark large rounded cta bordered text-shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark xlarge rounded cta bordered text-shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="block">
-                    <div class="c1 bg-light rel-center">
-                        <div class="box padded">
-                            <div class="bordered m-15 bg-white">
-
-                                <h3>Gradient Buttons + Rounded Borders + Border Width + Text Shadow</h3>
-                                <div class="bg-light-gradient xsmall rounded cta bordered text-shadow mb-15"> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-light-gradient small rounded cta bordered text-shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-solid-gradient medium rounded cta bordered text-shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark-gradient large rounded cta bordered text-shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark-gradient xlarge rounded cta bordered text-shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                    
-
-                <div class="block">
-                    <div class="c1 bg-light rel-center">
-                        <div class="box padded">
-                            <div class="bordered m-15 bg-white">
-
-                                <h3>Gradient Buttons + Rounded Borders + Border Width + Text Shadow + Global Shadow</h3>
-                                <div class="bg-light-gradient xsmall rounded cta bordered text-shadow shadow mb-15 "> XSMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-light-gradient small rounded cta bordered text-shadow shadow mb-15"> SMALL <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-solid-gradient medium rounded cta bordered text-shadow shadow mb-15"> MEDIUM <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark-gradient large rounded cta bordered text-shadow shadow mb-15"> LARGE <i class="icon-circle-arrow-right"></i> </div>
-                                <div class="bg-dark-gradient xlarge rounded cta bordered text-shadow shadow mb-25"> XLARGE <i class="icon-circle-arrow-right"></i> </div>
-
-                            </div>
-                        </div>
-                    </div> 
-                </div>
 
 
             </div>
@@ -521,6 +430,9 @@
         <!-- END OF PAGE SCRIPT --> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
+
+        <!-- Angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
         
         <!-- ADDITIONAL SCRIPTS --> 
         <script src="js/plugins.js"></script>

@@ -1,0 +1,89 @@
+$fontsize-xsmall  : 0.8em;
+$fontsize-small   : 1.0em;
+$fontsize-medium  : 1.2em;
+$fontsize-large   : 1.5em;
+$fontsize-xlarge  : 2.4em;
+$fontsize-xxlarge : 3.0em;
+
+$width-xsmall  : 80px;
+$width-small   : 120px;
+$width-medium  : 160px;
+$width-large   : 200px;
+$width-xlarge  : 240px;
+$width-xxlarge : 300px;
+
+/*
+    ----------------------
+    CALL TO ACTION BUTTONS
+    ----------------------
+*/
+.cta {
+    text-align: center;
+    width: 80px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    line-height: 2;
+    text-indent: 0px;
+
+}
+.xsmall.cta {
+    width: $width-xsmall;
+    font-size: $fontsize-xsmall;
+}
+.small.cta {
+    width: $width-small;
+    font-size: $fontsize-small;
+}
+.medium.cta {
+    width: $width-medium;
+    font-size: $fontsize-medium;
+}
+.large.cta {
+    width: $width-large;
+    font-size: $fontsize-large;
+}
+.xlarge.cta {
+    width: $width-xlarge;
+    font-size: $fontsize-xlarge;
+}
+.xxlarge.cta {
+    width: $width-xxlarge;
+    font-size: $fontsize-xxlarge;
+}
+
+/*
+    ----------------------
+    CALL TO ACTION STATES
+    ----------------------
+*/
+.cta:hover {
+    opacity:.75;
+    filter: alpha(opacity=75);
+}
+.cta:hover {
+
+}
+.cta.inactive {
+    opacity: .60;
+    filter: alpha(opacity=60);
+}
+.cta.inactive:hover {
+    cursor: display;
+}
+.cta.loading {
+    background-image: url(/assets/img/loading/loading-pink.gif) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-color: #ffffff !important;
+    text-indent: -9999px !important;
+    border: 1px #d0d0d0 solid !important;
+    cursor: default !important;
+}
+.cta.success{
+    text-indent: 0px !important;
+    width: 100% !important;
+    cursor: default !important;
+}

@@ -1,0 +1,14 @@
+#main {
+    overflow: hidden;
+}
+#main .block {
+  max-width: 1020px;
+  margin: 0 auto; 
+}
+
+#footer .block {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+@import "./grid.scss";

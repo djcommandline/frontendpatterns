@@ -68,6 +68,14 @@
     ABSOLUTE POSITIONING
     --------------------
 */
+.abs-t {
+    position: absolute;
+    top: 0px;
+}
+.abs-b {
+    position: absolute;
+    bottom: 0px;
+}
 .abs-tl {
     position: absolute;
     top: 0px;

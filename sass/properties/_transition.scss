@@ -1,0 +1,22 @@
+.transition, .transition *
+{
+    -webkit-transition-duration: 350ms;
+    -moz-transition-duration: 350ms;
+    -o-transition-duration: 350ms;
+    -ms-transition-duration: 350ms;
+    transition-duration: 350ms;
+}
+.fast-transition, .fast-transition * {
+    -webkit-transition-duration: 150ms;
+    -moz-transition-duration: 150ms;
+    -o-transition-duration: 150ms;
+    -ms-transition-duration: 150ms;
+    transition-duration: 150ms;
+}
+.no-transition, .no-transition * {
+    -webkit-transition-duration: 0ms;
+    -moz-transition-duration: 0ms;
+    -o-transition-duration: 0ms;
+    -ms-transition-duration: 0ms;
+    transition-duration: 0ms;
+}
