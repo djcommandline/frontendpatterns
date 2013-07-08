@@ -1,3 +1,2 @@
 /bootstrap/
-*sass-cache/
-
+.sass-cache

@@ -6,6 +6,8 @@
     RELATIVE POSITING
     ABSOLUTE POSITING
 */
+
+
 /*
     ------------------------------
     STYLE HELPERS =  FLOAT + CLEAR
@@ -41,53 +43,54 @@
     --------------------
 */
 .rel-center {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden; }
-
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
 .rel-left {
-  position: relative;
-  margin-right: auto;
-  margin-left: 0px;
-  overflow: hidden; }
-
+	position: relative;
+    margin-right: auto;
+    margin-left: 0px;
+    overflow: hidden;
+}
 .rel-right {
-  position: relative;
-  margin-right: 0px;
-  margin-left: auto;
-  overflow: hidden; }
+	position: relative;
+    margin-right: 0px;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+
 
 /*
     --------------------
     ABSOLUTE POSITIONING
     --------------------
 */
-.abs-t {
+.abs-tl {
     position: absolute;
     top: 0px;
+    left: 0px;
 }
-.abs-b {
+.abs-tr {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.abs-bl {
     position: absolute;
     bottom: 0px;
+    left: 0px;
 }
-.abs-tl {
-  position: absolute;
-  top: 0px;
-  left: 0px; }
-
-.abs-tr {
-  position: absolute;
-  top: 0px;
-  right: 0px; }
-
-.abs-bl {
-  position: absolute;
-  bottom: 0px;
-  left: 0px; }
-
-
 .abs-br {
-  position: absolute;
-  bottom: 0px;
-  right: 0px; }
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+
+
+
+
