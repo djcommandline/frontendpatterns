@@ -1,36 +1,27 @@
 /* ==========================================================================
    helper classes
    ========================================================================== */
-
 /* borders */
 .trbl-borders {
-    border: 1px solid #000;
-    border-style: solid solid solid solid;
-}
-
+  border: 1px solid #000;
+  border-style: solid solid solid solid; }
 
 .trl-borders {
-    border: 1px solid #000;
-    border-style: solid solid none;
-}
+  border: 1px solid #000;
+  border-style: solid solid none; }
 
 .rbl-borders {
-    border: 1px solid #000;
-    border-style: none solid solid;
-}
-
+  border: 1px solid #000;
+  border-style: none solid solid; }
 
 .lr-borders {
-    border: 1px solid #000;
-    border-style: none solid;
-}
+  border: 1px solid #000;
+  border-style: none solid; }
 
 .lrb-borders {
-    border: 1px solid #000;
-    border-style: none solid solid;
-}
+  border: 1px solid #000;
+  border-style: none solid solid; }
 
 .tb-borders {
-    border: 1px solid #000;
-    border-style: none solid;
-}
+  border: 1px solid #000;
+  border-style: none solid; }

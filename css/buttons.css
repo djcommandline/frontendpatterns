@@ -4,43 +4,39 @@
     ----------------------
 */
 .cta {
-    text-align: center;
-    width: 80px;
-    height: auto;
-    display: block;
-    cursor: pointer;
-    -webkit-font-smoothing: antialiased;
-    font-weight: bold;
-    line-height: 2;
-    text-indent: 0px;
+  text-align: center;
+  width: 80px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  line-height: 2;
+  text-indent: 0px; }
 
-}
 .xsmall.cta {
-    width: 80px;
-    font-size: .8em;
-}
+  width: 80px;
+  font-size: .8em; }
+
 .small.cta {
-    width: 120px;
-    font-size: 1em;
-}
+  width: 120px;
+  font-size: 1em; }
+
 .medium.cta {
-    width: 160px;
-    font-size: 1.2em;
-}
+  width: 160px;
+  font-size: 1.2em; }
+
 .large.cta {
-    width: 200px;
-    font-size: 1.5em;
-}
+  width: 200px;
+  font-size: 1.5em; }
+
 .xlarge.cta {
-    width: 240px;
-    font-size: 2.4em;
-}
+  width: 240px;
+  font-size: 2.4em; }
+
 .xxlarge.cta {
-    width: 300px;
-    font-size: 3em;
-}
-
-
+  width: 300px;
+  font-size: 3em; }
 
 /*
     ----------------------
@@ -48,30 +44,26 @@
     ----------------------
 */
 .cta:hover {
-    opacity:.75;
-    filter: alpha(opacity=75);
-}
-.cta:hover {
+  opacity: .75;
+  filter: alpha(opacity=75); }
 
-}
 .cta.inactive {
-    opacity: .60;
-    filter: alpha(opacity=60);
-}
+  opacity: .60;
+  filter: alpha(opacity=60); }
+
 .cta.inactive:hover {
-    cursor: display;
-}
+  cursor: display; }
+
 .cta.loading {
-    background-image: url(/assets/img/loading/loading-pink.gif) !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-color: #ffffff !important;
-    text-indent: -9999px !important;
-    border: 1px #d0d0d0 solid !important;
-    cursor: default !important;
-}
-.cta.success{
-    text-indent: 0px !important;
-    width: 100% !important;
-    cursor: default !important;
-}
+  background-image: url(/assets/img/loading/loading-pink.gif) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: #ffffff !important;
+  text-indent: -9999px !important;
+  border: 1px #d0d0d0 solid !important;
+  cursor: default !important; }
+
+.cta.success {
+  text-indent: 0px !important;
+  width: 100% !important;
+  cursor: default !important; }

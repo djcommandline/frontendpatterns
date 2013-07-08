@@ -4,59 +4,69 @@
     ----------------------
 */
 .bg-white {
-    color: #000;
-    background: #ffffff;
-}
-.bg-white-gradient {
-        
-}
-.bg-grey {
+  color: #000;
+  background: #ffffff; }
 
-    background: #f0f0f0;
-}
+.bg-grey {
+  background: #f0f0f0; }
+
 .bg-light {
-    color: #c33133;
-    background: #f0f0f0;
-}
+  color: #c33133;
+  background: #f0f0f0; }
+
 .bg-light-gradient {
-    color: #c33133;
-    background-color: #f0f0f0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#c0c0c0)); /* Chrome, Safari 4+ */
-    background-image: -webkit-linear-gradient(top, #f0f0f0, #c0c0c0); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    background-image:    -moz-linear-gradient(top, #f0f0f0, #c0c0c0); /* Firefox 3.6-15 */
-    background-image:      -o-linear-gradient(top, #f0f0f0, #c0c0c0); /* Opera 11.10-12.00 */
-    background-image:         linear-gradient(to bottom, #f0f0f0, #c0c0c0); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-}
+  color: #c33133;
+  background-color: #f0f0f0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(silver));
+  /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #f0f0f0, silver);
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, #f0f0f0, silver);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, #f0f0f0, silver);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, #f0f0f0, silver);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
 .bg-solid {
-    background: #15b4d3;
-    color: #fff;
-}
+  background: #15b4d3;
+  color: #fff; }
+
 .bg-solid-gradient {
-    background-color: #c33133;
-    color: #c0c0c0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#c33133), to(#4d274f)); /* Chrome, Safari 4+ */
-    background-image: -webkit-linear-gradient(top, #c33133, #4d274f); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    background-image:    -moz-linear-gradient(top, #c33133, #4d274f); /* Firefox 3.6-15 */
-    background-image:      -o-linear-gradient(top, #c33133, #4d274f); /* Opera 11.10-12.00 */
-    background-image:         linear-gradient(to bottom, #c33133, #4d274f); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-}
+  background-color: #c33133;
+  color: #c0c0c0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c33133), to(#4d274f));
+  /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #c33133, #4d274f);
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, #c33133, #4d274f);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, #c33133, #4d274f);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, #c33133, #4d274f);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
 .bg-dark {
-    color: #fff;
-    background: #333333;
-}
+  color: #fff;
+  background: #333333; }
+
 .bg-dark-gradient {
-    color: #fff;            
-    background-color: #333333;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111)); /* Chrome, Safari 4+ */
-    background-image: -webkit-linear-gradient(top, #333333, #111111); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    background-image:    -moz-linear-gradient(top, #333333, #111111); /* Firefox 3.6-15 */
-    background-image:      -o-linear-gradient(top, #333333, #111111); /* Opera 11.10-12.00 */
-    background-image:         linear-gradient(to bottom, #333333, #111111); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-}
+  color: #fff;
+  background-color: #333333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111));
+  /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #333333, #111111);
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, #333333, #111111);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, #333333, #111111);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, #333333, #111111);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
 .bg-facebook {
-    border:0px;
-    color: #fff !important;
-    background: #4c66a4 !important;
-    font-family: Tahoma, san-serif;
-    font-weight: normal;
-}
+  border: 0px;
+  color: #fff !important;
+  background: #4c66a4 !important;
+  font-family: Tahoma, san-serif;
+  font-weight: normal; }

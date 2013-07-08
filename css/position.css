@@ -6,36 +6,28 @@
     RELATIVE POSITING
     ABSOLUTE POSITING
 */
-
-
 /*
     ------------------------------
     STYLE HELPERS =  FLOAT + CLEAR
     ------------------------------
 */
-.set-left, .float-left{
-    float: left;
-}
+.set-left, .float-left {
+  float: left; }
 
-.set-left img, .float-left img{
-    float: left;
-    margin-right: 10px;
-}
+.set-left img, .float-left img {
+  float: left;
+  margin-right: 10px; }
 
 .set-right, .float-right {
-    float: right;
-}
-
+  float: right; }
 
 .set-right img, .float-right img {
-    float: right;
-    margin-left: 10px;
-}
+  float: right;
+  margin-left: 10px; }
 
 .set-center {
-    float: none !important;
-    margin: 0 auto !important;    
-}
+  float: none !important;
+  margin: 0 auto !important; }
 
 /*
     --------------------
@@ -43,25 +35,22 @@
     --------------------
 */
 .rel-center {
-	position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+
 .rel-left {
-	position: relative;
-    margin-right: auto;
-    margin-left: 0px;
-    overflow: hidden;
-}
+  position: relative;
+  margin-right: auto;
+  margin-left: 0px;
+  overflow: hidden; }
+
 .rel-right {
-	position: relative;
-    margin-right: 0px;
-    margin-left: auto;
-    overflow: hidden;
-}
-
-
+  position: relative;
+  margin-right: 0px;
+  margin-left: auto;
+  overflow: hidden; }
 
 /*
     --------------------
@@ -69,28 +58,21 @@
     --------------------
 */
 .abs-tl {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
 .abs-tr {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
 .abs-bl {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-}
+  position: absolute;
+  bottom: 0px;
+  left: 0px; }
+
 .abs-br {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-}
-
-
-
-
-
-
+  position: absolute;
+  bottom: 0px;
+  right: 0px; }
