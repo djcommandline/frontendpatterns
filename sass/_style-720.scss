@@ -1,0 +1,45 @@
+/*
+	=========
+	MIN 720px
+	=========
+ */
+@include min-screen(720px) {
+	
+	.c1 > .box {
+	    width: 100%;
+	    float: left;
+	}
+	.c2 > .box {
+	    width: 50%;
+	    float: left;
+	}
+	.c3 > .box {
+	    width: 33.3333333%;
+	    float: left;
+	}
+	.c4 > .box {
+	    width: 25%;
+	    float: left;
+	}
+	.c5 > .box {
+	    width: 20%;
+	    float: left;
+	}
+	.c6 > .box {
+	    width: 16.6666666%;
+	    float: left;
+	}
+	.c7 > .box {
+	    width: 14.2857142857143%;
+	    float: left;
+	}
+	.c8 > .box {
+	    width: 12.5%;
+	    float: left;
+	}
+	.cw400 {
+		width: 400px !important;
+	}
+
+
+}

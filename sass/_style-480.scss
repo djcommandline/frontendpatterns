@@ -5,9 +5,15 @@
  */
 @include min-screen(480px) {
 	
-
-
+	.c5 > .box,
+	.c6 > .box,
+	.c7 > .box,
+	.c8 > .box {
+	    width: 33%;
+	    float: left;
+	}
+	.cw400 {
+		width: 320px !important;
+	}
 
 }
-
-

@@ -1,21 +1,133 @@
-@import "./_helpers.scss";
+/////// SITE COLORS
+$solid:             #ccddee;
+$off-solid:         #cfdfef;
+$light:             #000000;
+$dark:              #000000;
+
+// BUTTON/STATE COLORS
+$primaryColor:      #1ABC9C;
+$secondaryColor:    #34495E;
+$defaultColor:      $primaryColor;
+$inverseColor:      $secondaryColor;
+$warningColor:      #F1C40F;
+$dangerColor:       #E74C3C;
+$successColor:      #2ECC71;
+$infoColor:         #3498DB;
+$disabledColor:     #ECF0F1;
+
+// SOCIAL COLORS
+$facebook:          #3B5998;
+$foursquare:        #8FD400;
+$google:            #C63D2D;
+$instagram:         #4E433C;
+$linkedin:          #4875B4;
+$tumblr:            #2B4964;
+$twitter:           #33CCFF;
+$vimeo:             #86B32D;
+$youtube:           #FF3333;
+
+//// SITE FONTS ::  SAN-SERIF
+$san-serif:                    'PT Sans', Helvetica, Arial, sans-serif;
+$san-serif-italic:             $san-serif;                                 
+$san-serif-light:              $san-serif;
+$san-serif-ultralight:         $san-serif;
+$san-serif-medium:             $san-serif;
+$san-serif-regular:            $san-serif;
+$san-serif-bold:               $san-serif;
+$san-serif-bold-italic:        $san-serif;
+$san-serif-bold-condensed:     $san-serif;
+
+
+//// SITE FONTS ::  SERIF
+$serif:                    'PT Sans', Helvetica, Arial, sans-serif;
+$serif-italic:             $serif;
+$serif-light:              $serif;
+$serif-ultralight:         $serif;
+$serif-medium:             $serif;
+$serif-regular:            $serif;
+$serif-bold:               $serif;
+$serif-bold-italic:        $serif;
+$serif-bold-condensed:     $serif;
+
+
+//// mixins inclusions
+@import "./mediaqueries/__mediaqueries.scss";  // Media Queries
+
+
+//// helper classes inclusion + prototyping classess
+@import "./__helpers.scss";
+
+
+
+// site structure
+.c5 .box.padded > div,
+.c4 .box.padded > div,
+.c3 .box.padded > div,
+.c2 .box.padded > div,
+.c1 .box.padded > div {
+padding: 1em;
+position: relative;
+}
+
+
+body {
+  color: #333;
+  position: relative;
+  width: 100%;
+  min-width: 20em;
+  font-family: $san-serif;
+}
+
+#main {
+    overflow: hidden;
+}
+#main .block {
+  max-width: 1020px;
+  margin: 0 auto; 
+}
+
+#footer .block {
+max-width: 1020px;
+margin: 0 auto;
+}
+
+.c1 > .box,
+.c2 > .box,
+.c3 > .box,
+.c4 > .box,
+.c5 > .box,
+.c6 > .box,
+.c7 > .box,
+.c8 > .box {
+width: 100%;
+float: left;
+}
+
+
+
+// ==========================================
+// Media Queriers
+// ==========================================
 // 320: Smartphone Portrait
 // 480: Smartphone Landscape
 // 640 or 768 ???: IPad Portrait ???
 // 960: IPad Landscape / Small Laptop ???
 // 1024: Desktop and Laptop
 // 1280: Wide Screen
-//
-//
-//
-// Mobile First Stratgety :: Make it look good on 320 first!!!
-
-
-
-
+// ==========================================
 @import "style-480.scss";
-// @import "style-640.scss";
-// @import "style-768.scss";
-// @import "style-960.scss";
-// @import "style-1024.scss";
-// @import "style-1280.scss";
+@import "style-640.scss";
+	@import "style-720.scss";
+@import "style-768.scss";
+@import "style-960.scss";
+@import "style-1024.scss";
+	@import "style-1080.scss";
+@import "style-1280.scss";
+
+
+
+
+
+
+// exceptions :: print stylesheets and IE bullshit
+@import "./exceptions/__exceptions.scss";

@@ -1,95 +1,81 @@
 /*
-	--------------
-	FONT REFERENCE
-	--------------
-*/
-.site-fonts-family-for-reference{
-
-    /* Arvo */
-    font-family: 'Arvo', Georgia, Times, serif;
-
-    /* PT Sans */
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-
-}
-
-body {
-	    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-}
-
-
-/*
     -----------
-    SANS SERIF
+    SANS SERIF HELPER CLASSES
     -----------
 */
-.sserif-light {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+.san-serif {
+    
 }
-.sserif-ultralight {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+.san-serif-light {
+    font-family: $san-serif-light;
 }
-.sserif-med {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+.san-serif-light {
+    font-family: $san-serif-italic;
 }
-.sserif-regular {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+.san-serif-ultralight {
+    font-family: $san-serif-ultralight;
 }
-.sserif-bold {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+.san-serif-medium {
+    font-family: $san-serif-medium;
 }
-.sserif-bold-italic {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+.san-serif-regular {
+    font-family: $san-serif-regular;
 }
-.sserif-bold-condensed {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+.san-serif-bold {
+    font-family: $san-serif-bold;
+}
+.san-serif-bold-italic {
+    font-family: $san-serif-bold-italic;
+}
+.san-serif-bold-condensed {
+    font-family: $san-serif-bold-condensed;
 }
 
 /*
     -----------
-    SERIF
+    SERIF HELPER CLASSES
     -----------
 */
-.serif-semibold-italic {
-    font-family: 'Arvo', Georgia, Times, serif;
+.serif {
+    font-family: $serif;
 }
 .serif-italic {
-    font-family: 'Arvo', Georgia, Times, serif;
+    font-family: $serif-italic;
 }
-.serif-regular {
-    font-family: 'Arvo', Georgia, Times, serif;
+.serif-light {
+    font-family: $serif-light;
+}
+.serif-ultralight {
+    font-family: $serif-ultralight;
 }
 .serif-medium {
-    font-family: 'Arvo', Georgia, Times, serif;
+    font-family: $serif-medium;
+}
+.serif-regular {
+    font-family: $serif-regular;
+}
+.serif-bold {
+    font-family: $serif-bold;
+}
+.serif-bold-italic {
+    font-family: $serif-bold-italic;
+}
+.serif-bold-condensed {
+    font-family: $serif-bold-condensed;
 }
 
-.font-1em {
-    font-size: 1em;
-}
-.font-2em {
-    font-size: 2em;
-}
-.font-3em {
-    font-size: 3em;
-}
-.font-4em {
-    font-size: 4em;
-}
-.font-5em {
-    font-size: 5em;
-}
-.font-6em {
-    font-size: 5em;
-}
-.font-7em {
-    font-size: 5em;
-}
-.font-8em {
-    font-size: 5em;
-}
-.font-9em {
-    font-size: 5em;
-}
-.font-10em {
-    font-size: 5em;
+
+/*
+    -----------
+    FONT SIZE HELPER CLASSES
+    -----------
+*/
+$num_step : 10;
+$spacing : 1em;
+$spacinglabel : 1;
+
+@for $i from 0 through $num_step {
+    .font-#{$i * $spacinglabel}em { 
+        font-size: $spacing * $i !important; 
+    }
 }

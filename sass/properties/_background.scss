@@ -1,26 +1,3 @@
-// BUTTON/STATE COLORS
-$primaryColor   : #1ABC9C;
-$secondaryColor : #34495E;
-$defaultColor   : $primaryColor; 
-$inverseColor   : $secondaryColor;
-$warningColor   : #F1C40F;
-$dangerColor    : #E74C3C;
-$successColor   : #2ECC71;
-$infoColor      : #3498DB;
-$disabledColor  : #ECF0F1;
-
-// SOCIAL COLORS
-$facebook       : #3B5998;
-$foursquare     : #8FD400;
-$google         : #C63D2D;
-$instagram      : #4E433C;
-$linkedin       : #4875B4;
-$tumblr         : #2B4964;
-$twitter        : #33CCFF;
-$vimeo          : #86B32D;
-$youtube        : #FF3333;
-
-
 /*
     ----------------------
     BACKGROUNDS
@@ -99,9 +76,3 @@ $youtube        : #FF3333;
 .bg-disabled {
     background-color: $disabledColor;
 }
-
-
-
-
-
-
