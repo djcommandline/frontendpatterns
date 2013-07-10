@@ -914,35 +914,35 @@ table {
     -----------
 */
 .san-serif-light {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
 .san-serif-light {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
 .san-serif-ultralight {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
 .san-serif-medium {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
 .san-serif-regular {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
 .san-serif-bold {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
 .san-serif-bold-italic {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
 .san-serif-bold-condensed {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -951,39 +951,39 @@ table {
     -----------
 */
 .serif {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 .serif-italic {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 .serif-light {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 .serif-ultralight {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 .serif-medium {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 .serif-regular {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 .serif-bold {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 .serif-bold-italic {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 .serif-bold-condensed {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 /*
@@ -2422,7 +2422,8 @@ body {
   position: relative;
   width: 100%;
   min-width: 20em;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 #main {

@@ -27,7 +27,7 @@ $vimeo:             #86B32D;
 $youtube:           #FF3333;
 
 //// SITE FONTS ::  SAN-SERIF
-$san-serif:                    'PT Sans', Helvetica, Arial, sans-serif;
+$san-serif:                    'Ubuntu', Helvetica, Arial, sans-serif;
 $san-serif-italic:             $san-serif;                                 
 $san-serif-light:              $san-serif;
 $san-serif-ultralight:         $san-serif;
@@ -39,7 +39,7 @@ $san-serif-bold-condensed:     $san-serif;
 
 
 //// SITE FONTS ::  SERIF
-$serif:                    'PT Sans', Helvetica, Arial, sans-serif;
+$serif:                    'Vollkorn', Georgia, serif;
 $serif-italic:             $serif;
 $serif-light:              $serif;
 $serif-ultralight:         $serif;
@@ -76,6 +76,7 @@ body {
   width: 100%;
   min-width: 20em;
   font-family: $san-serif;
+  text-transform: uppercase;
 }
 
 #main {
