@@ -1,1 +1,21 @@
 @import "./_helpers.scss";
+// 320: Smartphone Portrait
+// 480: Smartphone Landscape
+// 640 or 768 ???: IPad Portrait ???
+// 960: IPad Landscape / Small Laptop ???
+// 1024: Desktop and Laptop
+// 1280: Wide Screen
+//
+//
+//
+// Mobile First Stratgety :: Make it look good on 320 first!!!
+
+
+
+
+@import "style-480.scss";
+// @import "style-640.scss";
+// @import "style-768.scss";
+// @import "style-960.scss";
+// @import "style-1024.scss";
+// @import "style-1280.scss";

@@ -1,5 +1,8 @@
 // reset
-@import "./reset/_normalize.scss";
+@import "./reset/__reset.scss";
+
+// mediaqueries
+@import "./mediaqueries/__mediaqueries.scss";
 
 // hacks
 @import "./hacks/__hacks.scss";
