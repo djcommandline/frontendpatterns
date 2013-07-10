@@ -1,99 +1,34 @@
 
 /*
     ======
-    STYLE HELPER - MARGIN
+    MARGIN OVERRIDES
     ======
 */
-.m-0 {
-    margin: 0px !important;
+
+$num_step : 5;
+$spacing : 5px;
+
+// margin
+@for $i from 0 through $num_step {
+  .m-#{$i*5} { margin: $spacing * $i !important; }
 }
-.m-5 {
-    margin: 5px;
+
+// margin-bottom
+@for $i from 0 through $num_step {
+  .mb-#{$i*5} { margin-top: $spacing * $i !important; }
 }
-.m-10 {
-    margin: 10px;
+
+// margin-top
+@for $i from 0 through $num_step {
+  .mt-#{$i*5} { margin-bottom: $spacing * $i !important; }
 }
-.m-15 {
-    margin: 15px;
+
+// margin-left
+@for $i from 0 through $num_step {
+  .ml-#{$i*5} { margin-left: $spacing * $i !important; }
 }
-.m-20 {
-    margin: 20px;
-}
-.m-25 {
-    margin: 25px;
-}
-.mb-0 {
-    margin-bottom: 0px !important;
-}
-.mb-5 {
-    margin-bottom: 5px;
-}
-.mb-10 {
-    margin-bottom: 10px;
-}
-.mb-15 {
-    margin-bottom: 15px;
-}
-.mb-20 {
-    margin-bottom: 20px;
-}
-.mb-25 {
-    margin-bottom: 25px;
-}
-.mb-100 {
-    margin-bottom: 100px;
-}
-.mt-0 {
-    margin-top: 0px !important;
-}
-.mt-5 {
-    margin-top: 5px;
-}
-.mt-10 {
-    margin-top: 10px;
-}
-.mt-15 {
-    margin-top: 15px;
-}
-.mt-20 {
-    margin-top: 20px;
-}
-.mt-25 {
-    margin-top: 25px;
-}
-.ml-0 {
-    margin-left: 0px !important;
-}
-.ml-5 {
-    margin-left: 5px;
-}
-.ml-10 {
-    margin-left: 10px;
-}
-.ml-15 {
-    margin-left: 15px;
-}
-.ml-20 {
-    margin-left: 20px;
-}
-.ml-25 {
-    margin-left: 25px;
-}
-.mr-0 {
-    margin-right: 0px !important;
-}
-.mr-5 {
-    margin-right: 5px;
-}
-.mr-10 {
-    margin-right: 10px;
-}
-.mr-15 {
-    margin-right: 15px;
-}
-.mr-20 {
-    margin-right: 20px;
-}
-.mr-25 {
-    margin-right: 25px;
+
+// margin-right
+@for $i from 0 through $num_step {
+  .mr-#{$i*5} { margin-right: $spacing * $i !important; }
 }
