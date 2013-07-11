@@ -1,22 +1,28 @@
 /////// SITE COLORS
-$solid:             #ccddee;
-$off-solid:         #cfdfef;
-$light:             #000000;
-$dark:              #000000;
+$solidColor:            #3E4971;
+$solid-lightenColor:    lighten($solidColor, 20%);
+$solid-darkenColor:     darken($solidColor, 20%);
+$lightColor:            #F0F0F0;
+$darkColor:             #333333;
 
-// BUTTON/STATE COLORS
-$primaryColor:      #00A0B0;
-$secondaryColor:    #4ECDC4;
+// BackGround
+$primaryColor:      #33C9FF;
+$secondaryColor:    #363636;
+$dangerColor:       #F6656B;
 $warningColor:      #CC333F;
-$dangerColor:       #EB6841;
-$successColor:      #00A0B0;
+$successColor:      #4DAA57;
 $infoColor:         #C7F464;
 $disabledColor:     #F0F0F0;
 
+$defaultColor:      #FFD101;
+$inverseColor:      lighten($primaryColor, 30%);
 
-$defaultColor:      $primaryColor;
-$inverseColor:      $secondaryColor;
+$bgWhite: #FFFFFF;
+$bgGrey: #F0F0F0;
+$bgLight: $lightColor;
 
+$textColor:         #000000;
+$invertedTextColor: invert($textColor);
 
 // SOCIAL COLORS
 $facebook:          #3B5998;
@@ -51,6 +57,28 @@ $serif-regular:            $serif;
 $serif-bold:               $serif;
 $serif-bold-italic:        $serif;
 $serif-bold-condensed:     $serif;
+
+//// FONT SIZES
+$fontsize-xsmall:          0.8em;
+$fontsize-small:           0.9em;
+$fontsize-medium:          1.0em;
+$fontsize-large:           1.2em;
+$fontsize-xlarge:          1.4em;
+$fontsize-xxlarge:         2.0em;
+
+//// CTA BUTTON SIZES
+$width-xsmall:             80px;
+$width-small:              120px;
+$width-medium:             160px;
+$width-large:              280px;
+$width-xlarge:             300px;
+$width-xxlarge:            340px;
+
+
+//// SITE STRUCTURE BG
+$bgHeader: $primaryColor;
+$bgNav: $secondaryColor;
+
 
 
 //// mixins inclusions

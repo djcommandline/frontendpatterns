@@ -4,18 +4,18 @@
     ----------------------
 */
 .bg-white {
-    color: #000;
-    background: #ffffff;
+    color: inverse($bgWhite);
+    background: $bgWhite;
 }
 .bg-white-gradient {
      
 }
 .bg-grey {
-    background: #f0f0f0;
+    background: $bgGrey;
 }
 .bg-light {
-    color: #c33133;
-    background: #f0f0f0;
+    background: $bgLight;
+    color: darken($bgLight, 80%);
 }
 .bg-light-gradient {
     color: #c33133;
@@ -54,25 +54,37 @@
 }
 .bg-primary {
     background-color: $primaryColor;
+    color: lighten($primaryColor, 35%);
+}
+.bg-secondary {
+    background-color: $secondaryColor;
+    color: lighten($secondaryColor, 35%);
 }
 .bg-warning {
     background-color: $warningColor;
-}
-.bg-default {
-    background-color: $defaultColor;
+    color: lighten($warningColor, 35%);
 }
 .bg-danger {
     background-color: $dangerColor;
-}
-.bg-success {
-    background-color: $successColor;
-}
-.bg-inverse {
-    background-color: $inverseColor;
+    color: lighten($dangerColor, 35%);
 }
 .bg-info {
     background-color: $infoColor;
+    color: darken($infoColor, 35%);
 }
 .bg-disabled {
     background-color: $disabledColor;
+    color: darken($disabledColor, 35%);
+}
+.bg-default {
+    background-color: $defaultColor;
+    color: darken($defaultColor, 35%);
+}
+.bg-success {
+    background-color: $successColor;
+    color: darken($successColor, 35%);
+}
+.bg-inverse {
+    background-color: $inverseColor;
+    color: darken($inverseColor, 35%);
 }
