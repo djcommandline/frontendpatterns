@@ -5,15 +5,18 @@ $light:             #000000;
 $dark:              #000000;
 
 // BUTTON/STATE COLORS
-$primaryColor:      #1ABC9C;
-$secondaryColor:    #34495E;
+$primaryColor:      #00A0B0;
+$secondaryColor:    #4ECDC4;
+$warningColor:      #CC333F;
+$dangerColor:       #EB6841;
+$successColor:      #00A0B0;
+$infoColor:         #C7F464;
+$disabledColor:     #F0F0F0;
+
+
 $defaultColor:      $primaryColor;
 $inverseColor:      $secondaryColor;
-$warningColor:      #F1C40F;
-$dangerColor:       #E74C3C;
-$successColor:      #2ECC71;
-$infoColor:         #3498DB;
-$disabledColor:     #ECF0F1;
+
 
 // SOCIAL COLORS
 $facebook:          #3B5998;
