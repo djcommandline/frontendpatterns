@@ -2211,50 +2211,49 @@ a {
 /* line 6, ../sass/elements/_buttons.scss */
 .cta {
   text-align: center;
-  width: 80px;
   height: auto;
   display: block;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   line-height: 1;
   text-indent: 0px;
-  padding: 1em;
+  padding: 1em 0;
   font-size: 1em;
 }
 
-/* line 19, ../sass/elements/_buttons.scss */
+/* line 18, ../sass/elements/_buttons.scss */
 .xsmall.cta {
-  width: 80px;
-  font-size: 0.8em;
+  min-width: 0px;
+  font-size: 0.65em;
 }
 
-/* line 23, ../sass/elements/_buttons.scss */
+/* line 22, ../sass/elements/_buttons.scss */
 .small.cta {
-  width: 120px;
-  font-size: 0.9em;
+  min-width: 0px;
+  font-size: 0.85em;
 }
 
-/* line 27, ../sass/elements/_buttons.scss */
+/* line 26, ../sass/elements/_buttons.scss */
 .medium.cta {
-  width: 160px;
+  min-width: 0px;
   font-size: 1em;
 }
 
-/* line 31, ../sass/elements/_buttons.scss */
+/* line 30, ../sass/elements/_buttons.scss */
 .large.cta {
-  width: 280px;
-  font-size: 1.2em;
+  min-width: 0px;
+  font-size: 1.3em;
 }
 
-/* line 35, ../sass/elements/_buttons.scss */
+/* line 34, ../sass/elements/_buttons.scss */
 .xlarge.cta {
-  width: 300px;
-  font-size: 1.4em;
+  min-width: 0px;
+  font-size: 1.6em;
 }
 
-/* line 39, ../sass/elements/_buttons.scss */
+/* line 38, ../sass/elements/_buttons.scss */
 .xxlarge.cta {
-  width: 340px;
+  min-width: 0px;
   font-size: 2em;
 }
 
@@ -2263,24 +2262,24 @@ a {
     CALL TO ACTION STATES
     ----------------------
 */
-/* line 49, ../sass/elements/_buttons.scss */
+/* line 48, ../sass/elements/_buttons.scss */
 .cta:hover {
   opacity: .75;
   filter: alpha(opacity=75);
 }
 
-/* line 56, ../sass/elements/_buttons.scss */
+/* line 55, ../sass/elements/_buttons.scss */
 .cta.inactive {
   opacity: .60;
   filter: alpha(opacity=60);
 }
 
-/* line 60, ../sass/elements/_buttons.scss */
+/* line 59, ../sass/elements/_buttons.scss */
 .cta.inactive:hover {
   cursor: display;
 }
 
-/* line 63, ../sass/elements/_buttons.scss */
+/* line 62, ../sass/elements/_buttons.scss */
 .cta.loading {
   background-image: url(/assets/img/loading/loading-pink.gif) !important;
   background-repeat: no-repeat !important;
@@ -2291,7 +2290,7 @@ a {
   cursor: default !important;
 }
 
-/* line 72, ../sass/elements/_buttons.scss */
+/* line 71, ../sass/elements/_buttons.scss */
 .cta.success {
   text-indent: 0px !important;
   width: 100% !important;
@@ -3129,7 +3128,7 @@ input[type="search"] {
   top: -.95em;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .c5 .box.padded > div,
 .c4 .box.padded > div,
 .c3 .box.padded > div,
@@ -3139,7 +3138,7 @@ input[type="search"] {
   position: relative;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 body {
   color: #333;
   position: relative;
@@ -3149,24 +3148,24 @@ body {
   text-transform: uppercase;
 }
 
-/* line 134, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 #main {
   overflow: hidden;
 }
 
-/* line 137, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 #main .block {
   max-width: 1020px;
   margin: 0 auto;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 #footer .block {
   max-width: 1020px;
   margin: 0 auto;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .c1 > .box,
 .c2 > .box,
 .c3 > .box,
@@ -3179,12 +3178,12 @@ body {
   float: left;
 }
 
-/* line 160, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 button {
   border: 0px;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 input {
   border: 0px;
 }
