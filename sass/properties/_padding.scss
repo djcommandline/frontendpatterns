@@ -5,7 +5,7 @@
     ======
 */
 
-$num_step : 5;
+$num_step : 10;
 $spacing : 5px;
 
 // padding
@@ -13,14 +13,14 @@ $spacing : 5px;
   .p-#{$i*5} { padding: $spacing * $i !important; }
 }
 
-// padding-bottom
-@for $i from 0 through $num_step {
-  .pb-#{$i*5} { padding-top: $spacing * $i !important; }
-}
-
 // padding-top
 @for $i from 0 through $num_step {
-  .pt-#{$i*5} { padding-bottom: $spacing * $i !important; }
+  .pt-#{$i*5} { padding-top: $spacing * $i !important; }
+}
+
+// padding-bottom
+@for $i from 0 through $num_step {
+  .pb-#{$i*5} { padding-bottom: $spacing * $i !important; }
 }
 
 // padding-left

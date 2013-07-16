@@ -1,28 +1,6 @@
-/////// SITE COLORS
-$solidColor:            #3E4971;
-$solid-lightenColor:    lighten($solidColor, 20%);
-$solid-darkenColor:     darken($solidColor, 20%);
-$lightColor:            #F0F0F0;
-$darkColor:             #333333;
+@import 'bourbon/bourbon';
 
-// BackGround
-$primaryColor:      #33C9FF;
-$secondaryColor:    #363636;
-$dangerColor:       #F6656B;
-$warningColor:      #CC333F;
-$successColor:      #4DAA57;
-$infoColor:         #C7F464;
-$disabledColor:     #F0F0F0;
-
-$defaultColor:      #FFD101;
-$inverseColor:      lighten($primaryColor, 30%);
-
-$bgWhite: #FFFFFF;
-$bgGrey: #F0F0F0;
-$bgLight: $lightColor;
-
-$textColor:         #000000;
-$invertedTextColor: invert($textColor);
+/////// SOLID COLOR CHOICE
 
 // SOCIAL COLORS
 $facebook:          #3B5998;
@@ -34,6 +12,49 @@ $tumblr:            #2B4964;
 $twitter:           #33CCFF;
 $vimeo:             #86B32D;
 $youtube:           #FF3333;
+
+// SOLID COLOR CHOICES
+$solidColor:         #33C9FF;
+$solidColorLight:    lighten($solidColor, 20%);
+$solidColorDark:     darken($solidColor, 20%);
+
+// BLACK AND WHITE VALUES
+$blackColor:        #000000;
+$whiteColor:        #FFFFFF;
+
+// GREY COLOR
+$lightColor:        darken($whiteColor, 7%);
+$darkColor:         lighten($blackColor, 10%);
+$greyColor:         mix($lightColor, $darkColor, 50%);
+
+// SITE COLORS
+$primaryColor:      $solidColor;
+$secondaryColor:    #363636;
+$defaultColor:      #FFD101;
+$inverseColor:      lighten($primaryColor, 30%);
+
+// STATUS COLORS
+$dangerColor:       #F6656B;
+$warningColor:      #CC333F;
+$successColor:      #4DAA57;
+$infoColor:         #C7F464;
+$disabledColor:     #F0F0F0;
+
+// BACKGROUND COLORS
+$bgSolid:            $solidColor;
+$bgSolidLight:       $solidColorLight;
+$bgSolidDark:        $solidColorDark;
+$bgLight:            $lightColor;
+$bgDark:             $darkColor;
+$bgWhite:            $whiteColor;
+$bgBlack:            $blackColor;
+$bgGrey:             $greyColor;
+$bgGreyLight:        darken($lightColor, 5%);
+
+$textColor:         #000000;
+$invertedTextColor: invert($textColor);
+
+
 
 //// SITE FONTS ::  SAN-SERIF
 $san-serif:                    'Ubuntu', Helvetica, Arial, sans-serif;
@@ -136,6 +157,12 @@ float: left;
 }
 
 
+button {
+	border: 0px;
+}
+input {
+	border: 0px;
+}
 
 // ==========================================
 // Media Queriers

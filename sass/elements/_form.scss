@@ -1,18 +1,7 @@
 /*
-    Top Labeled Form
-*/
-form .input-wrap {
-    border: 1px solid black;
-    background: #f0f0f0;
-    padding: 10px;
-    margin-bottom: 25px;
-}
-
-form .input-wrap label {
-    font-size: .8em
-}
-
-form input {
+    DEFAULT INPUT STYLES
+ */
+input {
     padding: 0px;
     border: 0px;
     width: 100%;
@@ -20,43 +9,6 @@ form input {
     background: transparent;
     padding: .25em 0;
 }
-
-.input-wrap.focused {
-  box-shadow: inset 0 0 5px #7e5480;
-}
-
-
-
-
-
-
-.input-wrap .prompt {
-    opacity: .0;
-    filter: alpha(opacity=0);
-}
-
-.input-wrap.focused .prompt {
-  display: inline;
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-
-.input-wrap.focused .default {
-  display: inline;
-  opacity: 1;
-}
-
-.input-wrap.focused .default {
-  display: none;
-    opacity: 0;
-}
-
-
-
-
-
-
 input[type=text], textarea {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
@@ -64,7 +16,6 @@ input[type=text], textarea {
   -o-transition: all 0.30s ease-in-out;
   outline: none !important;
 }
- 
 input[type=text]:focus, textarea:focus {
   box-shadow: inset 0 0 0px rgba(81, 203, 238, 1);
 }
@@ -72,3 +23,149 @@ input[type=text]:focus, textarea:focus {
 input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
   outline: none !important;
 }
+
+
+/*
+    TOP LABELED FORM
+*/
+.input-wrap {
+  background: $bgGreyLight;
+  color: invert($bgGreyLight) !important;
+  padding: 10px;
+  margin-bottom: 1em;
+  position: relative;
+  
+  // LABEL SETTINGS
+  label {
+      font-size: inherit;
+      position: absolute;
+      line-height: 1.5em;
+      
+    // PROMPTER LABELS
+    &.prompter {
+      font-size: inherit;
+      line-height: inherit;
+      position: relative;
+
+      span {
+        font-size: 10px;
+      }
+    }
+
+    .prompt {
+      opacity: .0;
+      filter: alpha(opacity=0);
+    }
+
+    
+  }    
+  
+  // ICON COLORS
+  i {
+    color: $secondaryColor;
+  }
+
+  // BUTTON STYLES
+  & button {
+    position: absolute;
+    background: transparent;
+    display: block;
+    right: 0;
+    top: 0;
+    font-size: 1em;
+    padding: .875em 0;
+    background: $bgSolid;
+    width: 5%;
+    min-width: 50px;
+    text-align: center;
+
+    i {
+      background: transparent;
+      color: #fff;
+    }
+  }
+
+
+
+
+
+
+  // SIMULATED FOCUSED STATE APPLIED AS A CLASS
+  &.focused {
+    box-shadow: inset 3px 0px 0px $secondaryColor;
+    
+    & .prompt {
+      display: inline;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    & .default {
+      display: none;
+      opacity: 0;
+    }
+
+    & label i {
+      color: $primaryColor;
+    }
+
+  }
+
+
+  & button:hover {
+    opacity: .5;
+    
+    i {
+      color: $solidColorDark;
+    }
+
+  }
+
+  & button:focus {
+    i {
+      color: $solidColorDark;
+    }
+  }
+
+
+  // STATUS ICONS
+  .statusicon {
+    background: transparent;
+    font-size: 1em;
+    min-width: 50px;
+    padding: .875em 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 5%;
+    
+    i {
+      background: transparent;
+      color: $primaryColor;
+    }
+  }  
+
+
+
+  // SLIM INPUT ( ICON ON THE LEFT )
+  &.slim {
+    input {
+      text-indent: 1.5em;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

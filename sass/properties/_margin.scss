@@ -13,14 +13,14 @@ $spacing : 5px;
   .m-#{$i*5} { margin: $spacing * $i !important; }
 }
 
-// margin-bottom
-@for $i from 0 through $num_step {
-  .mb-#{$i*5} { margin-top: $spacing * $i !important; }
-}
-
 // margin-top
 @for $i from 0 through $num_step {
-  .mt-#{$i*5} { margin-bottom: $spacing * $i !important; }
+  .mt-#{$i*5} { margin-top: $spacing * $i !important; }
+}
+
+// margin-bottom
+@for $i from 0 through $num_step {
+  .mb-#{$i*5} { margin-bottom: $spacing * $i !important; }
 }
 
 // margin-left

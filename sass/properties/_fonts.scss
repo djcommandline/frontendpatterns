@@ -4,7 +4,7 @@
     -----------
 */
 .san-serif {
-    
+    font-family: $serif-light;
 }
 .san-serif-light {
     font-family: $san-serif-light;
@@ -70,7 +70,7 @@
     FONT SIZE HELPER CLASSES
     -----------
 */
-$num_step : 10;
+$num_step : 20;
 $spacing : 1em;
 $spacinglabel : 1;
 

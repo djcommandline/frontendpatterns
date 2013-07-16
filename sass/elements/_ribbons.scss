@@ -1,5 +1,5 @@
 .ribbon {     
-    background: #ba89b6;
+    background: $primaryColor;
     color: #fff;
     margin: 0 auto;
     padding: 0.4em 2em 0.4em 0em;
@@ -38,7 +38,7 @@
     position: absolute;
     display: block;
     border-style: solid;
-    border-color: #804f7c transparent transparent transparent;
+    border-color: darken($primaryColor, 20%) transparent transparent transparent;
     bottom: -0.95em;                                    
 }
 .ribbon .ribbon-text:after,
@@ -48,7 +48,7 @@
     position: absolute;
     display: block;
     border-style: solid;
-    border-color: #804f7c transparent transparent transparent;
+    border-color: darken($primaryColor, 20%) transparent transparent transparent;
     bottom: -0.95em;
 }
 .ribbon .ribbon-text:before {
@@ -70,7 +70,7 @@
 .abs-bl .ribbon .ribbon-text:before,
 .abs-b .ribbon .ribbon-text:before {
     left: 0;
-    border-color: transparent transparent #804f7c transparent;
+    border-color: transparent transparent darken($primaryColor, 20%) transparent;
     border-width: 0em 0em 1em 1em;
     bottom: auto;
     top: -.95em;
@@ -78,7 +78,7 @@
 .abs-br .ribbon .ribbon-text:after,
 .abs-b .ribbon .ribbon-text:after {
     right: 0;
-    border-color: transparent transparent #804f7c transparent;
+    border-color: transparent transparent darken($primaryColor, 20%) transparent;
     border-width: 0em 1em 1em 0em;
     bottom: auto;
     top: -.95em;

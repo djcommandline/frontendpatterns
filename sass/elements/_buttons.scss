@@ -10,8 +10,10 @@
     display: block;
     cursor: pointer;
     -webkit-font-smoothing: antialiased;
-    line-height: 2;
+    line-height: 1;
     text-indent: 0px;
+    padding: 1em;
+    font-size: 1em;
 
 }
 .xsmall.cta {
