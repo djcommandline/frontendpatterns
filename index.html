@@ -31,6 +31,15 @@
         <link rel="stylesheet" href="css/ie.css">
         <![endif]-->
 
+        <style>
+        #main {
+         background-image:url(
+            data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQYV2OMq7zlw4ADBKtdN4ZJMYIULmpX24JL8ZBSuHH+xnr/RP9Ggp4ZOIUArconi++UvM4AAAAASUVORK5CYII=
+            );
+         }
+
+        </style>
+
     </head>
    
     <body ng-app>
@@ -223,12 +232,12 @@
 
                             <style>
                             .colorsamples > div {
-                                border: 1px solid black;
+                                border: 1px solid #f0f0f0;
                                 display: block;
                                 float: left;
-                                height: 50px;
+                                height: 60px;
                                 margin: 0 5px 5px 0;
-                                width: 50px;
+                                width: 60px;
                             }
                             </style>
 
@@ -286,7 +295,7 @@
                 <div class="block button-examples">
                     <div class="c1 rel-center p25">
                         <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto">
+                            <div class="m-25 bg-white pt-50 wauto cf">
 
                             <div class="abs-t w100">
                                 <div>
@@ -295,25 +304,60 @@
                             </div>
 
                             <style>
-                            .buttonsamples > div {
-                                
+                            .b-status {
+                                width: 48%;
+                                padding-right: 2%;
+                                border-right: 1px dotted #c0c0c0;
+                                float: left;
+                            }
+                            .b-sizing {
+                                width: 48%;
+                                float: right;
+                            }
+
+
+                            .b-sizing > div {
+                                width: 100%;
+                            }
+                            .b-sizing .xsmall {
+                                width: 25%;
+                            }
+                            .b-sizing .small {
+                                width: 30%;
+                            }
+                            .b-sizing .medium {
+                                width: 45%;
+                            }
+                            .b-sizing .large {
+                                width: 55%;
+                            }
+                            .b-sizing .xlarge {
+                                width: 75%;
+                            }
+                            .b-sizing .xxlarge {
+                                width: 100%;
                             }
                             </style>
 
+                            <div class="b-status">
+                                <div class="small bg-primary cta">primary cta button</div>
+                                <div class="small bg-secondary cta">secondary cta button</div>
+                                <div class="small bg-warning cta">warning cta button</div>
+                                <div class="small bg-danger cta">danger cta button</div>
+                                <div class="small bg-info cta">info cta button</div>
+                                <div class="small bg-disabled cta">disabled cta button</div>
+                                <div class="small bg-default cta">default cta button</div>
+                                <div class="small bg-success cta">success cta button</div>
+                                <div class="small bg-inverse cta">inverse cta button</div>
+                            </div>
 
-
-                            <div class="buttonsamples">
-
-                                <div class="bg-primary cta w33">primary cta button</div>
-                                <div class="bg-secondary cta w33">secondary cta button</div>
-                                <div class="bg-warning cta w33">warning cta button</div>
-                                <div class="bg-danger cta w33">danger cta button</div>
-                                <div class="bg-info cta w33">info cta button</div>
-                                <div class="bg-disabled cta w33">disabled cta button</div>
-                                <div class="bg-default cta w33">default cta button</div>
-                                <div class="bg-success cta w33">success cta button</div>
-                                <div class="bg-inverse cta w33">inverse cta button</div>
-
+                            <div class="b-sizing">
+                                <div class="xsmall bg-primary cta">xsmall</div>
+                                <div class="small bg-primary cta">small</div>
+                                <div class="medium bg-primary cta">medium</div>
+                                <div class="large bg-primary cta">large</div>
+                                <div class="xlarge bg-primary cta">xlarge</div>
+                                <div class="xxlarge bg-primary cta">xxlarge</div>
                             </div>
 
 
@@ -330,7 +374,7 @@
                 <div class="block button-examples">
                     <div class="c1 rel-center p25">
                         <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto">
+                            <div class="m-25 bg-white pt-50 wauto cf">
 
                                 <div class="abs-t w100">
                                     <div>
@@ -660,6 +704,7 @@
         
         <!-- ADDITIONAL SCRIPTS --> 
         <script src="js/plugins.js"></script>
+        <script src="js/app.js"></script>
 
         <!-- ADDITIONAL PAGE SCRIPTS --> 
         <script type="text/javascript">            

@@ -80,11 +80,11 @@ $serif-bold-italic:        $serif;
 $serif-bold-condensed:     $serif;
 
 //// FONT SIZES
-$fontsize-xsmall:          0.8em;
-$fontsize-small:           0.9em;
+$fontsize-xsmall:          0.65em;
+$fontsize-small:           0.85em;
 $fontsize-medium:          1.0em;
-$fontsize-large:           1.2em;
-$fontsize-xlarge:          1.4em;
+$fontsize-large:           1.3em;
+$fontsize-xlarge:          1.6em;
 $fontsize-xxlarge:         2.0em;
 
 //// CTA BUTTON SIZES
@@ -94,6 +94,14 @@ $width-medium:             160px;
 $width-large:              280px;
 $width-xlarge:             300px;
 $width-xxlarge:            340px;
+
+
+$width-xsmall:             0px;
+$width-small:              0px;
+$width-medium:             0px;
+$width-large:              0px;
+$width-xlarge:             0px;
+$width-xxlarge:            0px;
 
 
 //// SITE STRUCTURE BG
