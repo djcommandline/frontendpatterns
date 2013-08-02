@@ -737,13 +737,13 @@ table {
 /* line 64, ../sass/properties/_background.scss */
 .bg-black {
   background: black;
-  color: inveret(black);
+  color: #595959;
 }
 
 /* line 68, ../sass/properties/_background.scss */
 .bg-white {
   background: white !important;
-  color: black;
+  color: #595959;
 }
 
 /* line 72, ../sass/properties/_background.scss */
@@ -1136,7 +1136,7 @@ table {
 */
 /* line 6, ../sass/properties/_fonts.scss */
 .san-serif {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 9, ../sass/properties/_fonts.scss */
@@ -1186,47 +1186,47 @@ table {
 */
 /* line 39, ../sass/properties/_fonts.scss */
 .serif {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 42, ../sass/properties/_fonts.scss */
 .serif-italic {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 45, ../sass/properties/_fonts.scss */
 .serif-light {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 48, ../sass/properties/_fonts.scss */
 .serif-ultralight {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 51, ../sass/properties/_fonts.scss */
 .serif-medium {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 54, ../sass/properties/_fonts.scss */
 .serif-regular {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 57, ../sass/properties/_fonts.scss */
 .serif-bold {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 60, ../sass/properties/_fonts.scss */
 .serif-bold-italic {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /* line 63, ../sass/properties/_fonts.scss */
 .serif-bold-condensed {
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: "Cabin", sans-serif;
 }
 
 /*
@@ -2203,6 +2203,23 @@ a {
   border-right: 5px solid black;
 }
 
+/* line 1, ../sass/elements/_banner.scss */
+.banner {
+  background: #33c9ff;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.4em 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 12, ../sass/elements/_banner.scss */
+.abs-t .banner,
+.abs-b .banner {
+  margin-left: -1em;
+}
+
 /*
     ----------------------
     CALL TO ACTION BUTTONS
@@ -3061,9 +3078,9 @@ input[type="search"] {
 }
 
 /* line 36, ../sass/elements/_ribbons.scss */
-.ribbon .ribbon-text:before,
-.abs-tl .ribbon .ribbon-text:before,
-.abs-bl .ribbon .ribbon-text:before {
+.ribbon .text:before,
+.abs-tl .ribbon .text:before,
+.abs-bl .ribbon .text:before {
   content: "";
   position: absolute;
   display: block;
@@ -3073,9 +3090,9 @@ input[type="search"] {
 }
 
 /* line 46, ../sass/elements/_ribbons.scss */
-.ribbon .ribbon-text:after,
-.abs-tr .ribbon .ribbon-text:after,
-.abs-br .ribbon .ribbon-text:after {
+.ribbon .text:after,
+.abs-tr .ribbon .text:after,
+.abs-br .ribbon .text:after {
   content: "";
   position: absolute;
   display: block;
@@ -3085,32 +3102,32 @@ input[type="search"] {
 }
 
 /* line 54, ../sass/elements/_ribbons.scss */
-.ribbon .ribbon-text:before {
+.ribbon .text:before {
   left: 0;
   border-width: 1em 0 0 1em;
 }
 
 /* line 58, ../sass/elements/_ribbons.scss */
-.ribbon .ribbon-text:after {
+.ribbon .text:after {
   right: 0;
   border-width: 1em 1em 0 0;
 }
 
 /* line 63, ../sass/elements/_ribbons.scss */
-.abs-bl .ribbon .ribbon-text:after,
-.abs-tl .ribbon .ribbon-text:after {
+.abs-bl .ribbon .text:after,
+.abs-tl .ribbon .text:after {
   border-width: 0em 0em 0em 0em;
 }
 
 /* line 67, ../sass/elements/_ribbons.scss */
-.abs-br .ribbon .ribbon-text:before,
-.abs-tr .ribbon .ribbon-text:before {
+.abs-br .ribbon .text:before,
+.abs-tr .ribbon .text:before {
   border-width: 0em 0em 0em 0em;
 }
 
 /* line 71, ../sass/elements/_ribbons.scss */
-.abs-bl .ribbon .ribbon-text:before,
-.abs-b .ribbon .ribbon-text:before {
+.abs-bl .ribbon .text:before,
+.abs-b .ribbon .text:before {
   left: 0;
   border-color: transparent transparent #0096cc transparent;
   border-width: 0em 0em 1em 1em;
@@ -3119,8 +3136,8 @@ input[type="search"] {
 }
 
 /* line 79, ../sass/elements/_ribbons.scss */
-.abs-br .ribbon .ribbon-text:after,
-.abs-b .ribbon .ribbon-text:after {
+.abs-br .ribbon .text:after,
+.abs-b .ribbon .text:after {
   right: 0;
   border-color: transparent transparent #0096cc transparent;
   border-width: 0em 1em 1em 0em;
@@ -3128,7 +3145,16 @@ input[type="search"] {
   top: -.95em;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
+.cta {
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.25s ease-out;
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 6, ../sass/_style-320.scss */
 .c5 .box.padded > div,
 .c4 .box.padded > div,
 .c3 .box.padded > div,
@@ -3138,7 +3164,7 @@ input[type="search"] {
   position: relative;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 12, ../sass/_style-320.scss */
 body {
   color: #333;
   position: relative;
@@ -3148,24 +3174,24 @@ body {
   text-transform: uppercase;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 21, ../sass/_style-320.scss */
 #main {
   overflow: hidden;
 }
 
-/* line 145, ../sass/style.scss */
+/* line 24, ../sass/_style-320.scss */
 #main .block {
   max-width: 1020px;
   margin: 0 auto;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 29, ../sass/_style-320.scss */
 #footer .block {
   max-width: 1020px;
   margin: 0 auto;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 41, ../sass/_style-320.scss */
 .c1 > .box,
 .c2 > .box,
 .c3 > .box,
@@ -3178,12 +3204,12 @@ body {
   float: left;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 47, ../sass/_style-320.scss */
 button {
   border: 0px;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 50, ../sass/_style-320.scss */
 input {
   border: 0px;
 }

@@ -31,9 +31,9 @@
     border-left-width: 1.5em;
     border-right-color: transparent;
 }
-.ribbon .ribbon-text:before,
-.abs-tl .ribbon .ribbon-text:before, 
-.abs-bl .ribbon .ribbon-text:before {
+.ribbon .text:before,
+.abs-tl .ribbon .text:before, 
+.abs-bl .ribbon .text:before {
     content: "";
     position: absolute;
     display: block;
@@ -41,9 +41,9 @@
     border-color: darken($primaryColor, 20%) transparent transparent transparent;
     bottom: -0.95em;                                    
 }
-.ribbon .ribbon-text:after,
-.abs-tr .ribbon .ribbon-text:after, 
-.abs-br .ribbon .ribbon-text:after  {
+.ribbon .text:after,
+.abs-tr .ribbon .text:after, 
+.abs-br .ribbon .text:after  {
     content: "";
     position: absolute;
     display: block;
@@ -51,32 +51,32 @@
     border-color: darken($primaryColor, 20%) transparent transparent transparent;
     bottom: -0.95em;
 }
-.ribbon .ribbon-text:before {
+.ribbon .text:before {
     left: 0;
     border-width: 1em 0 0 1em;
 }
-.ribbon .ribbon-text:after {
+.ribbon .text:after {
     right: 0;
     border-width: 1em 1em 0 0;
 }
-.abs-bl .ribbon .ribbon-text:after, 
-.abs-tl .ribbon .ribbon-text:after {
+.abs-bl .ribbon .text:after, 
+.abs-tl .ribbon .text:after {
     border-width: 0em 0em 0em 0em;
 }
-.abs-br .ribbon .ribbon-text:before, 
-.abs-tr .ribbon .ribbon-text:before {
+.abs-br .ribbon .text:before, 
+.abs-tr .ribbon .text:before {
     border-width: 0em 0em 0em 0em;
 }
-.abs-bl .ribbon .ribbon-text:before,
-.abs-b .ribbon .ribbon-text:before {
+.abs-bl .ribbon .text:before,
+.abs-b .ribbon .text:before {
     left: 0;
     border-color: transparent transparent darken($primaryColor, 20%) transparent;
     border-width: 0em 0em 1em 1em;
     bottom: auto;
     top: -.95em;
 }
-.abs-br .ribbon .ribbon-text:after,
-.abs-b .ribbon .ribbon-text:after {
+.abs-br .ribbon .text:after,
+.abs-b .ribbon .text:after {
     right: 0;
     border-color: transparent transparent darken($primaryColor, 20%) transparent;
     border-width: 0em 1em 1em 0em;

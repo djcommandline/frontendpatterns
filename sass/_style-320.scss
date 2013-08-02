@@ -1,0 +1,52 @@
+// site structure
+.c5 .box.padded > div,
+.c4 .box.padded > div,
+.c3 .box.padded > div,
+.c2 .box.padded > div,
+.c1 .box.padded > div {
+padding: 1em;
+position: relative;
+}
+
+
+body {
+  color: #333;
+  position: relative;
+  width: 100%;
+  min-width: 20em;
+  font-family: $san-serif;
+  text-transform: uppercase;
+}
+
+#main {
+    overflow: hidden;
+}
+#main .block {
+  max-width: 1020px;
+  margin: 0 auto; 
+}
+
+#footer .block {
+max-width: 1020px;
+margin: 0 auto;
+}
+
+.c1 > .box,
+.c2 > .box,
+.c3 > .box,
+.c4 > .box,
+.c5 > .box,
+.c6 > .box,
+.c7 > .box,
+.c8 > .box {
+width: 100%;
+float: left;
+}
+
+
+button {
+	border: 0px;
+}
+input {
+	border: 0px;
+}

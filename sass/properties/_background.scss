@@ -63,11 +63,11 @@
 */
 .bg-black {
     background: $bgBlack;
-    color: inveret($blackColor);
+    color: lighten($bgBlack, 35%);
 }
 .bg-white {
     background: $bgWhite !important;
-    color: invert($bgWhite);
+    color: darken($bgWhite, 65%);
 }
 .bg-white-gradient {
     @include linear-gradient($bgWhite, darken($bgWhite, 15%));

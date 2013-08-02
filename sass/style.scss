@@ -1,6 +1,23 @@
+// ==========================================
+// DEPENDENCIES
+// ==========================================
+// BOURBON: http://bourbon.io/
+// ==========================================
 @import 'bourbon/bourbon';
 
-/////// SOLID COLOR CHOICE
+
+// ==========================================
+// COLORS
+// ==========================================
+// SOCIAL PLATFORM COLORS
+// SOCIAl COLOR CHOICES
+// BLACK AND WHITE VALUES
+// GREY COLORS
+// SITE COLORS
+// STATUS COLORS
+// BACKGROUND COLORS
+// ==========================================
+
 
 // SOCIAL COLORS
 $facebook:          #3B5998;
@@ -55,29 +72,12 @@ $textColor:         #000000;
 $invertedTextColor: invert($textColor);
 
 
-
-//// SITE FONTS ::  SAN-SERIF
-$san-serif:                    'Ubuntu', Helvetica, Arial, sans-serif;
-$san-serif-italic:             $san-serif;                                 
-$san-serif-light:              $san-serif;
-$san-serif-ultralight:         $san-serif;
-$san-serif-medium:             $san-serif;
-$san-serif-regular:            $san-serif;
-$san-serif-bold:               $san-serif;
-$san-serif-bold-italic:        $san-serif;
-$san-serif-bold-condensed:     $san-serif;
-
-
-//// SITE FONTS ::  SERIF
-$serif:                    'Vollkorn', Georgia, serif;
-$serif-italic:             $serif;
-$serif-light:              $serif;
-$serif-ultralight:         $serif;
-$serif-medium:             $serif;
-$serif-regular:            $serif;
-$serif-bold:               $serif;
-$serif-bold-italic:        $serif;
-$serif-bold-condensed:     $serif;
+// ==========================================
+// FONTSIZE AND FONT FAMILYS
+// ==========================================
+// SAN SERIF
+// SERIF
+// ==========================================
 
 //// FONT SIZES
 $fontsize-xsmall:          0.65em;
@@ -103,74 +103,58 @@ $width-large:              0px;
 $width-xlarge:             0px;
 $width-xxlarge:            0px;
 
+// SITE FONTS ::  SAN-SERIF
+$san-serif:                    'Ubuntu', Helvetica, Arial, sans-serif;
+$san-serif-italic:             $san-serif;                                 
+$san-serif-light:              $san-serif;
+$san-serif-ultralight:         $san-serif;
+$san-serif-medium:             $san-serif;
+$san-serif-regular:            $san-serif;
+$san-serif-bold:               $san-serif;
+$san-serif-bold-italic:        $san-serif;
+$san-serif-bold-condensed:     $san-serif;
 
-//// SITE STRUCTURE BG
+//// SITE FONTS ::  SERIF
+$serif:                    'Cabin', sans-serif;
+$serif-italic:             $serif;
+$serif-light:              $serif;
+$serif-ultralight:         $serif;
+$serif-medium:             $serif;
+$serif-regular:            $serif;
+$serif-bold:               $serif;
+$serif-bold-italic:        $serif;
+$serif-bold-condensed:     $serif;
+
+
+
+// ==========================================
+// BACKGROUND COLORS FOR SITE LAYOUT ELEMENTS
+// ==========================================
+// BGCOLOR FOR HEADER
+// BGCOLOR FOR NAV
+// ==========================================
 $bgHeader: $primaryColor;
 $bgNav: $secondaryColor;
 
 
-
-//// mixins inclusions
+// ==========================================
+// RESPONSIVE SETUP
+// ==========================================
+// MEDIAQUERIES
+// HELPERS
+// ==========================================
 @import "./mediaqueries/__mediaqueries.scss";  // Media Queries
-
-
-//// helper classes inclusion + prototyping classess
 @import "./__helpers.scss";
 
 
-
-// site structure
-.c5 .box.padded > div,
-.c4 .box.padded > div,
-.c3 .box.padded > div,
-.c2 .box.padded > div,
-.c1 .box.padded > div {
-padding: 1em;
-position: relative;
+.cta {
+                                      -webkit-transition: 0.25s ease-out;
+                                    -moz-transition: 0.25s ease-out;
+                                    -o-transition: 0.25s ease-out;
+                                    transition: 0.25s ease-out;
+                                    -webkit-backface-visibility: hidden;
 }
 
-
-body {
-  color: #333;
-  position: relative;
-  width: 100%;
-  min-width: 20em;
-  font-family: $san-serif;
-  text-transform: uppercase;
-}
-
-#main {
-    overflow: hidden;
-}
-#main .block {
-  max-width: 1020px;
-  margin: 0 auto; 
-}
-
-#footer .block {
-max-width: 1020px;
-margin: 0 auto;
-}
-
-.c1 > .box,
-.c2 > .box,
-.c3 > .box,
-.c4 > .box,
-.c5 > .box,
-.c6 > .box,
-.c7 > .box,
-.c8 > .box {
-width: 100%;
-float: left;
-}
-
-
-button {
-	border: 0px;
-}
-input {
-	border: 0px;
-}
 
 // ==========================================
 // Media Queriers
@@ -182,6 +166,7 @@ input {
 // 1024: Desktop and Laptop
 // 1280: Wide Screen
 // ==========================================
+@import "style-320.scss";
 @import "style-480.scss";
 @import "style-640.scss";
 	@import "style-720.scss";

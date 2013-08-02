@@ -23,6 +23,9 @@
         <!-- fonts -->
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
 
         <!-- css -->
         <link rel="stylesheet" href="./css/style.css">
@@ -103,6 +106,14 @@
                 </div>
             </header>
 
+
+
+
+
+
+
+
+
             <!-- LEFT RESPONSIVE NAVIGATION -->
             <nav id="nav" role="navigation" class="left-layout text-left">
                 <div class="block">
@@ -181,6 +192,13 @@
                 </div>
             </nav>
 
+
+
+
+
+
+
+
             <!-- THE MAIN PORTION OF THE PAGE -->
             <div id="main" role="main" class="bg-light">
 
@@ -226,7 +244,7 @@
 
                             <div class="abs-t w100">
                                 <div>
-                                    <div class="ribbon"><div class="ribbon-text"><h3>COLOR OPTIONS</h3></div></div>
+                                    <div class="banner"><div class="text"><h3>COLOR OPTIONS</h3></div></div>
                                 </div>
                             </div>
 
@@ -299,7 +317,7 @@
 
                             <div class="abs-t w100">
                                 <div>
-                                    <div class="ribbon"><div class="ribbon-text"><h3>BUTTONS</h3></div></div>
+                                    <div class="banner"><div class="text"><h3>BUTTONS</h3></div></div>
                                 </div>
                             </div>
 
@@ -378,13 +396,23 @@
 
                                 <div class="abs-t w100">
                                     <div>
-                                        <div class="ribbon"><div class="ribbon-text"><h3>INPUTS</h3></div></div>
+                                        <div class="banner"><div class="text"><h3>INPUTS</h3></div></div>
                                     </div>
                                 </div>
 
                                 <style>
                                 .inputsamples > div {
 
+                                }
+
+                                .slim-outside {
+                                    width: 80%;
+                                }
+                                .slim-outside button {
+                                    width: 18%;
+                                    right: -19%;
+                                    position: absolute;
+                                    margin-left: 20px;
                                 }
                                 </style>
 
@@ -428,6 +456,13 @@
                                         <button><i class="icon-chevron-right"></i></button>
                                     </div>
 
+                                    <div class="input-text-wrap slim-outside">
+                                        <label for="basicinput" default="Enter" prompt="Try to get it right">
+                                        </label>
+                                        <input  id="basicinput" type="text" class="" placeholder="input placeholder text">
+                                        <button><i class="icon-chevron-right"></i></button>
+                                    </div>
+
 
                                 </div>
 
@@ -442,19 +477,17 @@
 
                 <!-- UI COMPONENT - RADIO STATES -->
                 <div class="block button-examples">
-                    <div class="c3 rel-center p25">
+                    <div class="c1 rel-center p25">
                         <div class="box padded">
                             <div class="m-25 bg-white pt-50 wauto cf">
 
-                                <div class="abs-t w100">
-                                    <div>
-                                        <div class="ribbon"><div class="ribbon-text"><h3>RADIOS</h3></div></div>
-                                    </div>
-                                </div>
+                                <div class="abs-t w100"><div>
+                                        <div class="banner"><div class="text"><h3>RADIOS</h3></div></div>
+                                </div></div>
 
                                 <style>
                                 .radiosamples > div {
-                                    width: 300px;
+                                    width: 100%;
                                 }
                                 .input-radio-wrap input[type="radio"] {
                                     float: left;
@@ -508,19 +541,19 @@
 
                 <!-- UI COMPONENT - CHECKBOX STATES -->
                 <div class="block button-examples">
-                    <div class="c3 rel-center p25">
+                    <div class="c1 rel-center p25">
                         <div class="box padded">
                             <div class="m-25 bg-white pt-50 wauto cf">
 
                                 <div class="abs-t w100">
                                     <div>
-                                        <div class="ribbon"><div class="ribbon-text"><h3>CHECKBOXES</h3></div></div>
+                                        <div class="banner"><div class="text"><h3>CHECKBOXES</h3></div></div>
                                     </div>
                                 </div>
 
                                 <style>
                                 .checkboxsamples > div {
-                                    width: 200px;
+                                    width: 100%;
                                 }
                                 .input-checkbox-wrap input[type="checkbox"] {
                                     float: left;
@@ -574,13 +607,13 @@
 
                 <!-- UI COMPONENT - SWITCHES STATES -->
                 <div class="block button-examples">
-                    <div class="c3 rel-center p25">
+                    <div class="c1 rel-center p25">
                         <div class="box padded">
                             <div class="m-25 bg-white pt-50 wauto cf">
 
                                 <div class="abs-t w100">
                                     <div>
-                                        <div class="ribbon"><div class="ribbon-text"><h3>SWITCHES</h3></div></div>
+                                        <div class="banner"><div class="text"><h3>SWITCHES</h3></div></div>
                                     </div>
                                 </div>
 
@@ -596,6 +629,10 @@
                                 .input-checkbox-wrap {
                                     float: left;
                                     display: block;
+                                    cursor: pointer;
+                                }
+                                .input-checkbox-wrap  * {
+                                    cursor: pointer;
                                 }
                                 .input-checkbox-wrap label {
                                     float: left;
@@ -607,24 +644,82 @@
                                     cursor: pointer;
                                 }
 
+                                .switch-animate {
+                                    position: relative;
+                                    width: 125px;
+                                    
+
+                                    -webkit-transition: 0.25s ease-out;
+                                    -moz-transition: 0.25s ease-out;
+                                    -o-transition: 0.25s ease-out;
+                                    transition: 0.25s ease-out;
+                                    -webkit-backface-visibility: hidden;
+                                }
+
+                                .switch-on {
+                                    left: 0%;
+                                    top: 0;
+                                }
+
+                                .switch-off {
+                                    left: -74%;
+                                    top: 0;
+                                }
+
+                                .switch {
+                                    float: left;
+                                    border: 1px solid #d9d9d9;
+                                    overflow: hidden;
+                                    background: #f0f0f0;
+                                    padding: 3px 9px;
+                                    width: 50px;
+                                    cursor: pointer;
+                                }
+                                
+                                .switch input  {
+                                    display: none;
+                                }
+
+                                .switch span {
+                                    float: left;
+                                    display: block;
+                                    cursor: pointer;
+                                    text-align: center;
+                                    
+
+                                }
+
+                                .switch label {
+                                    width: 35px;
+                                    display: block;
+                                    float: left;
+                                    cursor: pointer;
+                                    text-align: center;
+                                    
+                                }
+
+                                .input-switch-wrap .text {
+                                    padding: 3px 6px;
+                                    float: left;
+                                }
+
+
                                 </style>
 
                                 <div class="switchessamples" style="width: 50%; max-width: 500px; min-width: 320px;">
 
 
-                                    <div class="input-checkbox-wrap">
-                                        <input type="checkbox" name="day" value="Friday" checked> 
-                                        <label class="checked"><i class="icon-check-empty"></i>Option 1</label>
-                                    </div>
+                                    <div class="input-switch-wrap">
+                                        <div class="switch">
+                                            <div class="switch-on switch-animate">
+                                                <input type="checkbox" checked="" data-toggle="switch">
+                                                <span class="switch-left">ON</span>
+                                                <label><i class="icon-circle"></i></label>
+                                                <span class="switch-right">OFF</span>
+                                            </div>
+                                        </div>
 
-                                    <div class="input-checkbox-wrap">
-                                        <input type="checkbox" name="day" value="Friday"> 
-                                        <label class="checked"><i class="icon-check-empty"></i>Option 2</label>
-                                    </div>
-
-                                    <div class="input-checkbox-wrap">
-                                        <input type="checkbox" name="day" value="Friday"> 
-                                        <label class="checked"><i class="icon-check-empty"></i>Option 3</label>
+                                        <div class="text">TURN THIS ON</div>
                                     </div>
 
 
@@ -636,6 +731,57 @@
                     </div>
                 </div>
 
+
+
+
+
+                <!-- UI COMPONENT - 1COLUMN EXAMPLE -->
+                <div class="block">    
+                    <div class="c1 rel-center">
+                        <div class="box padded">
+                            <div class="m-15 bg-white">                        
+                                
+                                <div class="abs-tl w100">
+                                    <div>
+                                        <div class="banner"><div class="text">TABS</div></div>
+                                    </div>
+                                </div>
+
+                                <p>                                                                
+                                    Prototype elements using modular class definitions.
+                                </p>
+
+                                <p class="w100 rel-center text-left">
+                                    There are several school of thoughs on using non-semantic class names.
+                                    From a prototyping stand point, translating style properties to class
+                                    names allow for the quick application of styles to elements without
+                                    having to write css rules to specific divs.
+                                </p>
+
+                                <p class="w100 rel-center text-left">
+                                    Performance arguments could be made against this approach, but unless
+                                    your site and buisness requires the most effiecient usage of markup
+                                    and performance it doesn't make much sense to not employ 
+                                    fast prototyping techniques. Especially if you are working on unproven
+                                    business models or a a design/interface team that changes the game plan
+                                    at regular intervals.
+                                </p>
+
+                                <p class="w100 rel-center text-left">
+                                    For most small business sites or low traffic sites it just doesn't makes
+                                    sense. You can consolidate and optimze css rules and markup down the road
+                                    when there is a finianical reason to do it.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
                 <!-- BLOCK WRAPPER--> 
                 <div class="block button-examples">
                     <div class="c1 rel-center p25">
@@ -644,7 +790,7 @@
 
                                 <div class="abs-t w100">
                                     <div>
-                                        <div class="ribbon"><div class="ribbon-text"><h3>LOGIN</h3></div></div>
+                                        <div class="banner"><div class="text"><h3>LOGIN</h3></div></div>
                                     </div>
                                 </div>
 
@@ -724,7 +870,7 @@
 
                                 <div style="width: 45%; min-width: 320px;" class="set-right mt-25">
                                     <!-- UI COMPONENT - SIGNUP FORM -->  
-                                    <form class="form-signin o-hidden text-left transition bg-white p-25 m-0 mb-0 large bordered">
+                                    <form class="form-signin o-hidden text-left transition bg-white p-25 m-0 mb-0 large">
                                         <h2 class="form-signin-heading">Sign In {{name}}</h2>
 
                                         <div class="input-text-wrap">
@@ -756,27 +902,27 @@
                 <div class="block"> 
                     <div class="c3 rel-center mh-10">
                         <div class="box padded">
-                            <div class="bordered m-15 bg-white mh-15"> 
+                            <div class="m-15 bg-white mh-15"> 
 
 
                                 <div class="abs-tl">
                                     <div>
-                                        <div class="ribbon"><div class="ribbon-text">top left</div></div>
+                                        <div class="banner"><div class="text">top left</div></div>
                                     </div>
                                 </div>
                                 <div class="abs-tr">
                                     <div>                                        
-                                        <div class="ribbon"><div class="ribbon-text">top right</div></div>
+                                        <div class="banner"><div class="text">top right</div></div>
                                     </div>
                                 </div>
                                 <div class="abs-bl">
                                     <div>                                       
-                                        <div class="ribbon"><div class="ribbon-text">bot left</div></div>
+                                        <div class="banner"><div class="text">bot left</div></div>
                                     </div>
                                 </div>
                                 <div class="abs-br">
                                     <div>                                        
-                                        <div class="ribbon"><div class="ribbon-text">bot right</div></div>
+                                        <div class="banner"><div class="text">bot right</div></div>
                                     </div>
                                 </div>
 
@@ -788,17 +934,17 @@
                             </div>
                         </div>
                         <div class="box padded">
-                            <div class="bordered m-15 bg-white mh-15">
+                            <div class="m-15 bg-white mh-15">
 
                                 <div class="abs-t w100">
                                     <div>
-                                        <div class="ribbon"><div class="ribbon-text">top</div></div>
+                                        <div class="banner"><div class="text">top</div></div>
                                     </div>
                                 </div>
 
                                 <div class="abs-b w100">
                                     <div>
-                                        <div class="ribbon"><div class="ribbon-text">bottom</div></div>
+                                        <div class="banner"><div class="text">bottom</div></div>
                                     </div>
                                 </div>
 
@@ -808,7 +954,7 @@
                             </div>
                         </div>
                         <div class="box padded">
-                            <div class="bordered m-15 bg-white mh-15">
+                            <div class="m-15 bg-white mh-15">
                                 <i class="icon-cloud-download w100 set-left font-8em"></i>   
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, a, qui, labore, voluptate provident deleniti incidunt aliquam sed pariatur eaque dolorem obcaecati quaerat eveniet modi porro laboriosam facere. Laboriosam, error!
                             </div>
@@ -820,11 +966,11 @@
                 <div class="block"> 
                     <div class="c2 rel-center">
                         <div class="box padded">
-                            <div class="bordered m-15 bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
+                            <div class="m-15 bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
                             </div>
                         </div>
                         <div class="box padded">
-                            <div class="bordered m-15 bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
+                            <div class="m-15 bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
                             </div>
                         </div>
                     </div>
@@ -834,7 +980,7 @@
                 <div class="block">    
                     <div class="c1 rel-center">
                         <div class="box padded">
-                            <div class="bordered m-15 bg-white">                        
+                            <div class="m-15 bg-white">                        
                                 
                                 <h2 class="serif-regular">
                                     <strong>STYLE > SIZE > ACTION > POSITION > PROPERTIES</strong>    
@@ -870,6 +1016,32 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
 
 
@@ -935,6 +1107,12 @@
                 });
                 $('.input-checkbox-wrap input:checked ~ label i').toggleClass('icon-check-empty icon-check');
 
+                // generalize this...
+                $('.input-switch-wrap').click(function(){
+                   $(this).find('.switch-animate').toggleClass('switch-on switch-off');
+                   $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
+                   $(this).find('input').prop('checked', true);
+                });
 
 
             });

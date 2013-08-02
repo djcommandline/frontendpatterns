@@ -1,0 +1,16 @@
+.banner {     
+    background: $primaryColor;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0.4em 0;
+
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.abs-t .banner, 
+.abs-b .banner {
+    margin-left: -1em;
+}
+
+
