@@ -25,8 +25,12 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
 }
 
 
+
+
 /*
-    TOP LABELED FORM
+  ==================
+  INPUT TEXT
+  ==================
 */
 .input-text-wrap {
   background: $bgGreyLight;
@@ -86,7 +90,15 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
   }
 
 
-
+  // TEXTAREA
+  textarea {
+    border: 0px;
+    width: 100%;
+    padding: 0px;
+    line-height: 1.5em;
+    height: 1.5em * 7;
+    background: transparent;
+  }
 
 
 
@@ -149,23 +161,149 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
 
 
   // SLIM INPUT ( ICON ON THE LEFT )
-  &.slim {
+  &.with-icon {
     input {
       text-indent: 1.5em;
     }
   }
 
 
+
+  // SLIM INPUT ( LABEL ON OUTSIDE )
+  &.slim-aligned {
+    width: 60%;
+    margin-left: 36%;    
+
+    & label {
+      left: -56%;
+      width: 46%;
+      padding: 15px;
+      margin-top: -10px;
+      line-height: 1em;
+      text-align: right;
+    }
+
+    & button {
+        width: 18%;
+        right: -19%;
+        position: absolute;
+        margin-left: 20px;
+    }
+
+
+  }
+
+}
+
+
+
+.input-checkbox-wrap {
+    width: 100%
+}
+.input-checkbox-wrap input[type="checkbox"] {
+    float: left;
+    width: auto;
+    display: none;
+}
+.input-checkbox-wrap {
+    float: left;
+    display: block;
+}
+.input-checkbox-wrap label {
+    float: left;
+}
+.input-checkbox-wrap i {
+    margin-right: 5px;
+}
+.input-checkbox-wrap:hover * {
+    cursor: pointer;
 }
 
 
 
 
 
+.switchessamples > div {
+    width: 200px;
+}
+.input-checkbox-wrap input[type="checkbox"] {
+    float: left;
+    width: auto;
+    display: none;
+}
+.input-checkbox-wrap {
+    float: left;
+    display: block;
+    cursor: pointer;
+}
+.input-checkbox-wrap  * {
+    cursor: pointer;
+}
+.input-checkbox-wrap label {
+    float: left;
+}
+.input-checkbox-wrap i {
+    margin-right: 5px;
+}
+.input-checkbox-wrap:hover * {
+    cursor: pointer;
+}
 
+.switch-animate {
+    position: relative;
+    width: 125px;
+    
 
+    -webkit-transition: 0.25s ease-out;
+    -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+    -webkit-backface-visibility: hidden;
+}
 
+.switch-on {
+    left: 0%;
+    top: 0;
+}
 
+.switch-off {
+    left: -74%;
+    top: 0;
+}
 
+.switch {
+    float: left;
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    background: #f0f0f0;
+    padding: 3px 9px;
+    width: 50px;
+    cursor: pointer;
+}
 
+.switch input  {
+    display: none;
+}
 
+.switch span {
+    float: left;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    
+
+}
+
+.switch label {
+    width: 35px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.input-switch-wrap .text {
+    padding: 3px 6px;
+    float: left;
+}

@@ -137,6 +137,22 @@ $bgHeader: $primaryColor;
 $bgNav: $secondaryColor;
 
 
+
+// ==========================================
+// TRANSITIONS
+// ==========================================
+// CTA
+// A
+// ==========================================
+a, .cta {
+	-webkit-transition: 0.25s ease-out;
+	-moz-transition: 0.25s ease-out;
+	-o-transition: 0.25s ease-out;
+	transition: 0.25s ease-out;
+	-webkit-backface-visibility: hidden;
+}
+
+
 // ==========================================
 // RESPONSIVE SETUP
 // ==========================================
@@ -147,13 +163,6 @@ $bgNav: $secondaryColor;
 @import "./__helpers.scss";
 
 
-.cta {
-                                      -webkit-transition: 0.25s ease-out;
-                                    -moz-transition: 0.25s ease-out;
-                                    -o-transition: 0.25s ease-out;
-                                    transition: 0.25s ease-out;
-                                    -webkit-backface-visibility: hidden;
-}
 
 
 // ==========================================

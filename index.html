@@ -41,7 +41,17 @@
             );
          }
 
+         .block > div > div > div {
+             min-height: 300px;
+         }
         </style>
+
+
+        <!-- JQUERY --> 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
+
+
 
     </head>
    
@@ -49,8 +59,6 @@
 
         <div id="outer-wrap">
         <div id="inner-wrap">
-
-
 
             <!-- LEFT LOGO -->
             <header id="header" class="left-layout" role="banner">
@@ -105,14 +113,6 @@
                     </ul>
                 </div>
             </header>
-
-
-
-
-
-
-
-
 
             <!-- LEFT RESPONSIVE NAVIGATION -->
             <nav id="nav" role="navigation" class="left-layout text-left">
@@ -192,38 +192,30 @@
                 </div>
             </nav>
 
-
-
-
-
-
-
-
             <!-- THE MAIN PORTION OF THE PAGE -->
             <div id="main" role="main" class="bg-light">
 
-
-            <div class="block mt-25">
-                <div class="c1 rel-center">
-                    <div class="box padded">
-                        <div class="text-center m-15">
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <i class="icon-building bg-disabled font-7em"></i>
-                            <hr>
-                            <span class="font-2em">PATTERNS UI</span><br>
-                            <span class="font-1em">PREFAB INTERFACES</span>
-                            
+                <!--   -->
+                <div class="block mt-25">
+                    <div class="c1 rel-center">
+                        <div class="box padded">
+                            <div class="text-center m-15">
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <i class="icon-building bg-disabled font-7em"></i>
+                                <hr>
+                                <span class="font-2em">PATTERNS UI</span><br>
+                                <span class="font-1em">PREFAB INTERFACES</span>                            
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
 
@@ -322,39 +314,7 @@
                             </div>
 
                             <style>
-                            .b-status {
-                                width: 48%;
-                                padding-right: 2%;
-                                border-right: 1px dotted #c0c0c0;
-                                float: left;
-                            }
-                            .b-sizing {
-                                width: 48%;
-                                float: right;
-                            }
 
-
-                            .b-sizing > div {
-                                width: 100%;
-                            }
-                            .b-sizing .xsmall {
-                                width: 25%;
-                            }
-                            .b-sizing .small {
-                                width: 30%;
-                            }
-                            .b-sizing .medium {
-                                width: 45%;
-                            }
-                            .b-sizing .large {
-                                width: 55%;
-                            }
-                            .b-sizing .xlarge {
-                                width: 75%;
-                            }
-                            .b-sizing .xxlarge {
-                                width: 100%;
-                            }
                             </style>
 
                             <div class="b-status">
@@ -400,28 +360,11 @@
                                     </div>
                                 </div>
 
-                                <style>
-                                .inputsamples > div {
-
-                                }
-
-                                .slim-outside {
-                                    width: 80%;
-                                }
-                                .slim-outside button {
-                                    width: 18%;
-                                    right: -19%;
-                                    position: absolute;
-                                    margin-left: 20px;
-                                }
-                                </style>
-
                                 <div class="buttonsamples" style="width: 50%; max-width: 500px; min-width: 320px;">
 
 
                                     <div class="input-text-wrap">
-                                        <label for="basicinput" default="Enter" prompt="Try to get it right">
-                                        </label>
+                                        <label for="basicinput" default="Enter" prompt="Try to get it right"></label>
                                         <input  id="basicinput" type="text" class="" placeholder="input placeholder text">
                                     </div>
 
@@ -433,14 +376,14 @@
                                         <input  id="basicinput" type="text" class="" placeholder="input placeholder text">
                                     </div>
 
-                                    <div class="input-text-wrap slim">
+                                    <div class="input-text-wrap with-icon">
                                         <label for="basicinput" default="Enter" prompt="Try to get it right">
                                             <i class="icon-user"></i>
                                         </label>
                                         <input  id="basicinput" type="text" class="" placeholder="input placeholder text">
                                     </div>
 
-                                    <div class="input-text-wrap slim">
+                                    <div class="input-text-wrap with-icon">
                                         <label for="basicinput" default="Enter" prompt="Try to get it right">
                                             <i class="icon-user"></i>
                                         </label>
@@ -448,21 +391,13 @@
                                         <div class="statusicon"><i class="icon-ok"></i></div>
                                     </div>
 
-                                    <div class="input-text-wrap slim">
+                                    <div class="input-text-wrap with-icon">
                                         <label for="basicinput" default="Enter" prompt="Try to get it right">
                                             <i class="icon-user"></i>
                                         </label>
                                         <input  id="basicinput" type="text" class="" placeholder="input placeholder text">
                                         <button><i class="icon-chevron-right"></i></button>
                                     </div>
-
-                                    <div class="input-text-wrap slim-outside">
-                                        <label for="basicinput" default="Enter" prompt="Try to get it right">
-                                        </label>
-                                        <input  id="basicinput" type="text" class="" placeholder="input placeholder text">
-                                        <button><i class="icon-chevron-right"></i></button>
-                                    </div>
-
 
                                 </div>
 
@@ -473,7 +408,50 @@
                 </div>
 
 
+                <!-- UI COMPONENT - INPUTS STATES -->
+                <div class="block button-examples">
+                    <div class="c1 rel-center p25">
+                        <div class="box padded">
+                            <div class="m-25 bg-white pt-50 wauto cf">
 
+                                <div class="abs-t w100">
+                                    <div>
+                                        <div class="banner"><div class="text"><h3>CONTACT</h3></div></div>
+                                    </div>
+                                </div>
+
+                                <div class="buttonsamples" style="width: 50%; max-width: 500px; min-width: 320px;">
+
+                                    <div class="input-text-wrap slim-aligned">
+                                        <label for="contactname">NAME</label>
+                                        <input  id="contactname" type="text" class="" placeholder="Jessica Smith">
+                                    </div>
+
+
+                                    <div class="input-text-wrap slim-aligned">
+                                        <label for="contactname">EMAIL</label>
+                                        <input  id="contactname" type="text" class="" placeholder="user@email.com">
+                                    </div>
+
+
+                                    <div class="input-text-wrap slim-aligned">
+                                        <label for="contactname">SUBJECT</label>
+                                        <input  id="contactname" type="text" class="" placeholder="What do i do when i win?">
+                                    </div>
+
+
+                                    <div class="input-text-wrap slim-aligned">
+                                        <label for="contactname">MESSAGE</label>
+                                        <textarea  id="contactname" type="text" class="" placeholder="Jessica Smith"></textarea>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- UI COMPONENT - RADIO STATES -->
                 <div class="block button-examples">
@@ -545,36 +523,13 @@
                         <div class="box padded">
                             <div class="m-25 bg-white pt-50 wauto cf">
 
+
+
                                 <div class="abs-t w100">
                                     <div>
                                         <div class="banner"><div class="text"><h3>CHECKBOXES</h3></div></div>
                                     </div>
                                 </div>
-
-                                <style>
-                                .checkboxsamples > div {
-                                    width: 100%;
-                                }
-                                .input-checkbox-wrap input[type="checkbox"] {
-                                    float: left;
-                                    width: auto;
-                                    display: none;
-                                }
-                                .input-checkbox-wrap {
-                                    float: left;
-                                    display: block;
-                                }
-                                .input-checkbox-wrap label {
-                                    float: left;
-                                }
-                                .input-checkbox-wrap i {
-                                    margin-right: 5px;
-                                }
-                                .input-checkbox-wrap:hover * {
-                                    cursor: pointer;
-                                }
-
-                                </style>
 
                                 <div class="checkboxsamples" style="width: 50%; max-width: 500px; min-width: 320px;">
 
@@ -617,94 +572,6 @@
                                     </div>
                                 </div>
 
-                                <style>
-                                .switchessamples > div {
-                                    width: 200px;
-                                }
-                                .input-checkbox-wrap input[type="checkbox"] {
-                                    float: left;
-                                    width: auto;
-                                    display: none;
-                                }
-                                .input-checkbox-wrap {
-                                    float: left;
-                                    display: block;
-                                    cursor: pointer;
-                                }
-                                .input-checkbox-wrap  * {
-                                    cursor: pointer;
-                                }
-                                .input-checkbox-wrap label {
-                                    float: left;
-                                }
-                                .input-checkbox-wrap i {
-                                    margin-right: 5px;
-                                }
-                                .input-checkbox-wrap:hover * {
-                                    cursor: pointer;
-                                }
-
-                                .switch-animate {
-                                    position: relative;
-                                    width: 125px;
-                                    
-
-                                    -webkit-transition: 0.25s ease-out;
-                                    -moz-transition: 0.25s ease-out;
-                                    -o-transition: 0.25s ease-out;
-                                    transition: 0.25s ease-out;
-                                    -webkit-backface-visibility: hidden;
-                                }
-
-                                .switch-on {
-                                    left: 0%;
-                                    top: 0;
-                                }
-
-                                .switch-off {
-                                    left: -74%;
-                                    top: 0;
-                                }
-
-                                .switch {
-                                    float: left;
-                                    border: 1px solid #d9d9d9;
-                                    overflow: hidden;
-                                    background: #f0f0f0;
-                                    padding: 3px 9px;
-                                    width: 50px;
-                                    cursor: pointer;
-                                }
-                                
-                                .switch input  {
-                                    display: none;
-                                }
-
-                                .switch span {
-                                    float: left;
-                                    display: block;
-                                    cursor: pointer;
-                                    text-align: center;
-                                    
-
-                                }
-
-                                .switch label {
-                                    width: 35px;
-                                    display: block;
-                                    float: left;
-                                    cursor: pointer;
-                                    text-align: center;
-                                    
-                                }
-
-                                .input-switch-wrap .text {
-                                    padding: 3px 6px;
-                                    float: left;
-                                }
-
-
-                                </style>
 
                                 <div class="switchessamples" style="width: 50%; max-width: 500px; min-width: 320px;">
 
@@ -739,39 +606,43 @@
                 <div class="block">    
                     <div class="c1 rel-center">
                         <div class="box padded">
-                            <div class="m-15 bg-white">                        
-                                
-                                <div class="abs-tl w100">
-                                    <div>
-                                        <div class="banner"><div class="text">TABS</div></div>
+                            <div class="m-25 bg-white">                        
+
+                                <div class="abs-tl w100"><div>
+                                    <div class="banner"><div class="text">TABS</div></div>
+                                </div></div>
+
+                                <script>
+                                   jQuery(document).ready(function($) {
+                                        $("#tabs").responsiveTabs({
+                                            type:       'default', //Types: default, vertical, accordion
+                                            width:      'auto', //auto or any custom width
+                                            fit:        true,   // 100% fits in a container
+                                            closed:     false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
+                                            activate:   function() {}  // Callback function, gets called if tab is switched
+                                        }); 
+                                   });
+                                </script>
+
+                                <div id="tabs" class="mt-25">          
+                                    <ul class="tab-labels">
+                                        <li>TAB A</li>
+                                        <li>TAB B</li>
+                                        <li>TAB C</li>
+                                    </ul> 
+
+                                    <div class="tab-container">                                                        
+                                        <div>
+                                            <div>TAB CONTENT A</div>
+                                        </div>
+                                        <div>
+                                            <div>TAB CONTENT B</div>
+                                        </div>
+                                        <div>
+                                            <div>TAB CONTENT C</div>
+                                        </div>
                                     </div>
-                                </div>
-
-                                <p>                                                                
-                                    Prototype elements using modular class definitions.
-                                </p>
-
-                                <p class="w100 rel-center text-left">
-                                    There are several school of thoughs on using non-semantic class names.
-                                    From a prototyping stand point, translating style properties to class
-                                    names allow for the quick application of styles to elements without
-                                    having to write css rules to specific divs.
-                                </p>
-
-                                <p class="w100 rel-center text-left">
-                                    Performance arguments could be made against this approach, but unless
-                                    your site and buisness requires the most effiecient usage of markup
-                                    and performance it doesn't make much sense to not employ 
-                                    fast prototyping techniques. Especially if you are working on unproven
-                                    business models or a a design/interface team that changes the game plan
-                                    at regular intervals.
-                                </p>
-
-                                <p class="w100 rel-center text-left">
-                                    For most small business sites or low traffic sites it just doesn't makes
-                                    sense. You can consolidate and optimze css rules and markup down the road
-                                    when there is a finianical reason to do it.
-                                </p>
+                                </div> 
 
                             </div>
                         </div>
@@ -1065,9 +936,7 @@
         <!--/#outer-wrap-->
 
 
-        <!-- END OF PAGE SCRIPT --> 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
+
 
         <!-- Angular -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>

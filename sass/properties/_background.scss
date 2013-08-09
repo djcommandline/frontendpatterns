@@ -30,10 +30,6 @@
 .bg-youtube {
     background: $youtube;
 }
-
-
-
-
 /*
     ----------------------
     SOLID COLOR CHOICE
@@ -53,13 +49,10 @@
     color: lighten($bgSolid, 55%);
     @include linear-gradient($bgSolid, darken($bgSolid, 15%));
 }
-
-
-
 /*
-    ----------------------
+    ---------------
     BLACK AND WHITE
-    ----------------------
+    ---------------
 */
 .bg-black {
     background: $bgBlack;
@@ -75,13 +68,10 @@
 .bg-black-gradient{
     @include linear-gradient($bgBlack, lighten($bgBlack, 15%));
 }
-
-
-
 /*
-    ----------------------
+    ------------------
     GREY VALUES COLORS
-    ----------------------
+    ------------------
 */
 .bg-light {
     background: $lightColor;
@@ -99,8 +89,6 @@
     background: $bgDark;
     color: lighten($bgDark, 30);
 }
-
-
 .bg-light-gradient {
     @include linear-gradient($bgWhite, darken($bgWhite, 15%));
 }
@@ -108,10 +96,10 @@
 .bg-dark-gradient {
     @include linear-gradient($bgBlack, lighten($bgBlack, 15%));
 }
-
-
 /*
+    ----------------------
     SITE BACKGROUND COLORS
+    ----------------------
  */
 .bg-primary {
     background-color: $primaryColor !important;
@@ -129,14 +117,11 @@
     background-color: $inverseColor !important;
     color: darken($inverseColor, 35%);
 }
-
-
 /*
-    ----------------------
+    ------------------------
     STATUS BACKGROUND COLORS
-    ----------------------
+    ------------------------
 */
-
 .bg-warning {
     background-color: $warningColor !important;
     color: lighten($warningColor, 35%);
@@ -153,7 +138,6 @@
     background-color: $disabledColor !important;
     color: darken($disabledColor, 35%);
 }
-
 .bg-success {
     background-color: $successColor !important;
     color: darken($successColor, 35%);

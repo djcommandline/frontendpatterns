@@ -1,0 +1,188 @@
+ul.tab-labels {
+
+    margin: 0px;
+    padding: 0px;
+    
+    li {
+        font-weight: 600;
+        font-size: 13px;
+        display: inline-block;
+        padding: 13px 15px;
+        margin: 0;
+        list-style: none;
+        cursor: pointer;
+        float: left;
+    }
+}
+
+
+.tab-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+.tab-accordion-label {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content > div {
+    margin: 15px;
+}
+
+.tab-active {
+    border: 1px solid #c1c1c1;
+    border-bottom: none;
+    margin-bottom: -1px !important;
+    padding: 12px 14px 14px 14px !important;
+}
+
+.tab-active {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.content-active, .tab-accordion-label-active {
+    display: block;
+}
+
+.tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+div.tab-accordion-label {
+    font-size: 13px;
+    border: 1px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+div.tab-active {
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+div.tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+    background: blue;
+}
+/*-----------Vertical tabs-----------*/
+.vtabs ul.tab-labels {
+    float: left;
+    width: 30%;
+}
+
+.vtabs .tab-labels li {
+    display: block;
+    padding: 15px 15px !important;
+    margin: 0;
+    cursor: pointer;
+    float: none;
+}
+
+.vtabs .tab-container {
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    float: left;
+    width: 68%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.vtabs .tab-content {
+    border: none;
+}
+
+.vtabs li.tab-active {
+    border: 1px solid #c1c1c1;
+    border-right: none;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 14px 15px 15px 14px !important;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid $primaryColor;
+}
+
+div.tab-active span.arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $primaryColor;
+}
+
+/*-----------Accordion styles-----------*/
+div.tab-active {
+    background: #DBDBDB !important;
+}
+.tb-accordion  div.tab-accordion-label {
+        display: block;
+}
+.tb-accordion .tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.tb-accordion .tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1 !important;
+}
+
+.jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.tab-content-active {
+    display: block;
+}
+
+div.tab-accordion-label:first-child {
+    border-top: 1px solid #c1c1c1 !important;
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.tab-labels {
+        display: none;
+    }
+
+    div.tab-accordion-label {
+        display: block;
+    }
+
+    .vtabs .tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .vtabs .tab-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
+        clear: none;
+    }
+    .tab-accordion-label-closed {
+        display:none !important;
+    }
+    .vtabs .tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+}
