@@ -1,9 +1,7 @@
 //// ele :: banner ( server as block titles )
 @mixin bannerStyle( $style: 'flushed', $multiplier: 1 ){
 
-
-
-    @if $style == 'flushed' {
+    @if $style == 'flush' {
         background: $primaryColor;
         color: #fff;
         margin: -$tb-box-padding 0 $tb-box-padding 0;
@@ -15,15 +13,14 @@
         margin: 0 0 $tb-box-margin 0;
         padding: $tb-box-padding 0;
         text-indent: $rl-box-padding;
-
-    } @else if $style == 'flushdotted' {
+    } @else if $style == 'flushDotted' {
         background: transparent;
         border-bottom: 1px dotted $primaryColor;
         color: $primaryColor;
         margin: -$tb-box-padding 0 $tb-box-padding 0;
         left: -$rl-box-padding;
         padding: $tb-box-padding*$multiplier $rl-box-padding;
-    } @else if $style == 'flushsolid' {
+    } @else if $style == 'flushSolid' {
         background: transparent;
         border-bottom: 1px solid $primaryColor;
         color: $primaryColor;

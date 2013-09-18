@@ -1885,14 +1885,14 @@ a {
   border-bottom: 5px solid transparent;
   border-right: 5px solid black; }
 
-/* line 41, ../sass/elements/_banner.scss */
+/* line 38, ../sass/elements/_banner.scss */
 .banner {
   background: transparent;
   border-bottom: 1px dotted #33c9ff;
   color: #33c9ff;
-  margin: -2em 0 2em 0;
+  margin: -1em 0 1em 0;
   left: -1em;
-  padding: 2em 1em;
+  padding: 1em 1em;
   position: relative;
   width: 100%; }
 
@@ -2268,7 +2268,7 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
 
 /* line 330, ../sass/elements/_form.scss */
 .form-signin-heading {
-  padding: 0 0 2em 0; }
+  padding: 0 0 1em 0; }
 
 /* 
   ------------------------
@@ -3376,9 +3376,8 @@ button, input {
   width: 100%;
   height: auto; }
 
-/* line 134, ../sass/_style-320.scss */
+/* line 129, ../sass/_style-320.scss */
 #main {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQYV2OMq7zlw4ADBKtdN4ZJMYIULmpX24JL8ZBSuHH+xnr/RP9Ggp4ZOIUArconi++UvM4AAAAASUVORK5CYII=);
   width: 100%;
   *zoom: 1; }
   /* line 48, ../sass/techniques/_clearfix.scss */
@@ -3392,17 +3391,17 @@ button, input {
   /* line 54, ../sass/techniques/_clearfix.scss */
   #main:after {
     clear: both; }
-  /* line 139, ../sass/_style-320.scss */
+  /* line 134, ../sass/_style-320.scss */
   #main .block {
     width: auto;
     max-width: 1020px;
     margin: 0 auto; }
-  /* line 154, ../sass/_style-320.scss */
+  /* line 149, ../sass/_style-320.scss */
   #main .block > div > .box-wrap > .box {
     background: #fff;
     width: auto;
-    padding: 2em 1em;
-    margin: 1em 0em;
+    padding: 1em 1em;
+    margin: 0em 0em;
     *zoom: 1; }
     /* line 48, ../sass/techniques/_clearfix.scss */
     #main .block > div > .box-wrap > .box:before, #main .block > div > .box-wrap > .box:after {
@@ -3416,18 +3415,18 @@ button, input {
     #main .block > div > .box-wrap > .box:after {
       clear: both; }
 
-/* line 192, ../sass/_style-320.scss */
+/* line 187, ../sass/_style-320.scss */
 .button-examples .cta {
   margin-right: 3;
   margin-bottom: 10px; }
 
-/* line 201, ../sass/_style-320.scss */
+/* line 196, ../sass/_style-320.scss */
 #hero {
   padding: 100px 0;
   margin-bottom: 100px;
   overflow: hidden; }
 
-/* line 208, ../sass/_style-320.scss */
+/* line 203, ../sass/_style-320.scss */
 .colorsamples > div {
   border: 1px solid #f0f0f0;
   display: block;
@@ -3441,51 +3440,51 @@ button, input {
     CALL TO ACTION STATES
     =====================
 */
-/* line 223, ../sass/_style-320.scss */
+/* line 218, ../sass/_style-320.scss */
 .b-status {
   width: 48%;
   padding-right: 2%;
   border-right: 1px dotted #c0c0c0;
   float: left; }
 
-/* line 229, ../sass/_style-320.scss */
+/* line 224, ../sass/_style-320.scss */
 .b-sizing {
   width: 48%;
   float: right; }
 
-/* line 233, ../sass/_style-320.scss */
+/* line 228, ../sass/_style-320.scss */
 .b-sizing > div {
   width: 100%; }
 
-/* line 236, ../sass/_style-320.scss */
+/* line 231, ../sass/_style-320.scss */
 .b-sizing .xsmall {
   width: 25%; }
 
-/* line 239, ../sass/_style-320.scss */
+/* line 234, ../sass/_style-320.scss */
 .b-sizing .small {
   width: 30%; }
 
-/* line 242, ../sass/_style-320.scss */
+/* line 237, ../sass/_style-320.scss */
 .b-sizing .medium {
   width: 45%; }
 
-/* line 245, ../sass/_style-320.scss */
+/* line 240, ../sass/_style-320.scss */
 .b-sizing .large {
   width: 55%; }
 
-/* line 248, ../sass/_style-320.scss */
+/* line 243, ../sass/_style-320.scss */
 .b-sizing .xlarge {
   width: 75%; }
 
-/* line 251, ../sass/_style-320.scss */
+/* line 246, ../sass/_style-320.scss */
 .b-sizing .xxlarge {
   width: 100%; }
 
-/* line 281, ../sass/_style-320.scss */
+/* line 276, ../sass/_style-320.scss */
 footer {
   clear: both; }
 
-/* line 284, ../sass/_style-320.scss */
+/* line 279, ../sass/_style-320.scss */
 #footer .block {
   max-width: 1020px;
   margin: 0 auto; }

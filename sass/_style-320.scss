@@ -100,12 +100,7 @@ button, input {
 // #main
 // ==========================================
                                               @mixin mainBlock() {
-                                                background-image:url(
-                                                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQYV2OMq7zlw4ADBKtdN4ZJMYIULmpX24JL8ZBSuHH+xnr/RP9Ggp4ZOIUArconi++UvM4AAAAASUVORK5CYII=
-                                                  );
-
                                                 width: 100%;
-
                                               }
 
                                               @mixin setPosition( $position: left ){
