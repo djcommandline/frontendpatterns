@@ -5,15 +5,12 @@
  */
 @include min-screen(480px) {
 	
-	.c5 > .box,
-	.c6 > .box,
-	.c7 > .box,
-	.c8 > .box {
+	.c5 > .box-wrap,
+	.c6 > .box-wrap,
+	.c7 > .box-wrap,
+	.c8 > .box-wrap {
 	    width: 33%;
 	    float: left;
-	}
-	.cw400 {
-		width: 320px !important;
 	}
 
 }

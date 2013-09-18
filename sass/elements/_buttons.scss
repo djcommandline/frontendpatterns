@@ -72,39 +72,3 @@
     width: 100% !important;
     cursor: default !important;
 }
-/*
-    =====================
-    CALL TO ACTION STATES
-    =====================
-*/
-.b-status {
-    width: 48%;
-    padding-right: 2%;
-    border-right: 1px dotted #c0c0c0;
-    float: left;
-}
-.b-sizing {
-    width: 48%;
-    float: right;
-}
-.b-sizing > div {
-    width: 100%;
-}
-.b-sizing .xsmall {
-    width: 25%;
-}
-.b-sizing .small {
-    width: 30%;
-}
-.b-sizing .medium {
-    width: 45%;
-}
-.b-sizing .large {
-    width: 55%;
-}
-.b-sizing .xlarge {
-    width: 75%;
-}
-.b-sizing .xxlarge {
-    width: 100%;
-}

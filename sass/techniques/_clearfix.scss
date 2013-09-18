@@ -1,0 +1,59 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+@mixin cf() {
+        //// We Could use overflow to contain floats, 
+    //// but sometimes we want elements position outside the box
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+        font-size: 0px;
+        line-height: 0px;
+    }
+    &:after {
+        clear: both;
+    }
+    //// For IE 6/7 only - Include this rule to trigger hasLayout and contain floats.\
+    *zoom: 1;
+}

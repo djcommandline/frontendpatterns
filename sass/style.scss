@@ -6,8 +6,11 @@
 @import 'bourbon/bourbon';
 
 
+
+
+
 // ==========================================
-// COLORS
+// COLORS (SITE PALLETE)
 // ==========================================
 // SOCIAL PLATFORM COLORS
 // SOCIAl COLOR CHOICES
@@ -18,8 +21,7 @@
 // BACKGROUND COLORS
 // ==========================================
 
-
-// SOCIAL COLORS
+//// SOCIAL COLOR DEFINITIONS
 $facebook:          #3B5998;
 $foursquare:        #8FD400;
 $google:            #C63D2D;
@@ -30,34 +32,28 @@ $twitter:           #33CCFF;
 $vimeo:             #86B32D;
 $youtube:           #FF3333;
 
-// SOLID COLOR CHOICES
+//// DEFAULT COLOR
 $solidColor:         #33C9FF;
 $solidColorLight:    lighten($solidColor, 20%);
 $solidColorDark:     darken($solidColor, 20%);
 
-// BLACK AND WHITE VALUES
+//// BLACK AND WHITE VALUES
 $blackColor:        #000000;
 $whiteColor:        #FFFFFF;
 
-// GREY COLOR
+//// GREY COLOR
 $lightColor:        darken($whiteColor, 7%);
 $darkColor:         lighten($blackColor, 10%);
 $greyColor:         mix($lightColor, $darkColor, 50%);
 
-// SITE COLORS
-$primaryColor:      $solidColor;
-$secondaryColor:    #363636;
-$defaultColor:      #FFD101;
-$inverseColor:      lighten($primaryColor, 30%);
-
-// STATUS COLORS
+//// STATUS COLORS
 $dangerColor:       #F6656B;
 $warningColor:      #CC333F;
 $successColor:      #4DAA57;
 $infoColor:         #C7F464;
 $disabledColor:     #F0F0F0;
 
-// BACKGROUND COLORS
+//// BACKGROUND COLORS
 $bgSolid:            $solidColor;
 $bgSolidLight:       $solidColorLight;
 $bgSolidDark:        $solidColorDark;
@@ -68,8 +64,37 @@ $bgBlack:            $blackColor;
 $bgGrey:             $greyColor;
 $bgGreyLight:        darken($lightColor, 5%);
 
+//// SITE COLORS
+$primaryColor:      $solidColor;
+$secondaryColor:    #363636;
+$defaultColor:      #FFD101;
+$inverseColor:      lighten($primaryColor, 30%);
+
+//// TEXT COLORS
 $textColor:         #000000;
 $invertedTextColor: invert($textColor);
+
+
+// ==========================================
+// BACKGROUND COLORS FOR SITE LAYOUT ELEMENTS
+// ==========================================
+// BGCOLOR FOR HEADER
+// BGCOLOR FOR NAV
+// ==========================================
+$bgHeader:          $primaryColor;
+$bgNav:             $secondaryColor;
+$bgFooter:          $primaryColor;
+$bgModalBkg:        rgba($blackColor, .8);
+
+
+// ==========================================
+// SITE DIMENTSIONS
+// ==========================================
+// ==========================================
+$wheader:           1280px;
+$wNav:              1280px;
+$wFooter:           1280px;
+
 
 
 // ==========================================
@@ -81,11 +106,11 @@ $invertedTextColor: invert($textColor);
 
 //// FONT SIZES
 $fontsize-xsmall:          0.65em;
-$fontsize-small:           0.85em;
+$fontsize-small:           0.86em;
 $fontsize-medium:          1.0em;
 $fontsize-large:           1.3em;
-$fontsize-xlarge:          1.6em;
-$fontsize-xxlarge:         2.0em;
+$fontsize-xlarge:          1.65em;
+$fontsize-xxlarge:         2.1em;
 
 //// CTA BUTTON SIZES
 $width-xsmall:             80px;
@@ -95,7 +120,6 @@ $width-large:              280px;
 $width-xlarge:             300px;
 $width-xxlarge:            340px;
 
-
 $width-xsmall:             0px;
 $width-small:              0px;
 $width-medium:             0px;
@@ -103,7 +127,7 @@ $width-large:              0px;
 $width-xlarge:             0px;
 $width-xxlarge:            0px;
 
-// SITE FONTS ::  SAN-SERIF
+//// SITE FONTS ::  SAN-SERIF
 $san-serif:                    'Ubuntu', Helvetica, Arial, sans-serif;
 $san-serif-italic:             $san-serif;                                 
 $san-serif-light:              $san-serif;
@@ -127,29 +151,26 @@ $serif-bold-condensed:     $serif;
 
 
 
-// ==========================================
-// BACKGROUND COLORS FOR SITE LAYOUT ELEMENTS
-// ==========================================
-// BGCOLOR FOR HEADER
-// BGCOLOR FOR NAV
-// ==========================================
-$bgHeader: $primaryColor;
-$bgNav: $secondaryColor;
+
+
+//// BLOCK PADDING
+$box-padding: 1em;
+$tb-box-padding: 2em;
+$rl-box-padding: 1em;
+
+$tb-box-margin: 1em;
+$rl-box-margin: 0em;
+
+$input-text-margin: 0em;
+
+$bstyle: 'flushdotted';
 
 
 
-// ==========================================
-// TRANSITIONS
-// ==========================================
-// CTA
-// A
-// ==========================================
-a, .cta {
-	-webkit-transition: 0.25s ease-out;
-	-moz-transition: 0.25s ease-out;
-	-o-transition: 0.25s ease-out;
-	transition: 0.25s ease-out;
-	-webkit-backface-visibility: hidden;
+
+.cta:hover {
+outline: 1px solid #fff;
+outline-offset: -5px;
 }
 
 
@@ -161,6 +182,28 @@ a, .cta {
 // ==========================================
 @import "./mediaqueries/__mediaqueries.scss";  // Media Queries
 @import "./__helpers.scss";
+
+
+
+
+
+// ==========================================
+// SITE SPECIFIC STYLING 
+// ==========================================
+// SELECTION HIGHLIGHT
+// ==========================================
+
+//// SET SELECTION HIGH LIGHT COLOR
+$selection-highlight-color: #f0f0f0;
+::selection {
+  background: $selection-highlight-color !important;
+}
+::-moz-selection {
+  background: $selection-highlight-color !important;
+}
+::-webkit-selection {
+  background: $selection-highlight-color !important;
+}
 
 
 
@@ -189,6 +232,8 @@ a, .cta {
 
 
 
-
-// exceptions :: print stylesheets and IE bullshit
+// ==========================================
+// Exceptions 
+// Print stylesheets + IE bullshit
+// ==========================================
 @import "./exceptions/__exceptions.scss";

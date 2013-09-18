@@ -5,41 +5,54 @@
  */
 @include min-screen(720px) {
 	
-	.c1 > .box {
+	.c1 > .box-wrap {
 	    width: 100%;
 	    float: left;
 	}
-	.c2 > .box {
+	.c2 > .box-wrap {
 	    width: 50%;
 	    float: left;
 	}
-	.c3 > .box {
+	.c3 > .box-wrap {
 	    width: 33.3333333%;
 	    float: left;
 	}
-	.c4 > .box {
+	.c4 > .box-wrap {
 	    width: 25%;
 	    float: left;
 	}
-	.c5 > .box {
+	.c5 > .box-wrap {
 	    width: 20%;
 	    float: left;
 	}
-	.c6 > .box {
+	.c6 > .box-wrap {
 	    width: 16.6666666%;
 	    float: left;
 	}
-	.c7 > .box {
+	.c7 > .box-wrap {
 	    width: 14.2857142857143%;
 	    float: left;
 	}
-	.c8 > .box {
+	.c8 > .box-wrap {
 	    width: 12.5%;
 	    float: left;
 	}
-	.cw400 {
-		width: 400px !important;
+
+
+
+	$num_step : 8;
+	$padding: 1%;
+	// sub-div
+	@for $i from 1 through $num_step {
+	  .d#{$i} {
+	    width: (100% - $padding) / $i ;
+	    margin-right: $padding;
+	    float: left;
+	  }
 	}
 
+
+
+	
 
 }

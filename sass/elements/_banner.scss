@@ -1,16 +1,45 @@
-.banner {     
-    background: $primaryColor;
-    color: #fff;
-    margin: 0 auto;
-    padding: 0.4em 0;
+//// ele :: banner ( server as block titles )
+@mixin bannerStyle( $style: 'flushed', $multiplier: 1 ){
 
+
+
+    @if $style == 'flushed' {
+        background: $primaryColor;
+        color: #fff;
+        margin: -$tb-box-padding 0 $tb-box-padding 0;
+        left: -$rl-box-padding;
+        padding: $tb-box-padding*$multiplier $rl-box-padding;
+    } @else if $style == 'bp' {
+        background: $primaryColor;
+        color: #fff;
+        margin: 0 0 $tb-box-margin 0;
+        padding: $tb-box-padding 0;
+        text-indent: $rl-box-padding;
+
+    } @else if $style == 'flushdotted' {
+        background: transparent;
+        border-bottom: 1px dotted $primaryColor;
+        color: $primaryColor;
+        margin: -$tb-box-padding 0 $tb-box-padding 0;
+        left: -$rl-box-padding;
+        padding: $tb-box-padding*$multiplier $rl-box-padding;
+    } @else if $style == 'flushsolid' {
+        background: transparent;
+        border-bottom: 1px solid $primaryColor;
+        color: $primaryColor;
+        margin: -$tb-box-padding 0 $tb-box-padding 0;
+        left: -$rl-box-padding;
+        padding: $tb-box-padding*$multiplier $rl-box-padding;
+    } 
+    @else {
+        margin: 0 0 $rl-box-padding 0;
+    }
+}
+
+
+
+.banner {
+    @include bannerStyle($bstyle, 1);
     position: relative;
-    text-align: center;
     width: 100%;
 }
-.abs-t .banner, 
-.abs-b .banner {
-    margin-left: -1em;
-}
-
-

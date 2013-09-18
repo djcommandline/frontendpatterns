@@ -3,19 +3,19 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Front End Patterns</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Front End Patterns</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
 
-        <!-- modernizr -->
-        <script src="js/modernizr.js"></script>
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
 
-        <!-- font awesome -->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <!--[if IE 7]>
         <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
         <![endif]-->
@@ -34,340 +34,259 @@
         <link rel="stylesheet" href="css/ie.css">
         <![endif]-->
 
-        <style>
-        #main {
-         background-image:url(
-            data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQYV2OMq7zlw4ADBKtdN4ZJMYIULmpX24JL8ZBSuHH+xnr/RP9Ggp4ZOIUArconi++UvM4AAAAASUVORK5CYII=
-            );
-         }
-
-         .block > div > div > div {
-             min-height: 300px;
-         }
-        </style>
-
-
         <!-- JQUERY --> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
-
-
-
     </head>
-   
+
     <body ng-app>
 
         <div id="outer-wrap">
-        <div id="inner-wrap">
+            <div id="inner-wrap">
 
-            <!-- LEFT LOGO -->
-            <header id="header" class="left-layout" role="banner">
-                <div class="block cf">                    
-                    <a class="nav-btn" id="nav-open-btn"><i class="icon-reorder"></i></a>
-                    <h1 class="title text-left"><span>PATTERNS™</span></h1>
-                    <ul class="ml-10 inline-menu hide">
-                        <li><a href="#"><span>link 1</span></a></li>
-                        <li><a href="#"><span>link 2</span></a></li>
-                        <li><a href="#"><span>link 3</span></a></li>
-                    </ul>
-                    <ul class="set-right mr-10 inline-menu hide">
-                        <li><a href="#"><span>link 4</span></a></li>
-                        <li><a href="#"><span>link 5</span></a></li>
-                        <li><a href="#"><span>link 6</span></a></li>
-                    </ul>
-                </div>
-            </header>
-
-            <!-- RIGHT LOGO -->
-            <header id="header" class="hide right-layout" role="banner">
-                <div class="block cf">                    
-                    <a class="nav-btn" id="nav-open-btn"><i class="icon-reorder"></i></a>
-                    <h1 class="title text-right"><span>PATTERNS™</span></h1>
-                    <ul class="ml-10 inline-menu hide">
-                        <li><a href="#"><span>link 1</span></a></li>
-                        <li><a href="#"><span>link 2</span></a></li>
-                        <li><a href="#"><span>link 3</span></a></li>
-                    </ul>
-                    <ul class="set-right mr-10 inline-menu hide">
-                        <li><a href="#"><span>link 4</span></a></li>
-                        <li><a href="#"><span>link 5</span></a></li>
-                        <li><a href="#"><span>link 6</span></a></li>
-                    </ul>
-                </div>
-            </header>
-
-            <!-- CENTER -->
-            <header id="header" class="hide center-layout" role="banner">
-                <div class="block cf">                    
-                    <a class="nav-btn" id="nav-open-btn"><i class="icon-reorder"></i></a>
-                    <h1 class="title text-left"><span>PATTERNS™</span></h1>
-                    <ul class="ml-10 inline-menu">
-                        <li><a href="#"><span>link 1</span></a></li>
-                        <li><a href="#"><span>link 2</span></a></li>
-                        <li><a href="#"><span>link 3</span></a></li>
-                    </ul>
-                    <ul class="set-right mr-10 inline-menu">
-                        <li><a href="#"><span>link 4</span></a></li>
-                        <li><a href="#"><span>link 5</span></a></li>
-                        <li><a href="#"><span>link 6</span></a></li>
-                    </ul>
-                </div>
-            </header>
-
-            <!-- LEFT RESPONSIVE NAVIGATION -->
-            <nav id="nav" role="navigation" class="left-layout text-left">
-                <div class="block">
-
-                    <!-- TITLE -->
-
-                    <h2 class="title">Title</h2>
-                    <a class="close-btn" id="nav-close-btn" href="#header"><i class="icon-reorder"></i> PATTERNS™</a>
-
-                    <ul>
-                        <li class="is-active">
-                            <a href="#"><i class="icon-user"></i>BUTTONS</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-cog"></i>SETTINGS</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-comment"></i>COMMENTS</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-envelope"></i>INBOX</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-search"></i>SEARCH</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-credit-card"></i>PAYMENT INFO</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-mobile-phone"></i>CONTACT</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-truck"></i>SHIPPING</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-
-            <!-- RIGHT RESPONSIVE NAVIGATION -->
-            <nav id="nav" role="navigation" class="hide right-layout text-left">
-                <div class="block">
-
-                    <!-- TITLE -->
-
-                    <h2 class="title">Title</h2>
-                    <a class="close-btn" id="nav-close-btn" href="#header"><i class="icon-reorder"></i> PATTERNS™</a>
-
-                    <ul class="set-right">
-                        <li class="is-active">
-                            <a href="#"><i class="icon-user"></i>PROFILE</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-cog"></i>SETTINGS</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-comment"></i>COMMENTS</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-envelope"></i>INBOX</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-search"></i>SEARCH</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-credit-card"></i>PAYMENT INFO</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-mobile-phone"></i>CONTACT</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-truck"></i>SHIPPING</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-
-            <!-- THE MAIN PORTION OF THE PAGE -->
-            <div id="main" role="main" class="bg-light">
-
-                <!--   -->
-                <div class="block mt-25">
-                    <div class="c1 rel-center">
-                        <div class="box padded">
-                            <div class="text-center m-15">
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <i class="icon-building bg-disabled font-7em"></i>
-                                <hr>
-                                <span class="font-2em">PATTERNS UI</span><br>
-                                <span class="font-1em">PREFAB INTERFACES</span>                            
-                            </div>
-                        </div>
+                <!-- HEADER MENU -->
+                <header id="header" role="header" class="left-layout" >
+                    <div class="block cf">                    
+                        <a class="nav-btn" id="nav-open-btn"><i class="icon-reorder"></i></a>
+                        <h1 class="title"><span>PATTERNS™</span></h1>
+                        <ul class="ml-10 inline-menu hide">
+                            <li><a href="#"><span>link 1</span></a></li>
+                            <li><a href="#"><span>link 2</span></a></li>
+                            <li><a href="#"><span>link 3</span></a></li>
+                        </ul>
+                        <ul class="set-right mr-10 inline-menu hide">
+                            <li><a href="#"><span>link 4</span></a></li>
+                            <li><a href="#"><span>link 5</span></a></li>
+                            <li><a href="#"><span>link 6</span></a></li>
+                        </ul>
                     </div>
-                </div>
+                </header>
+
+                <!-- MOBILE NAV -->
+                <nav id="nav" role="navigation" class="left-layout text-left">
+                    <div class="block">
+
+                        <h2 class="title">Title</h2>
+                        <a class="close-btn" id="nav-close-btn" href="#header"><i class="icon-reorder"></i> PATTERNS™</a>
+
+                        <ul>
+                            <li class="is-active">
+                                <a href="#"><i class="icon-user"></i>BUTTONS</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-cog"></i>SETTINGS</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-comment"></i>COMMENTS</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-envelope"></i>INBOX</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-search"></i>SEARCH</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-credit-card"></i>PAYMENT INFO</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-mobile-phone"></i>CONTACT</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-truck"></i>SHIPPING</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
 
 
+                <!-- THE MAIN PORTION OF THE PAGE -->
+                <div id="main" role="main" class="bg-light">
 
-
-                <style>
-                    .button-examples .cta {
-                        margin-right: 3;
-                        margin-bottom: 10px;
-                    }
-                </style>
-
-
-                <!-- UI COMPONENT - BUTTON STATES -->
-                <div class="block button-examples">
-                    <div class="c1 rel-center p25">
-                        <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto cf">
-
-                            <div class="abs-t w100">
-                                <div>
-                                    <div class="banner"><div class="text"><h3>COLOR OPTIONS</h3></div></div>
+                    <!-- HERO -->
+                    <div id="hero" class="block">
+                        <div class="c1">
+                            <div class="box-wrap">
+                                <div class="text-center">
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <i class="icon-building bg-disabled font-7em"></i>
+                                    <hr>
+                                    <span class="font-2em">PATTERNS UI</span><br>
+                                    <span class="font-1em">PREFAB INTERFACES</span>                            
                                 </div>
                             </div>
-
-                            <style>
-                            .colorsamples > div {
-                                border: 1px solid #f0f0f0;
-                                display: block;
-                                float: left;
-                                height: 60px;
-                                margin: 0 5px 5px 0;
-                                width: 60px;
-                            }
-                            </style>
-
-                            <!-- SOCIAL BACKGROUND CLOLORS -->
-                            <div class="colorsamples">
-                                <h4>SOCIAL</h4> 
-                                <div class="bg-facebook"></div>     
-                                <div class="bg-foursquare"></div>
-                                <div class="bg-google"></div>
-                                <div class="bg-instagram"></div>
-                                <div class="bg-linkedin"></div>
-                                <div class="bg-tumblr"></div>
-                                <div class="bg-twitter"></div>
-                                <div class="bg-vimeo"></div>
-                                <div class="bg-youtube"></div>
-                                <hr>
-
-                                <h4>SOLIDS</h4>
-                                <div class="bg-solid"></div>
-                                <div class="bg-solidlight"></div>
-                                <div class="bg-soliddark"></div>
-                                <hr>
-
-
-                                <h4>GREYS</h4>
-                                <div class="bg-white"></div>
-                                <div class="bg-light"></div>
-                                <div class="bg-greylight"></div>
-                                <div class="bg-grey"></div>
-                                <div class="bg-dark"></div>
-                                <div class="bg-black"></div>
-                                <hr>
-
-                                <h4>STATUS COLORS</h4>
-                                <div class="bg-primary"></div>
-                                <div class="bg-secondary"></div>
-                                <div class="bg-warning"></div>
-                                <div class="bg-danger"></div>
-                                <div class="bg-inactive"></div>
-                                <div class="bg-disabled"></div>
-                                <div class="bg-default"></div>
-                                <div class="bg-success"></div>
-                                <div class="bg-inverse"></div>
-                            </div>
-
-
-                            </div>
                         </div>
                     </div>
-                </div>
+
+                    <!-- UI COMPONENT - COLORS -->
+                    <div id="colors" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
+
+                                <div class="banner"><div class="text"><h3>COLORS</h3></div></div>
+
+                                <!-- SOCIAL BACKGROUND CLOLORS -->
+                                <div class="colorsamples">
+                                    <h4>SOCIAL</h4> 
+                                    <div class="bg-facebook"></div>     
+                                    <div class="bg-foursquare"></div>
+                                    <div class="bg-google"></div>
+                                    <div class="bg-instagram"></div>
+                                    <div class="bg-linkedin"></div>
+                                    <div class="bg-tumblr"></div>
+                                    <div class="bg-twitter"></div>
+                                    <div class="bg-vimeo"></div>
+                                    <div class="bg-youtube"></div>
+                                    <hr>
+
+                                    <h4>SOLIDS</h4>
+                                    <div class="bg-solid"></div>
+                                    <div class="bg-solidlight"></div>
+                                    <div class="bg-soliddark"></div>
+                                    <hr>
 
 
+                                    <h4>GREYS</h4>
+                                    <div class="bg-white"></div>
+                                    <div class="bg-light"></div>
+                                    <div class="bg-greylight"></div>
+                                    <div class="bg-grey"></div>
+                                    <div class="bg-dark"></div>
+                                    <div class="bg-black"></div>
+                                    <hr>
 
-                <!-- UI COMPONENT - BUTTON STATES -->
-                <div class="block button-examples">
-                    <div class="c1 rel-center p25">
-                        <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto cf">
-
-                            <div class="abs-t w100">
-                                <div>
-                                    <div class="banner"><div class="text"><h3>BUTTONS</h3></div></div>
+                                    <h4>STATUS COLORS</h4>
+                                    <div class="bg-primary"></div>
+                                    <div class="bg-secondary"></div>
+                                    <div class="bg-warning"></div>
+                                    <div class="bg-danger"></div>
+                                    <div class="bg-inactive"></div>
+                                    <div class="bg-disabled"></div>
+                                    <div class="bg-default"></div>
+                                    <div class="bg-success"></div>
+                                    <div class="bg-inverse"></div>
                                 </div>
-                            </div>
-
-                            <style>
-
-                            </style>
-
-                            <div class="b-status">
-                                <div class="small bg-primary cta">primary</div>
-                                <div class="small bg-secondary cta">secondary</div>
-                                <div class="small bg-warning cta">warning</div>
-                                <div class="small bg-danger cta">danger</div>
-                                <div class="small bg-info cta">info</div>
-                                <div class="small bg-disabled cta">disabled</div>
-                                <div class="small bg-default cta">default</div>
-                                <div class="small bg-success cta">success</div>
-                                <div class="small bg-inverse cta">inverse</div>
-                            </div>
-
-                            <div class="b-sizing">
-                                <div class="xsmall bg-primary cta">xsmall</div>
-                                <div class="small bg-primary cta">small</div>
-                                <div class="medium bg-primary cta">medium</div>
-                                <div class="large bg-primary cta">large</div>
-                                <div class="xlarge bg-primary cta">xlarge</div>
-                                <div class="xxlarge bg-primary cta">xxlarge</div>
-                            </div>
 
 
-
-
-                            </div>
+                            </div></div>
                         </div>
-                    </div>
-                </div>
+                    </div> 
 
 
+                    <!-- UI COMPONENT - BUTTONS -->
+                    <div id="buttons" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
 
-                <!-- UI COMPONENT - INPUTS STATES -->
-                <div class="block button-examples">
-                    <div class="c1 rel-center p25">
-                        <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto cf">
+                                <div class="banner"><div class="text"><h3>BUTTONS</h3></div></div>
 
-                                <div class="abs-t w100">
-                                    <div>
-                                        <div class="banner"><div class="text"><h3>INPUTS</h3></div></div>
+
+                                <div class="d2">
+                                    <div class="small bg-primary cta">primary</div>
+                                    <div class="small bg-secondary cta">secondary</div>
+                                    <div class="small bg-warning cta">warning</div>
+                                    <div class="small bg-danger cta">danger</div>
+                                    <div class="small bg-info cta">info</div>
+                                    <div class="small bg-disabled cta">disabled</div>
+                                    <div class="small bg-default cta">default</div>
+                                    <div class="small bg-success cta">success</div>
+                                    <div class="small bg-inverse cta">inverse</div>
+                                </div>
+
+                                <div class="d2 mr-0">
+                                    <div class="xsmall bg-primary cta">xsmall</div>
+                                    <div class="small bg-primary cta">small</div>
+                                    <div class="medium bg-primary cta">medium</div>
+                                    <div class="large bg-primary cta">large</div>
+                                    <div class="xlarge bg-primary cta">xlarge</div>
+                                    <div class="xxlarge bg-primary cta">xxlarge</div>
+                                </div>
+
+                            </div></div>
+                        </div>
+                    </div> 
+
+                    <!-- UI COMPONENT - SWITCHES STATES -->
+                    <div id="switches" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
+
+                                <div class="banner"><div class="text"><h3>SWITCHES</h3></div></div>
+
+                                <div class="switchessamples" style="width: 50%; max-width: 500px; min-width: 320px;">
+
+                                    <div class="input-switch-wrap">
+                                        <div class="switch">
+                                            <div class="switch-on switch-animate">
+                                                <input type="checkbox" checked="" data-toggle="switch">
+                                                <span class="switch-left">ON</span>
+                                                <label><i class="icon-circle"></i></label>
+                                                <span class="switch-right">OFF</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="text">TURN THIS ON</div>
                                     </div>
                                 </div>
 
-                                <div class="buttonsamples" style="width: 50%; max-width: 500px; min-width: 320px;">
+                            </div></div>
+                        </div>
+                    </div>
+
+                    <!-- UI COMPONENT - CHECKBOX STATES -->
+                    <div id="checkboxes" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
+
+                                <div class="banner"><div class="text"><h3>CHECKBOXES</h3></div></div>
 
 
+                                <div class="checkboxsamples" style="width: 50%; max-width: 500px; min-width: 320px;">
+
+
+                                    <div class="input-checkbox-wrap">
+                                        <input type="checkbox" name="day" value="Friday" checked> 
+                                        <label class="checked"><i class="icon-check-empty"></i>Option 1</label>
+                                    </div>
+
+                                    <div class="input-checkbox-wrap">
+                                        <input type="checkbox" name="day" value="Friday"> 
+                                        <label class="checked"><i class="icon-check-empty"></i>Option 2</label>
+                                    </div>
+
+                                    <div class="input-checkbox-wrap">
+                                        <input type="checkbox" name="day" value="Friday"> 
+                                        <label class="checked"><i class="icon-check-empty"></i>Option 3</label>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div></div>
+                        </div>
+                    </div>
+
+                    <!-- UI COMPONENT - INPUTS -->
+                    <div id="inputs" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
+
+                                <div class="banner"><div class="text"><h3>INPUTS</h3></div></div>
+
+
+                                <div class="d2">
                                     <div class="input-text-wrap">
                                         <label for="basicinput" default="Enter" prompt="Try to get it right"></label>
                                         <input  id="basicinput" type="text" class="" placeholder="input placeholder text">
                                     </div>
-
                                     <div class="input-text-wrap">
                                         <label for="basicinput" class="prompter">
                                             <span class="default">Enter</span> 
@@ -398,99 +317,23 @@
                                         <input  id="basicinput" type="text" class="" placeholder="input placeholder text">
                                         <button><i class="icon-chevron-right"></i></button>
                                     </div>
-
                                 </div>
 
 
-                            </div>
+                            </div></div>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+
+                    <!-- UI COMPONENT - RADIO STATES -->
+                    <div id="radio" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
 
 
-                <!-- UI COMPONENT - INPUTS STATES -->
-                <div class="block button-examples">
-                    <div class="c1 rel-center p25">
-                        <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto cf">
-
-                                <div class="abs-t w100">
-                                    <div>
-                                        <div class="banner"><div class="text"><h3>CONTACT</h3></div></div>
-                                    </div>
-                                </div>
-
-                                <div class="buttonsamples" style="width: 50%; max-width: 500px; min-width: 320px;">
-
-                                    <div class="input-text-wrap slim-aligned">
-                                        <label for="contactname">NAME</label>
-                                        <input  id="contactname" type="text" class="" placeholder="Jessica Smith">
-                                    </div>
+                                <div class="banner"><div class="text"><h3>RADIOS</h3></div></div>
 
 
-                                    <div class="input-text-wrap slim-aligned">
-                                        <label for="contactname">EMAIL</label>
-                                        <input  id="contactname" type="text" class="" placeholder="user@email.com">
-                                    </div>
-
-
-                                    <div class="input-text-wrap slim-aligned">
-                                        <label for="contactname">SUBJECT</label>
-                                        <input  id="contactname" type="text" class="" placeholder="What do i do when i win?">
-                                    </div>
-
-
-                                    <div class="input-text-wrap slim-aligned">
-                                        <label for="contactname">MESSAGE</label>
-                                        <textarea  id="contactname" type="text" class="" placeholder="Jessica Smith"></textarea>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UI COMPONENT - RADIO STATES -->
-                <div class="block button-examples">
-                    <div class="c1 rel-center p25">
-                        <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto cf">
-
-                                <div class="abs-t w100"><div>
-                                        <div class="banner"><div class="text"><h3>RADIOS</h3></div></div>
-                                </div></div>
-
-                                <style>
-                                .radiosamples > div {
-                                    width: 100%;
-                                }
-                                .input-radio-wrap input[type="radio"] {
-                                    float: left;
-                                    width: auto;
-                                    display: none;
-                                }
-                                .input-radio-wrap {
-                                    float: left;
-                                    display: block;
-                                }
-                                .input-radio-wrap label {
-                                    float: left;
-                                }
-                                .input-radio-wrap i {
-                                    margin-right: 5px;
-                                }
-                                .input-radio-wrap:hover * {
-                                    cursor: pointer;
-                                }
-
-
-
-                                </style>
-
-                                <div class="radiosamples" style="width: 50%; max-width: 500px; min-width: 320px;">
+                                <div>
 
 
                                     <div class="input-radio-wrap">
@@ -508,164 +351,94 @@
                                         <label class="checked"><i class="icon-circle-blank"></i>Option 3</label>
                                     </div>
 
-
                                 </div>
 
-
-                            </div>
+                            </div></div>
                         </div>
                     </div>
-                </div>
-
-                <!-- UI COMPONENT - CHECKBOX STATES -->
-                <div class="block button-examples">
-                    <div class="c1 rel-center p25">
-                        <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto cf">
 
 
+                    <!-- UI COMPONENT - CONTACT -->
+                    <div id="contact" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
 
-                                <div class="abs-t w100">
-                                    <div>
-                                        <div class="banner"><div class="text"><h3>CHECKBOXES</h3></div></div>
+                                <div class="banner"><div class="text"><h3>CONTACT</h3></div></div>
+
+                                <div class="d2">
+                                    <div class="input-text-wrap slim-aligned">
+                                        <label for="contactname">NAME</label>
+                                        <input  id="contactname" type="text" class="" placeholder="Jessica Smith">
+                                    </div>
+
+                                    <div class="input-text-wrap slim-aligned">
+                                        <label for="contactname">EMAIL</label>
+                                        <input  id="contactname" type="text" class="" placeholder="user@email.com">
+                                    </div>
+
+                                    <div class="input-text-wrap slim-aligned">
+                                        <label for="contactname">SUBJECT</label>
+                                        <input  id="contactname" type="text" class="" placeholder="What do i do when i win?">
+                                    </div>
+
+                                    <div class="input-text-wrap slim-aligned">
+                                        <label for="contactname">MESSAGE</label>
+                                        <textarea  id="contactname" type="text" class="" placeholder="Jessica Smith"></textarea>
                                     </div>
                                 </div>
 
-                                <div class="checkboxsamples" style="width: 50%; max-width: 500px; min-width: 320px;">
 
-
-                                    <div class="input-checkbox-wrap">
-                                        <input type="checkbox" name="day" value="Friday" checked> 
-                                        <label class="checked"><i class="icon-check-empty"></i>Option 1</label>
-                                    </div>
-
-                                    <div class="input-checkbox-wrap">
-                                        <input type="checkbox" name="day" value="Friday"> 
-                                        <label class="checked"><i class="icon-check-empty"></i>Option 2</label>
-                                    </div>
-
-                                    <div class="input-checkbox-wrap">
-                                        <input type="checkbox" name="day" value="Friday"> 
-                                        <label class="checked"><i class="icon-check-empty"></i>Option 3</label>
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
+                            </div></div>
                         </div>
-                    </div>
-                </div>
+                    </div> 
 
 
+                    <!-- UI COMPONENT - MODAL -->
+                    <div id="example-modal" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
 
-                <!-- UI COMPONENT - SWITCHES STATES -->
-                <div class="block button-examples">
-                    <div class="c1 rel-center p25">
-                        <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto cf">
+                                <div class="banner"><div class="text"><h3>MODAL</h3></div></div>
 
-                                <div class="abs-t w100">
-                                    <div>
-                                        <div class="banner"><div class="text"><h3>SWITCHES</h3></div></div>
-                                    </div>
+                                <div class="d2">
+                                    <a class="fancybox" rel="gallery1" href="http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_b.jpg" title="Westfield Waterfalls - Middletown CT Lower (Graham_CS)">
+                                        <img src="http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_m.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="d2 mr-0">
+                                    <a class="fancybox" rel="gallery1" href="http://farm4.staticflickr.com/3824/9041440555_2175b32078_b.jpg" title="Calm Before The Storm (One Shoe Photography Ltd.)">
+                                        <img src="http://farm4.staticflickr.com/3824/9041440555_2175b32078_m.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="d2">
+                                    <a class="fancybox" rel="gallery1" href="http://farm3.staticflickr.com/2870/8985207189_01ea27882d_b.jpg" title="Lambs Valley (JMImagesonline.com)">
+                                        <img src="http://farm3.staticflickr.com/2870/8985207189_01ea27882d_m.jpg" alt="" />
+                                    </a>    
+                                </div>
+
+                                <div class="d2 mr-0">
+                                    <a class="fancybox" rel="gallery1" href="http://farm4.staticflickr.com/3677/8962691008_7f489395c9_b.jpg" title="Grasmere Lake (Phil 'the link' Whittaker (gizto29))">
+                                        <img src="http://farm4.staticflickr.com/3677/8962691008_7f489395c9_m.jpg" alt="" />
+                                    </a>    
                                 </div>
 
 
-                                <div class="switchessamples" style="width: 50%; max-width: 500px; min-width: 320px;">
 
-
-                                    <div class="input-switch-wrap">
-                                        <div class="switch">
-                                            <div class="switch-on switch-animate">
-                                                <input type="checkbox" checked="" data-toggle="switch">
-                                                <span class="switch-left">ON</span>
-                                                <label><i class="icon-circle"></i></label>
-                                                <span class="switch-right">OFF</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="text">TURN THIS ON</div>
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
+                            </div></div>
                         </div>
-                    </div>
-                </div>
+                    </div> 
 
 
 
+                    <!-- UI COMPONENT - LOGIN FORM --> 
+                    <div class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
 
+                                <div class="banner"><div class="text"><h3>LOGIN</h3></div></div>
 
-                <!-- UI COMPONENT - 1COLUMN EXAMPLE -->
-                <div class="block">    
-                    <div class="c1 rel-center">
-                        <div class="box padded">
-                            <div class="m-25 bg-white">                        
-
-                                <div class="abs-tl w100"><div>
-                                    <div class="banner"><div class="text">TABS</div></div>
-                                </div></div>
-
-                                <script>
-                                   jQuery(document).ready(function($) {
-                                        $("#tabs").responsiveTabs({
-                                            type:       'default', //Types: default, vertical, accordion
-                                            width:      'auto', //auto or any custom width
-                                            fit:        true,   // 100% fits in a container
-                                            closed:     false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
-                                            activate:   function() {}  // Callback function, gets called if tab is switched
-                                        }); 
-                                   });
-                                </script>
-
-                                <div id="tabs" class="mt-25">          
-                                    <ul class="tab-labels">
-                                        <li>TAB A</li>
-                                        <li>TAB B</li>
-                                        <li>TAB C</li>
-                                    </ul> 
-
-                                    <div class="tab-container">                                                        
-                                        <div>
-                                            <div>TAB CONTENT A</div>
-                                        </div>
-                                        <div>
-                                            <div>TAB CONTENT B</div>
-                                        </div>
-                                        <div>
-                                            <div>TAB CONTENT C</div>
-                                        </div>
-                                    </div>
-                                </div> 
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <!-- BLOCK WRAPPER--> 
-                <div class="block button-examples">
-                    <div class="c1 rel-center p25">
-                        <div class="box padded">
-                            <div class="m-25 bg-white pt-50 wauto cf">
-
-                                <div class="abs-t w100">
-                                    <div>
-                                        <div class="banner"><div class="text"><h3>LOGIN</h3></div></div>
-                                    </div>
-                                </div>
-
-                                <div style="width: 45%; min-width: 320px;" class="set-left mt-25">
+                                <!-- UI COMPONENT - SIGNUP FORM -->  
+                                <div class="d2">
                                     <!-- UI COMPONENT - SIGNUP FORM -->  
                                     <form class="form-signin o-hidden text-left transition bg-dark p-25 m-0 mb-0 large">
                                         <h2 class="form-signin-heading">Sign In {{name}}</h2>
@@ -673,50 +446,56 @@
                                         <div class="input-text-wrap">
                                             <label for="email" class="prompter">
                                                 <span class="default">Enter</span>
-                                                <span class="prompt">Hopefully you remember your own email...</span></label>
-                                            <input ng-model="name" id="email" class="w100" type="text" class="input-block-level" placeholder="Email address"> 
+                                                <span class="prompt">Hopefully you remember your own email...</span>
+                                            </label>
+                                            <input ng-model="name" id="email" class="w100" type="text" class="input-block-level" placeholder="Email address" /> 
                                         </div>
 
                                         <div class="input-text-wrap">
-                                            <label for="password" class="prompter"><span class="default">Enter</span> <span class="prompt">Try to get it right...</span>  </label>
-                                            <input  id="password" class="w100" type="password" class="input-block-level" placeholder="Password">
+                                            <label for="password" class="prompter">
+                                                <span class="default">Enter</span>
+                                                <span class="prompt">Try to get it right...</span>
+                                            </label>
+                                            <input  id="password" class="w100" type="password" class="input-block-level" placeholder="Password" />
                                         </div>
 
                                         <button class="bg-primary large cta rel-center w100 mb-25" type="submit">Sign in</button>
 
                                         <div class="input-checkbox-wrap set-right">
-                                            <input type="checkbox" name="rememberme" checked> 
+                                            <input type="checkbox" name="rememberme" checked /> 
                                             <label class="checked"><i class="icon-check-empty"></i>REMEMBER ME</label>
                                         </div>
+
                                     </form>
                                 </div>
 
-                                <div style="width: 45%; min-width: 320px;" class="set-right mt-25">
-                                    <!-- UI COMPONENT - SIGNUP FORM -->  
+                                <!-- UI COMPONENT - SIGNUP FORM -->  
+                                <div class="d2 mr-0">
                                     <form class="form-signin o-hidden text-left transition bg-primary p-25 m-0 mb-0 large">
                                         <h2 class="form-signin-heading">Sign In {{name}}</h2>
 
                                         <div class="input-text-wrap bg-white">
                                             <label for="email" class="prompter"><span class="default">Enter</span> <span class="prompt">Hopefully you remember your own email...</span> </label>
-                                            <input ng-model="name" id="email" class="w100" type="text" class="input-block-level" placeholder="Email address"> 
+                                            <input ng-model="name" id="email" class="w100" type="text" class="input-block-level" placeholder="Email address" /> 
                                         </div>
 
                                         <div class="input-text-wrap bg-white">
                                             <label for="password" class="prompter"><span class="default">Enter</span> <span class="prompt">Try to get it right...</span>  </label>
-                                            <input  id="password" class="w100" type="password" class="input-block-level" placeholder="Password">
+                                            <input  id="password" class="w100" type="password" class="input-block-level" placeholder="Password" />
                                         </div>
 
                                         <button class="bg-dark large cta rel-center w100 mb-25" type="submit">Sign in</button>
 
                                         <div class="input-checkbox-wrap set-right">
-                                            <input type="checkbox" name="rememberme" checked> 
+                                            <input type="checkbox" name="rememberme" checked /> 
                                             <label class="checked"><i class="icon-check-empty"></i>REMEMBER ME</label>
                                         </div>
-                                    </form>
+                                    </form>                                           
                                 </div>
 
-                                <div style="width: 45%; min-width: 320px;" class="set-left mt-25">
-                                    <!-- UI COMPONENT - SIGNUP FORM -->  
+
+                                <!-- UI COMPONENT - SIGNUP FORM -->
+                                <div class="d2"> 
                                     <form class="form-signin o-hidden text-left transition bg-light p-25 m-0 mb-0 large">
                                         <h2 class="form-signin-heading">Sign In {{name}}</h2>
 
@@ -733,25 +512,25 @@
                                         <button class="bg-primary large cta rel-center w100 mb-25" type="submit">Sign in</button>
 
                                         <div class="input-checkbox-wrap set-right">
-                                            <input type="checkbox" name="rememberme" checked> 
+                                            <input type="checkbox" name="rememberme" checked /> 
                                             <label class="checked"><i class="icon-check-empty"></i>REMEMBER ME</label>
                                         </div>
                                     </form>
-                                </div>
+                                </div> 
 
-                                <div style="width: 45%; min-width: 320px;" class="set-right mt-25">
+                                <div class="d2 mr-0">
                                     <!-- UI COMPONENT - SIGNUP FORM -->  
                                     <form class="form-signin o-hidden text-left transition bg-white p-25 m-0 mb-0 large">
                                         <h2 class="form-signin-heading">Sign In {{name}}</h2>
 
                                         <div class="input-text-wrap">
                                             <label for="email" class="prompter"><span class="default">Enter</span> <span class="prompt">Hopefully you remember your own email...</span> </label>
-                                            <input ng-model="name" id="email" class="w100" type="text" class="input-block-level" placeholder="Email address"> 
+                                            <input ng-model="name" id="email" class="w100" type="text" class="input-block-level" placeholder="Email address" /> 
                                         </div>
 
                                         <div class="input-text-wrap">
                                             <label for="password" class="prompter"><span class="default">Enter</span> <span class="prompt">Try to get it right...</span>  </label>
-                                            <input  id="password" class="w100" type="password" class="input-block-level" placeholder="Password">
+                                            <input  id="password" class="w100" type="password" class="input-block-level" placeholder="Password" />
                                         </div>
 
                                         <button class="bg-primary large cta rel-center w100 mb-25" type="submit">Sign in</button>
@@ -763,157 +542,59 @@
                                     </form>
                                 </div>
 
-
-                            </div>
+                            </div></div>
                         </div>     
                     </div>
-                </div>
-
-                <!-- UI COMPONENT - 3COLUMN EXAMPLE --> 
-                <div class="block"> 
-                    <div class="c3 rel-center mh-10">
-                        <div class="box padded">
-                            <div class="m-15 bg-white mh-15"> 
 
 
-                                <div class="abs-tl">
-                                    <div>
-                                        <div class="banner"><div class="text">top left</div></div>
-                                    </div>
-                                </div>
-                                <div class="abs-tr">
-                                    <div>                                        
-                                        <div class="banner"><div class="text">top right</div></div>
-                                    </div>
-                                </div>
-                                <div class="abs-bl">
-                                    <div>                                       
-                                        <div class="banner"><div class="text">bot left</div></div>
-                                    </div>
-                                </div>
-                                <div class="abs-br">
-                                    <div>                                        
-                                        <div class="banner"><div class="text">bot right</div></div>
-                                    </div>
-                                </div>
-
-
-
-
-                                <i class="icon-cloud-download w100 set-left font-8em"></i>     
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
-                            </div>
-                        </div>
-                        <div class="box padded">
-                            <div class="m-15 bg-white mh-15">
-
-                                <div class="abs-t w100">
-                                    <div>
-                                        <div class="banner"><div class="text">top</div></div>
-                                    </div>
-                                </div>
-
-                                <div class="abs-b w100">
-                                    <div>
-                                        <div class="banner"><div class="text">bottom</div></div>
-                                    </div>
-                                </div>
-
-
-                                <i class="icon-cloud-download w100 set-left font-8em"></i>   
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
-                            </div>
-                        </div>
-                        <div class="box padded">
-                            <div class="m-15 bg-white mh-15">
-                                <i class="icon-cloud-download w100 set-left font-8em"></i>   
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, a, qui, labore, voluptate provident deleniti incidunt aliquam sed pariatur eaque dolorem obcaecati quaerat eveniet modi porro laboriosam facere. Laboriosam, error!
-                            </div>
+                    <!-- UI COMPONENT - 3COLUMN EXAMPLE --> 
+                    <div class="block"> 
+                        <div class="c3">
+                            <div class="box-wrap"><div class="box"> 
+                                    <i class="icon-cloud-download w100 set-left font-8em"></i>     
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
+                            </div></div>
+                            
+                            <div class="box-wrap"><div class="box"> 
+                                    <i class="icon-cloud-download w100 set-left font-8em"></i>   
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
+                            </div></div>
+                            <div class="box-wrap"><div class="box"> 
+                                    <i class="icon-cloud-download w100 set-left font-8em"></i>   
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, a, qui, labore, voluptate provident deleniti incidunt aliquam sed pariatur eaque dolorem obcaecati quaerat eveniet modi porro laboriosam facere. Laboriosam, error!
+                            </div></div>
                         </div>
                     </div>
-                </div>
 
-                <!-- UI COMPONENT - 2COLUMN EXAMPLE --> 
-                <div class="block"> 
-                    <div class="c2 rel-center">
-                        <div class="box padded">
-                            <div class="m-15 bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
-                            </div>
-                        </div>
-                        <div class="box padded">
-                            <div class="m-15 bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- UI COMPONENT - 1COLUMN EXAMPLE -->
-                <div class="block">    
-                    <div class="c1 rel-center">
-                        <div class="box padded">
-                            <div class="m-15 bg-white">                        
-                                
-                                <h2 class="serif-regular">
-                                    <strong>STYLE > SIZE > ACTION > POSITION > PROPERTIES</strong>    
-                                </h2>
-
-                                <p>                                                                
-                                    Prototype elements using modular class definitions.
-                                </p>
-
-                                <p class="w100 rel-center text-left">
-                                    There are several school of thoughs on using non-semantic class names.
-                                    From a prototyping stand point, translating style properties to class
-                                    names allow for the quick application of styles to elements without
-                                    having to write css rules to specific divs.
-                                </p>
-
-                                <p class="w100 rel-center text-left">
-                                    Performance arguments could be made against this approach, but unless
-                                    your site and buisness requires the most effiecient usage of markup
-                                    and performance it doesn't make much sense to not employ 
-                                    fast prototyping techniques. Especially if you are working on unproven
-                                    business models or a a design/interface team that changes the game plan
-                                    at regular intervals.
-                                </p>
-
-                                <p class="w100 rel-center text-left">
-                                    For most small business sites or low traffic sites it just doesn't makes
-                                    sense. You can consolidate and optimze css rules and markup down the road
-                                    when there is a finianical reason to do it.
-                                </p>
-
-                            </div>
+                    <!-- UI COMPONENT - 3COLUMN EXAMPLE --> 
+                    <div class="block"> 
+                        <div class="c2">
+                            <div class="box-wrap"><div class="box"> 
+                                    <i class="icon-cloud-download w100 set-left font-8em"></i>     
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
+                            </div></div>
+                            
+                            <div class="box-wrap"><div class="box"> 
+                                    <i class="icon-cloud-download w100 set-left font-8em"></i>   
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur, accusantium, eum adipisci qui vero deserunt dolore rerum error quod ut id explicabo quis ex harum dolorum incidunt aperiam aspernatur?
+                            </div></div>
                         </div>
                     </div>
-                </div>
+
+                    <!-- UI COMPONENT - 3COLUMN EXAMPLE --> 
+                    <div class="block"> 
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box"> 
+                                    <i class="icon-cloud-download w100 set-left font-8em"></i>     
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sit, officiis, nihil, magnam beatae recusandae quisquam quos asperiores excepturi rem voluptas earum sequi a molestias iste assumenda sapiente perspiciatis perferendis.
+                            </div></div>
+                        </div>
+                    </div>
 
 
+            </div><!-- /#main -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
 
 
 
@@ -921,33 +602,38 @@
             <footer id="footer" role="contentinfo" class="bg-light">
                 <div class="block">
                     <div class="c1 rel-center">
-                        <div class="box padded">
+                        <div class="box-wrap padded">
                            <div class="m-15"> 
-                                This is the footet text
-                            </div>
+                            This is the footet text
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer><!-- /footer -->
 
-        </div>
-        <!--/#inner-wrap-->
-        </div>
-        <!--/#outer-wrap-->
+</div>
+<!--/#inner-wrap-->
+</div>
+<!--/#outer-wrap-->
 
 
 
 
-        <!-- Angular -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-        
-        <!-- ADDITIONAL SCRIPTS --> 
-        <script src="js/plugins.js"></script>
-        <script src="js/app.js"></script>
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
-        <!-- ADDITIONAL PAGE SCRIPTS --> 
-        <script type="text/javascript">            
-            jQuery(document).ready(function($) {
+<!-- ADDITIONAL SCRIPTS --> 
+<script src="js/plugins.js"></script>
+<script src="js/app.js"></script>
+
+<!-- ELEMENTS -->
+<script src="js/ui_modal.js"></script>
+<script src="js/ui_slider.js"></script>
+<script src="js/ui_tabs.js"></script>
+
+<!-- ADDITIONAL PAGE SCRIPTS --> 
+<script type="text/javascript">            
+jQuery(document).ready(function($) {
 
                 // text input :: focus effect
                 $('.input-text-wrap input').focus(function(){
@@ -961,27 +647,36 @@
 
                 // generalize this...
                 $('.input-radio-wrap label').click(function(){
-                   $(this).find('i').toggleClass('icon-circle-blank icon-circle');
-                   $(this).parent().siblings().find('i').removeClass('icon-circle').addClass('icon-circle-blank');
-                   $(this).siblings().prop('checked', true);
-                });
+                 $(this).find('i').toggleClass('icon-circle-blank icon-circle');
+                 $(this).parent().siblings().find('i').removeClass('icon-circle').addClass('icon-circle-blank');
+                 $(this).siblings().prop('checked', true);
+             });
                 $('.input-radio-wrap input:checked ~ label i').toggleClass('icon-circle-blank icon-circle');
 
 
                 // generalize this...
                 $('.input-checkbox-wrap label').click(function(){
-                   $(this).find('i').toggleClass('icon-check-empty icon-check');
-                   $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
-                   $(this).siblings().prop('checked', true);
-                });
+                 $(this).find('i').toggleClass('icon-check-empty icon-check');
+                 $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
+                 $(this).siblings().prop('checked', true);
+             });
                 $('.input-checkbox-wrap input:checked ~ label i').toggleClass('icon-check-empty icon-check');
 
                 // generalize this...
                 $('.input-switch-wrap').click(function(){
-                   $(this).find('.switch-animate').toggleClass('switch-on switch-off');
-                   $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
-                   $(this).find('input').prop('checked', true);
+                 $(this).find('.switch-animate').toggleClass('switch-on switch-off');
+                 $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
+                 $(this).find('input').prop('checked', true);
+             });
+
+
+
+                $(".fancybox").fancybox({
+                    openEffect  : 'none',
+                    closeEffect : 'none',
+                    padding : '0'
                 });
+
 
 
             });
@@ -989,19 +684,19 @@
 
 
 
-        </script>
+</script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script type="text/javascript">
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script type="text/javascript">
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
 
-    
-    </body>
+
+</body>
 
 
 

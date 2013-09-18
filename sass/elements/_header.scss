@@ -1,0 +1,106 @@
+/* 
+  ------------------------
+  HEADER
+  ------------------------
+*/
+
+#header .title {
+  margin: 0 20px;
+}
+
+#header .block {
+  position: relative;
+  margin: 0 auto;
+  padding: 1.5em 0em;
+  max-width: 64em;
+}
+
+#nav .block {
+  position: relative;
+  margin: 0 auto;
+  padding: 1.5em 0em;
+  max-width: 64em;
+}
+
+.nav-btn {
+  display: block;
+  width: 2.625em;
+  height: 2.25em;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-size: 1.875em 1.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.no-svg .nav-btn {
+  background-image: url("../img/nav-icon.png");
+}
+
+.nav-btn:hover, .nav-btn:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.close-btn {
+  display: block;
+  width: 2.625em;
+  height: 2.25em;
+  padding: 0;
+  border: 0;
+  outline: none;
+
+  overflow: hidden;
+  white-space: nowrap;
+  
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  color: #fff;
+}
+.no-svg .close-btn {
+  background-image: url("../img/close-btn.png");
+}
+.close-btn:focus, .close-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+/*
+  ================
+  HEADER 
+  ================
+*/
+
+#header {
+  z-index: 100;
+  position: relative;
+  color: #fff;
+  background-color: $bgHeader;
+}
+#header .title {
+  margin: 0;
+  font-size: 2.15em;
+  line-height: 1.2em;
+  white-space: nowrap;
+}
+#header .title span {
+  margin-left: 15px;
+  display: block;
+}
+#header .nav-btn { 
+  position: absolute;
+  top: 0;
+  left: 0em;
+  font-size: 2em;
+  height: 2.7em;
+  text-align: center;
+  line-height: 2.7em;
+  cursor: pointer;
+}

@@ -36,8 +36,9 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
   background: $bgGreyLight;
   color: invert($bgGreyLight) !important;
   padding: 10px;
-  margin-bottom: 1em;
+  margin: $input-text-margin;
   position: relative;
+  border-bottom: 1px dotted #c0c0c0;
   
   // LABEL SETTINGS
   label {
@@ -53,12 +54,14 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
 
       span {
         font-size: 10px;
+        display: inline-block;
       }
     }
 
     .prompt {
-      opacity: .0;
+      opacity: 0;
       filter: alpha(opacity=0);
+
     }
 
     
@@ -195,8 +198,6 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
 
 }
 
-
-
 .input-checkbox-wrap {
     width: 100%
 }
@@ -218,10 +219,6 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
 .input-checkbox-wrap:hover * {
     cursor: pointer;
 }
-
-
-
-
 
 .switchessamples > div {
     width: 200px;
@@ -306,4 +303,30 @@ input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
 .input-switch-wrap .text {
     padding: 3px 6px;
     float: left;
+}
+
+.radiosamples > div {
+    width: 100%;
+}
+.input-radio-wrap input[type="radio"] {
+    float: left;
+    width: auto;
+    display: none;
+}
+.input-radio-wrap {
+    float: left;
+    display: block;
+}
+.input-radio-wrap label {
+    float: left;
+}
+.input-radio-wrap i {
+    margin-right: 5px;
+}
+.input-radio-wrap:hover * {
+    cursor: pointer;
+}
+
+.form-signin-heading {
+  padding: 0 0 $tb-box-padding 0;
 }

@@ -1,12 +1,42 @@
-// site structure
-.c5 .box.padded > div,
-.c4 .box.padded > div,
-.c3 .box.padded > div,
-.c2 .box.padded > div,
-.c1 .box.padded > div {
-padding: 1em;
-position: relative;
-}
+// ==========================================
+//
+//              SITE STRUCTURE 
+//
+// ==========================================
+// body
+// #outer-wrap
+//  #inner-wrap
+//    #header 
+//      + edit in elements/_header.scss
+//    #nav
+//    #main
+//       > ele  :: 
+//       > ele  :: 
+//       > ele  :: 
+//       > page :: home                  :: /
+//       > page :: product listings      :: /products
+//       > page :: single product page   :: /products/product-slug
+//       > page :: about us              ::
+//       > page :: contact               ::
+//       > page :: how it works          ::
+//       > page :: faq                   ::
+//       > page :: shipping & returns    :: 
+//       > page :: terms & conditions    ::
+//       > page :: privacy policy        :: 
+//       > page :: my account            ::
+//       > page :: checkout              ::
+//    #footer
+//    #modal-content 
+//       + edit in elements/_ui-modal.scss 
+// ==========================================
+
+
+
+
+
+// ==========================================
+// body
+// ==========================================
 body {
   color: #333;
   position: relative;
@@ -16,19 +46,22 @@ body {
   text-transform: uppercase;
 }
 
-#main {
-    overflow: hidden;
-}
-#main .block {
-  max-width: 1020px;
-  margin: 0 auto; 
-}
-
-#footer .block {
-max-width: 1020px;
-margin: 0 auto;
+//// SET ELEMENT TRANSITIONS
+a, .cta,
+.input-text-wrap {
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.25s ease-out;
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
 }
 
+//// SET BORDER NONE
+button, input {
+  border: 0px;
+}
+
+//// SET RESPONIVE DIVS
 .c1 > .box,
 .c2 > .box,
 .c3 > .box,
@@ -36,15 +69,221 @@ margin: 0 auto;
 .c5 > .box,
 .c6 > .box,
 .c7 > .box,
-.c8 > .box {
-width: 100%;
-float: left;
+.c8 > .box,
+.d1,
+.d2,
+.d3,
+.d4,
+.d5,
+.d6,
+.d7,
+.d8
+{
+  width: 100%;
+  float: left;
+}
+
+.d1 img,
+.d2 img,
+.d3 img,
+.d4 img,
+.d5 img,
+.d6 img,
+.d7 img,
+.d8 img
+{
+  width: 100%;
+  height: auto;
+}
+
+// ==========================================
+// #main
+// ==========================================
+                                              @mixin mainBlock() {
+                                                background-image:url(
+                                                  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQYV2OMq7zlw4ADBKtdN4ZJMYIULmpX24JL8ZBSuHH+xnr/RP9Ggp4ZOIUArconi++UvM4AAAAASUVORK5CYII=
+                                                  );
+
+                                                width: 100%;
+
+                                              }
+
+                                              @mixin setPosition( $position: left ){
+                                                @if $position == center {
+                                                  margin: 0 auto;
+                                                } @else if $position == left {
+                                                  margin: 0 auto 0 0;
+                                                } @else if $position == right {
+                                                  margin: 0 0 0 auto;
+                                                } @else {
+                                                  margin: 0 auto;
+                                                }
+                                              }
+
+                                              @mixin blockWidth( $width: 1020px) {
+                                                width: auto;
+                                                max-width: $width;
+                                                @include setPosition( center );
+                                              }
+
+                                              @function setAsideWidth( $contentWidth, $mainWidth) {
+                                                @return $contentWidth - $mainWidth;
+                                              }
+
+
+#main {
+  @include mainBlock();
+  @include cf();
+
+  //// sections
+  .block {
+    @include blockWidth();
+  }
+
+  //// rows ( div.c1, div.c2, div.c3, div.c4, etc.. )
+  .block > div {
+
+  }
+
+  //// columns boxes 
+  .block > div > .box-wrap {
+
+  }
+
+  //// columns box styling and spacing
+  .block > div > .box-wrap > .box {
+    background: #fff;
+    width: auto;
+    padding: $tb-box-padding $rl-box-padding;
+    margin: $tb-box-margin $rl-box-margin; 
+    @include cf(); 
+  }
+
 }
 
 
-button {
-	border: 0px;
+
+// ==========================================
+// #header ( EDIT ELSE WHERE )
+// ==========================================
+
+
+
+
+
+// ==========================================
+// #nav ( EDIT ELSE WHERE )
+// ==========================================
+
+
+
+
+
+// ==========================================
+// #main 
+// ==========================================
+// ele :: [ type ]
+//    >> reusable site components
+// page :: [ name ] :: [ relative url ]
+//    >> page specific rules
+// ==========================================
+
+//// ele :: 
+.button-examples .cta {
+  margin-right: 3;
+  margin-bottom: 10px;
 }
-input {
-	border: 0px;
+
+
+
+
+//// page :: home
+#hero {
+  padding: 100px 0;
+  margin-bottom: 100px;
+  overflow: hidden;
 }
+
+//// ele :: color samples
+.colorsamples > div {
+  border: 1px solid #f0f0f0;
+  display: block;
+  float: left;
+  height: 60px;
+  margin: 0 5px 5px 0;
+  width: 60px;
+}
+
+
+/*
+    =====================
+    CALL TO ACTION STATES
+    =====================
+*/
+.b-status {
+    width: 48%;
+    padding-right: 2%;
+    border-right: 1px dotted #c0c0c0;
+    float: left;
+}
+.b-sizing {
+    width: 48%;
+    float: right;
+}
+.b-sizing > div {
+    width: 100%;
+}
+.b-sizing .xsmall {
+    width: 25%;
+}
+.b-sizing .small {
+    width: 30%;
+}
+.b-sizing .medium {
+    width: 45%;
+}
+.b-sizing .large {
+    width: 55%;
+}
+.b-sizing .xlarge {
+    width: 75%;
+}
+.b-sizing .xxlarge {
+    width: 100%;
+}
+
+
+//// page :: product listing
+
+//// page :: single product page
+
+//// page :: about us
+
+//// page :: contact
+
+//// page :: how it works
+
+//// page :: faq
+
+//// page :: shipping and returns
+
+//// page :: terms & conditions
+
+//// page :: privacy policy
+
+
+
+
+
+// ==========================================
+// #footer
+// ==========================================
+footer {
+  clear: both
+}
+#footer .block {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+
