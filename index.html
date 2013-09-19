@@ -125,6 +125,33 @@
                         </div>
                     </div>
 
+                    <!-- HERO SLIDER -->
+                    <div id="colors" class="block">
+                        <div class="c1">
+                            <div class="box-wrap"><div class="box">
+
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li>
+                                            <img src="http://placehold.it/920x300.jpg/ffffff" />
+                                        </li>
+                                        <li>
+                                            <img src="http://placehold.it/920x300.jpg/ccddee" />
+                                        </li>
+                                        <li>
+                                            <img src="http://placehold.it/920x300.jpg/eeffdd" />
+                                        </li>
+                                        <li>
+                                             <img src="http://placehold.it/920x300.jpg/ab3ded" />
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div></div>
+                        </div>
+                    </div>
+
                     <!-- UI COMPONENT - COLORS -->
                     <div id="colors" class="block">
                         <div class="c1">
@@ -635,51 +662,58 @@
 <script type="text/javascript">            
 jQuery(document).ready(function($) {
 
-                // text input :: focus effect
-                $('.input-text-wrap input').focus(function(){
-                    $(this).parent().addClass('focused');
-                    console.log('hello');
-                });
-                $('.input-text-wrap input').focusout(function(){
-                    $(this).parent().removeClass('focused');
-                });
+    // text input :: focus effect
+    $('.input-text-wrap input').focus(function(){
+    $(this).parent().addClass('focused');
+    console.log('hello');
+    });
+    $('.input-text-wrap input').focusout(function(){
+    $(this).parent().removeClass('focused');
+    });
 
 
-                // generalize this...
-                $('.input-radio-wrap label').click(function(){
-                 $(this).find('i').toggleClass('icon-circle-blank icon-circle');
-                 $(this).parent().siblings().find('i').removeClass('icon-circle').addClass('icon-circle-blank');
-                 $(this).siblings().prop('checked', true);
-             });
-                $('.input-radio-wrap input:checked ~ label i').toggleClass('icon-circle-blank icon-circle');
+    // generalize this...
+    $('.input-radio-wrap label').click(function(){
+    $(this).find('i').toggleClass('icon-circle-blank icon-circle');
+    $(this).parent().siblings().find('i').removeClass('icon-circle').addClass('icon-circle-blank');
+    $(this).siblings().prop('checked', true);
+    });
+    $('.input-radio-wrap input:checked ~ label i').toggleClass('icon-circle-blank icon-circle');
 
 
-                // generalize this...
-                $('.input-checkbox-wrap label').click(function(){
-                 $(this).find('i').toggleClass('icon-check-empty icon-check');
-                 $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
-                 $(this).siblings().prop('checked', true);
-             });
-                $('.input-checkbox-wrap input:checked ~ label i').toggleClass('icon-check-empty icon-check');
+    // generalize this...
+    $('.input-checkbox-wrap label').click(function(){
+    $(this).find('i').toggleClass('icon-check-empty icon-check');
+    $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
+    $(this).siblings().prop('checked', true);
+    });
+    $('.input-checkbox-wrap input:checked ~ label i').toggleClass('icon-check-empty icon-check');
 
-                // generalize this...
-                $('.input-switch-wrap').click(function(){
-                 $(this).find('.switch-animate').toggleClass('switch-on switch-off');
-                 $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
-                 $(this).find('input').prop('checked', true);
-             });
-
-
-
-                $(".fancybox").fancybox({
-                    openEffect  : 'none',
-                    closeEffect : 'none',
-                    padding : '0'
-                });
+    // generalize this...
+    $('.input-switch-wrap').click(function(){
+    $(this).find('.switch-animate').toggleClass('switch-on switch-off');
+    $(this).parent().siblings().find('i').removeClass('icon-check').addClass('icon-check-empty');
+    $(this).find('input').prop('checked', true);
+    });
 
 
 
-            });
+    $(".fancybox").fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none',
+    padding : '0'
+    });
+
+
+    // page / slider
+    $('.flexslider').flexslider({
+    'animation' : 'slide',
+    'controlNav': false,
+    'prevText': '<i class="icon-arrow-left"></i>',
+    'nextText': '<i class="icon-arrow-right"></i>'
+    });
+
+});
 
 
 

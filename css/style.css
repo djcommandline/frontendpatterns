@@ -3310,6 +3310,205 @@ input[type="search"] {
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
+/* line 1, ../sass/elements/_ui-slider.scss */
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+  outline: none; }
+
+/* line 5, ../sass/elements/_ui-slider.scss */
+.slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 11, ../sass/elements/_ui-slider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0; }
+  /* line 15, ../sass/elements/_ui-slider.scss */
+  .flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden; }
+  /* line 19, ../sass/elements/_ui-slider.scss */
+  .flexslider .slides img {
+    width: 100%;
+    display: block; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 28, ../sass/elements/_ui-slider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* line 32, ../sass/elements/_ui-slider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* line 41, ../sass/elements/_ui-slider.scss */
+html[xmlns] .slides {
+  display: block; }
+
+/* line 45, ../sass/elements/_ui-slider.scss */
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 53, ../sass/elements/_ui-slider.scss */
+.no-js .slides > li:first-child {
+  display: block; }
+
+/* line 57, ../sass/elements/_ui-slider.scss */
+.flexslider {
+  margin: 0 0 0 0;
+  position: relative;
+  zoom: 1; }
+  /* line 62, ../sass/elements/_ui-slider.scss */
+  .flexslider.hascontrolnav {
+    margin: 0 0 50px; }
+
+/* line 67, ../sass/elements/_ui-slider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease; }
+
+/* line 74, ../sass/elements/_ui-slider.scss */
+.loading .flex-viewport {
+  max-height: 300px; }
+
+/* line 78, ../sass/elements/_ui-slider.scss */
+.flexslider .slides {
+  zoom: 1; }
+
+/* line 82, ../sass/elements/_ui-slider.scss */
+.carousel li {
+  margin-right: 5px; }
+
+/* Direction Nav */
+/* line 88, ../sass/elements/_ui-slider.scss */
+.flex-direction-nav {
+  *height: 0; }
+  /* line 90, ../sass/elements/_ui-slider.scss */
+  .flex-direction-nav a {
+    width: 36px;
+    height: 36px;
+    padding: 18px;
+    margin: -36px 0 0;
+    display: block;
+    font-size: 36px;
+    opacity: 0;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-transition: all .40s ease; }
+  /* line 105, ../sass/elements/_ui-slider.scss */
+  .flex-direction-nav .flex-next {
+    background-position: 100% 0;
+    right: -36px; }
+  /* line 109, ../sass/elements/_ui-slider.scss */
+  .flex-direction-nav .flex-prev {
+    left: -36px; }
+
+/* line 115, ../sass/elements/_ui-slider.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.6;
+  right: 5px; }
+/* line 119, ../sass/elements/_ui-slider.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.6;
+  left: 5px; }
+/* line 123, ../sass/elements/_ui-slider.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1; }
+
+/* line 128, ../sass/elements/_ui-slider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0.3 !important;
+  filter: alpha(opacity=30);
+  cursor: default; }
+
+/* Control Nav */
+/* line 136, ../sass/elements/_ui-slider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center; }
+  /* line 141, ../sass/elements/_ui-slider.scss */
+  .flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+
+/* line 149, ../sass/elements/_ui-slider.scss */
+f
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px; }
+  /* line 157, ../sass/elements/_ui-slider.scss */
+  f
+  .flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, 0.7); }
+  /* line 161, ../sass/elements/_ui-slider.scss */
+  f
+  .flex-control-paging li a.flex-active {
+    background: #000;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: default; }
+
+/* line 168, ../sass/elements/_ui-slider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden; }
+  /* line 172, ../sass/elements/_ui-slider.scss */
+  .flex-control-thumbs li {
+    width: 23%;
+    float: left;
+    margin: 2% 2% 0 0; }
+  /* line 177, ../sass/elements/_ui-slider.scss */
+  .flex-control-thumbs img {
+    width: 100%;
+    display: block;
+    opacity: .7;
+    cursor: pointer; }
+    /* line 182, ../sass/elements/_ui-slider.scss */
+    .flex-control-thumbs img:hover {
+      opacity: 1; }
+  /* line 186, ../sass/elements/_ui-slider.scss */
+  .flex-control-thumbs .flex-active {
+    opacity: 1;
+    cursor: default; }
+
+/*
+@media screen and (max-width: 480px) {
+  .flex-direction-nav {
+    .flex-prev {
+      opacity: 1;
+      left: 0;
+    }
+    .flex-next {
+      opacity: 1;
+      right: 0;
+    }
+  }
+}
+*/
 /* line 198, ../sass/style.scss */
 ::selection {
   background: #f0f0f0 !important; }
