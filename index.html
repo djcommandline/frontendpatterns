@@ -126,7 +126,7 @@
                     </div>
 
                     <!-- UI COMPONENT - COLORS -->
-                    <div id="colors" class="block">
+                    <div id="xample-colors" class="block">
                         <div class="c1">
                             <div class="box-wrap"><div class="box">
 
@@ -181,7 +181,7 @@
 
 
                     <!-- UI COMPONENT - BUTTONS -->
-                    <div id="buttons" class="block">
+                    <div id="example-buttons" class="block">
                         <div class="c1">
                             <div class="box-wrap"><div class="box">
 
@@ -214,7 +214,7 @@
                     </div> 
 
                     <!-- UI COMPONENT - SWITCHES STATES -->
-                    <div id="switches" class="block">
+                    <div id="example-switches" class="block">
                         <div class="c1">
                             <div class="box-wrap"><div class="box">
 
@@ -241,7 +241,7 @@
                     </div>
 
                     <!-- UI COMPONENT - CHECKBOX STATES -->
-                    <div id="checkboxes" class="block">
+                    <div id="example-checkboxes" class="block">
                         <div class="c1">
                             <div class="box-wrap"><div class="box">
 
@@ -275,7 +275,7 @@
                     </div>
 
                     <!-- UI COMPONENT - INPUTS -->
-                    <div id="inputs" class="block">
+                    <div id="example-inputs" class="block">
                         <div class="c1">
                             <div class="box-wrap"><div class="box">
 
@@ -325,7 +325,7 @@
                     </div> 
 
                     <!-- UI COMPONENT - RADIO STATES -->
-                    <div id="radio" class="block">
+                    <div id="example-radio" class="block">
                         <div class="c1">
                             <div class="box-wrap"><div class="box">
 
@@ -358,8 +358,9 @@
                     </div>
 
 
+
                     <!-- UI COMPONENT - CONTACT -->
-                    <div id="contact" class="block">
+                    <div id="example-contact" class="block">
                         <div class="c1">
                             <div class="box-wrap"><div class="box">
 
@@ -401,8 +402,8 @@
                                 <div class="banner"><div class="text"><h3>MODAL</h3></div></div>
 
                                 <div class="d2">
-                                    <a class="fancybox" rel="gallery1" href="http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_b.jpg" title="Westfield Waterfalls - Middletown CT Lower (Graham_CS)">
-                                        <img src="http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_m.jpg" alt="" />
+                                    <a class="fancybox" rel="gallery1" href="http://flickholdr.com/200/300/girls" title="Westfield Waterfalls - Middletown CT Lower (Graham_CS)">
+                                        <img src="http://flickholdr.com/600/300/girls" alt="" />
                                     </a>
                                 </div>
                                 <div class="d2 mr-0">
@@ -429,9 +430,8 @@
                     </div> 
 
 
-
                     <!-- UI COMPONENT - LOGIN FORM --> 
-                    <div class="block">
+                    <div id="example-login" class="block">
                         <div class="c1">
                             <div class="box-wrap"><div class="box">
 
@@ -546,7 +546,6 @@
                         </div>     
                     </div>
 
-
                     <!-- UI COMPONENT - 3COLUMN EXAMPLE --> 
                     <div class="block"> 
                         <div class="c3">
@@ -567,7 +566,7 @@
                     </div>
 
 
-                    <!-- UI COMPONENT - 3COLUMN EXAMPLE --> 
+                    <!-- UI COMPONENT - 2COLUMN EXAMPLE --> 
                     <div class="block"> 
                         <div class="c2">
                             <div class="box-wrap"><div class="box"> 
@@ -582,7 +581,7 @@
                         </div>
                     </div>
 
-                    <!-- UI COMPONENT - 3COLUMN EXAMPLE --> 
+                    <!-- UI COMPONENT - 1COLUMN EXAMPLE --> 
                     <div class="block"> 
                         <div class="c1">
                             <div class="box-wrap"><div class="box"> 
@@ -627,6 +626,7 @@
 <script src="js/app.js"></script>
 
 <!-- ELEMENTS -->
+<script src="js/ui_dropdown.js"></script>
 <script src="js/ui_modal.js"></script>
 <script src="js/ui_slider.js"></script>
 <script src="js/ui_tabs.js"></script>
@@ -677,6 +677,14 @@ jQuery(document).ready(function($) {
                     padding : '0'
                 });
 
+
+                $("#tabs").responsiveTabs({
+                    type:       'default', //Types: default, vertical, accordion
+                    width:      'auto', //auto or any custom width
+                    fit:        true,   // 100% fits in a container
+                    closed:     false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
+                    activate:   function() {}  // Callback function, gets called if tab is switched
+                }); 
 
 
             });

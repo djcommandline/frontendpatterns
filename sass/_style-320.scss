@@ -56,10 +56,7 @@ a, .cta,
   -webkit-backface-visibility: hidden;
 }
 
-//// SET BORDER NONE
-button, input {
-  border: 0px;
-}
+
 
 //// SET RESPONIVE DIVS
 .c1 > .box,
@@ -115,7 +112,7 @@ button, input {
                                                 }
                                               }
 
-                                              @mixin blockWidth( $width: 1020px) {
+                                              @mixin blockWidth( $width) {
                                                 width: auto;
                                                 max-width: $width;
                                                 @include setPosition( center );
@@ -132,7 +129,7 @@ button, input {
 
   //// sections
   .block {
-    @include blockWidth();
+    @include blockWidth($site-width);
   }
 
   //// rows ( div.c1, div.c2, div.c3, div.c4, etc.. )
