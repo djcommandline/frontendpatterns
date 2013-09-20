@@ -3600,7 +3600,7 @@ button, input {
     background: #fff;
     width: auto;
     padding: 1em 1em;
-    margin: 0em 0em;
+    margin: 1em 1em;
     *zoom: 1; }
     /* line 48, ../sass/techniques/_clearfix.scss */
     #main .block > div > .box-wrap > .box:before, #main .block > div > .box-wrap > .box:after {

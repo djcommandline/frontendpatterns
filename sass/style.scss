@@ -154,16 +154,16 @@ $serif-bold-condensed:     $serif;
 
 
 //// BLOCK PADDING
-$box-padding: 0em;
+$box-padding: 2em;
 $tb-box-padding: 1em;
 $rl-box-padding: 1em;
 
-$tb-box-margin: 0em;
-$rl-box-margin: 0em;
+$tb-box-margin: 1em;
+$rl-box-margin: 1em;
 
 $input-text-margin: 0em;
 
-$bstyle: 'flushDotted';
+$bstyle: 'flushDotted';  // flush || bp || flushDotted || flushSolid
 
 
 
