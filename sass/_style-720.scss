@@ -45,7 +45,7 @@
 	// sub-div
 	@for $i from 1 through $num_step {
 	  .d#{$i} {
-	    width: (100% - $padding) / $i ;
+	    width: (100% - $padding * ($i - 1) ) / $i ;
 	    margin-right: $padding;
 	    float: left;
 	  }
