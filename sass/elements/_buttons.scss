@@ -4,40 +4,46 @@
     ----------------------
 */
 .cta {
-    text-align: center;
-    height: auto;
-    display: block;
-    cursor: pointer;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1;
-    text-indent: 0px;
-    padding: 1em 0;
-    font-size: 1em;
+  text-align: center;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  text-indent: 0px;
+  padding: 1em 0;
+  font-size: 1em;
 
+  @if( $cta-style == 'outline') {   
+    &:hover {
+      outline: 1px solid #fff;
+      outline-offset: -5px;
+    }
+  }
 }
 .xsmall.cta {
-    min-width: $width-xsmall;
-    font-size: $fontsize-xsmall;
+  min-width: $width-xsmall;
+  font-size: $fontsize-xsmall;
 }
 .small.cta {
-    min-width: $width-small;
-    font-size: $fontsize-small;
+  min-width: $width-small;
+  font-size: $fontsize-small;
 }
 .medium.cta {
-    min-width: $width-medium;
-    font-size: $fontsize-medium;
+  min-width: $width-medium;
+  font-size: $fontsize-medium;
 }
 .large.cta {
-    min-width: $width-large;
-    font-size: $fontsize-large;
+  min-width: $width-large;
+  font-size: $fontsize-large;
 }
 .xlarge.cta {
-    min-width: $width-xlarge;
-    font-size: $fontsize-xlarge;
+  min-width: $width-xlarge;
+  font-size: $fontsize-xlarge;
 }
 .xxlarge.cta {
-    min-width: $width-xxlarge;
-    font-size: $fontsize-xxlarge;
+  min-width: $width-xxlarge;
+  font-size: $fontsize-xxlarge;
 }
 /*
     ----------------------
@@ -45,30 +51,30 @@
     ----------------------
 */
 .cta:hover {
-    opacity:.75;
-    filter: alpha(opacity=75);
+  opacity:.75;
+  filter: alpha(opacity=75);
 }
 .cta:hover {
 
 }
 .cta.inactive {
-    opacity: .60;
-    filter: alpha(opacity=60);
+  opacity: .60;
+  filter: alpha(opacity=60);
 }
 .cta.inactive:hover {
-    cursor: display;
+  cursor: display;
 }
 .cta.loading {
-    background-image: url(/assets/img/loading/loading-pink.gif) !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-color: #ffffff !important;
-    text-indent: -9999px !important;
-    border: 1px #d0d0d0 solid !important;
-    cursor: default !important;
+  background-image: url(/assets/img/loading/loading-pink.gif) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: #ffffff !important;
+  text-indent: -9999px !important;
+  border: 1px #d0d0d0 solid !important;
+  cursor: default !important;
 }
 .cta.success{
-    text-indent: 0px !important;
-    width: 100% !important;
-    cursor: default !important;
+  text-indent: 0px !important;
+  width: 100% !important;
+  cursor: default !important;
 }

@@ -150,29 +150,68 @@ $serif-bold-italic:        $serif;
 $serif-bold-condensed:     $serif;
 
 
+                                              @mixin mainBlock() {
+                                                width: 100%;
+                                              }
+
+                                              @mixin setPosition( $position: left ){
+                                                @if $position == center {
+                                                  margin: 0 auto;
+                                                } @else if $position == left {
+                                                  margin: 0 auto 0 0;
+                                                } @else if $position == right {
+                                                  margin: 0 0 0 auto;
+                                                } @else {
+                                                  margin: 0 auto;
+                                                }
+                                              }
+
+                                              @mixin blockWidth( $width) {
+                                                width: auto;
+                                                max-width: $width;
+                                                @include setPosition( center );
+                                              }
+
+                                              @function setAsideWidth( $contentWidth, $mainWidth) {
+                                                @return $contentWidth - $mainWidth;
+                                              }
 
 
+                                            
 
-//// BLOCK PADDING
-$site-width: 1020px;
-$box-padding: 2em;
+//// SITE DIMENSION 
+$site-width: 920px;
+
+//// BLOCK BOX PADDING 
 $tb-box-padding: 1em;
 $rl-box-padding: 1em;
+$t-box-pad:      1em;
+$b-box-pad:      1em;
+$r-box-pad:      1em;
+$l-box-pad:      1em;
+$box-pad: $t-box-pad $r-box-pad $b-box-pad $l-box-pad;
 
+
+//// BLOCK BOX MARGIN 
 $tb-box-margin: 1em;
-$rl-box-margin: 1em;
+$rl-box-margin: 0em;
+$t-box-mar: 1em;
+$b-box-mar: 1em;
+$r-box-mar: 1em;
+$l-box-mar: 1em;
+$box-mar: $t-box-mar $r-box-mar $b-box-mar $l-box-mar;           
+
 
 $input-text-margin: 0em;
 
-$bstyle: 'flushDotted';  // flush || bp || flushDotted || flushSolid
 
+// header style
+$bstyle: 'bp';  // flush || bp || flushDotted || flushSolid
 
+// cta button style
+$cta-style : 'outline';
+            
 
-
-.cta:hover {
-outline: 1px solid #fff;
-outline-offset: -5px;
-}
 
 
 // ==========================================

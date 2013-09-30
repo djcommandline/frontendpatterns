@@ -57,6 +57,11 @@ a, .cta,
 }
 
 
+//// CLEAR FLOAT FIXES
+.cf, #main, .box-wrap > .box {
+  @include cf();
+}
+
 
 //// SET RESPONIVE DIVS
 .c1 > .box,
@@ -125,7 +130,6 @@ a, .cta,
 
 #main {
   @include mainBlock();
-  @include cf();
 
   //// sections
   .block {
@@ -148,7 +152,6 @@ a, .cta,
     width: auto;
     padding: $tb-box-padding $rl-box-padding;
     margin: $tb-box-margin $rl-box-margin; 
-    @include cf(); 
   }
 
 }

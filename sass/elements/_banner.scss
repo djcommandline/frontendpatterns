@@ -1,35 +1,35 @@
-//// ele :: banner ( server as block titles )
+//// ele :: banner ( they server as style headings )
 @mixin bannerStyle( $style: 'flushed', $multiplier: 1 ){
 
     @if $style == 'flush' {
         background: $primaryColor;
         color: #fff;
-        margin: -$tb-box-padding 0 $tb-box-padding 0;
-        left: -$rl-box-padding;
-        padding: $tb-box-padding*$multiplier $rl-box-padding;
+        margin: $box-mar;
+        left: -$l-box-pad;
+        padding: $box-pad;
     } @else if $style == 'bp' {
         background: $primaryColor;
         color: #fff;
-        margin: 0 0 $tb-box-margin 0;
-        padding: $tb-box-padding 0;
-        text-indent: $rl-box-padding;
+        margin: 0 0 $r-box-mar 0;
+        padding: $t-box-pad 0 $b-box-pad 0;
+        text-indent: $l-box-pad;
     } @else if $style == 'flushDotted' {
         background: transparent;
         border-bottom: 1px dotted $primaryColor;
         color: $primaryColor;
-        margin: -$tb-box-padding 0 $tb-box-padding 0;
-        left: -$rl-box-padding;
-        padding: $tb-box-padding*$multiplier $rl-box-padding;
+        margin: -$t-box-pad 0 $b-box-pad 0;
+        left: -$l-box-pad;
+        padding: $t-box-pad $r-box-pad $b-box-pad $l-box-pad;
     } @else if $style == 'flushSolid' {
         background: transparent;
         border-bottom: 1px solid $primaryColor;
         color: $primaryColor;
-        margin: -$tb-box-padding 0 $tb-box-padding 0;
-        left: -$rl-box-padding;
-        padding: $tb-box-padding*$multiplier $rl-box-padding;
+        margin: -$t-box-pad 0 $b-box-pad 0;
+        left: -$l-box-pad;
+        padding: ($t-box-pad * $multiplider) $r-box-pad ($b-box-pad * $multiplier) $l-box-pad;
     } 
     @else {
-        margin: 0 0 $rl-box-padding 0;
+        margin: 0 0 $r-box-mar 0;
     }
 }
 
