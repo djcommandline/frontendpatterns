@@ -48,7 +48,9 @@ body {
 
 //// SET ELEMENT TRANSITIONS
 a, .cta,
-.input-text-wrap {
+.input-text-wrap,
+.pimage,
+.pimage * {
   -webkit-transition: 0.25s ease-out;
   -moz-transition: 0.25s ease-out;
   -o-transition: 0.25s ease-out;
@@ -249,6 +251,87 @@ a, .cta,
 
 
 //// page :: product listing
+
+
+/*
+  ===========================
+  PAGE /products
+  ===========================
+ */
+
+ .pimage {
+  width: 100%;
+  position: relative;
+  
+  a {
+    overflow: hidden !important;
+    display: block;
+
+    img {
+      float: left;
+    }
+  }
+  
+
+  .quick-add {
+    background: rgba( 0, 0, 0, .75);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+
+    &:hover {
+      background: rgba( 0, 0, 0, .2);
+      
+      button {
+        top: 55%;
+      }
+    }
+
+    button {
+      background-color: #888;
+      color: $whiteColor;
+      font-family: $san-serif;
+      font-size: 14px;
+      margin: 0 auto;
+      padding: 9px 25px;
+      position: relative;
+      width: 75%;
+      top: 10%;
+
+      &:hover {
+        background: $primaryColor;
+        color: $whiteColor;
+        padding: 9px 30px;
+        line-height: 140%;
+      }
+    }
+
+  }
+  
+
+
+}
+
+.product-cell {
+
+  :hover {
+
+    .quick-add {
+      opacity: 1;
+    }
+
+    .product-listing-details  a {
+      color: #12aee8;
+    }
+
+  }
+}
+
+
+
 
 //// page :: single product page
 
