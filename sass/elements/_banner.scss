@@ -1,34 +1,35 @@
+
+@mixin flush( $multiplier : 1 ){
+         margin: -$t-box-pad 0 $b-box-pad 0;
+        left: -$l-box-pad;
+        padding: ($t-box-pad * $multiplier) $r-box-pad ($b-box-pad * $multiplier) $l-box-pad;   
+}
+
+
 //// ele :: banner ( they server as style headings )
 @mixin bannerStyle( $style: 'flushed', $multiplier: 1 ){
 
     @if $style == 'flush' {
         background: $primaryColor;
         color: #fff;
-        margin: $box-mar;
-        left: -$l-box-pad;
-        padding: $box-pad;
+        
+        @include flush(1);
+
     } @else if $style == 'bp' {
         background: $primaryColor;
         color: #fff;
-        margin: 0 0 $r-box-mar 0;
-        padding: $t-box-pad 0 $b-box-pad 0;
-        text-indent: $l-box-pad;
-    } @else if $style == 'flushDotted' {
+        @include flush(1);
+    } @else if $style == 'flush-dotted' {
         background: transparent;
         border-bottom: 1px dotted $primaryColor;
         color: $primaryColor;
-        margin: -$t-box-pad 0 $b-box-pad 0;
-        left: -$l-box-pad;
-        padding: $t-box-pad $r-box-pad $b-box-pad $l-box-pad;
-    } @else if $style == 'flushSolid' {
+        @include flush(1);
+    } @else if $style == 'flush-solid' {
         background: transparent;
         border-bottom: 1px solid $primaryColor;
         color: $primaryColor;
-        margin: -$t-box-pad 0 $b-box-pad 0;
-        left: -$l-box-pad;
-        padding: ($t-box-pad * $multiplider) $r-box-pad ($b-box-pad * $multiplier) $l-box-pad;
-    } 
-    @else {
+        @include flush(1);
+    } @else {
         margin: 0 0 $r-box-mar 0;
     }
 }
@@ -39,4 +40,5 @@
     @include bannerStyle($bstyle, 1);
     position: relative;
     width: 100%;
+    @include box-emboss(0.8, 0.05);
 }

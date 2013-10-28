@@ -175,23 +175,37 @@ button {
 
 
 
+
+
+
+
+
   // SLIM INPUT ( LABEL ON OUTSIDE )
   &.slim-aligned {
-    width: 60%;
-    margin-left: 36%;    
+    width: 94%;
+    margin-left: 0%; 
+    float: left;   
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 3%;
 
     & label {
-      left: -56%;
-      width: 46%;
-      padding: 15px;
-      margin-top: -10px;
+      left: 0%;
+      width: 100%;
+      margin-top: -20px;
       line-height: 1em;
-      text-align: right;
+      text-align: left;
+      padding: 3px 0;
+      color: #000;
+      font-size: 13px;
+      top: 0px;
+      display: block;
+      text-indent: 0px;
     }
 
     & button {
         width: 18%;
-        right: -19%;
+        right: 0%;
         position: absolute;
         margin-left: 20px;
     }
@@ -199,7 +213,186 @@ button {
 
   }
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+$screenWidth: 480px;
+@include min-screen($screenWidth) {
+
+/*
+  ==================
+  INPUT SELECT DROPDOWN WRAP
+  ==================
+  */
+.input-dropdown-wrap {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  margin-top: 0px;
+
+  // LABEL SETTINGS
+  label {
+    position: absolute;
+  }    
+
+  // SLIM INPUT ( LABEL ON OUTSIDE )
+  &.slim-aligned {
+    width: 65%;
+    margin-left: 35%;    
+
+    & label {
+      left: -50%;
+      width: 46%;
+      padding: 15px 0 15px;
+      margin-top: 10px;
+      line-height: 1em;
+      text-align: right;
+    }
+
+    & button {
+      width: 18%;
+      right: -19%;
+      position: absolute;
+      margin-left: 20px;
+    }
+
+  } 
+}
+
+
+
+/*
+  ==================
+  INPUT TEXT
+  ==================
+  */
+  .input-text-wrap {
+    margin-bottom: 1em;
+    margin-top: 0px;
+
+
+  // LABEL SETTINGS
+  label {
+    position: absolute;
+    padding-right: 0px;
+  }    
+  
+
+  // INPUT
+  input {
+    text-indent: 10px;
+  }
+
+  // SLIM INPUT ( LABEL ON OUTSIDE )
+  &.slim-aligned {
+    width: 65%;
+    margin-left: 35%; 
+    margin-bottom: 1em;
+    margin-top: 0em;   
+
+    & label {
+      left: -50%;
+      width: 46%;
+      padding: 20px 0;
+      margin-top: 0px;
+      line-height: 1em;
+      text-align: right;
+    }
+
+    & button {
+      width: 18%;
+      right: -19%;
+      position: absolute;
+      margin-left: 20px;
+    }
+
+  }
+
+  // SECURITY CODE
+  &.slim-aligned.short {
+    width: 120px;
+
+    input {
+      text-align: center;
+    }
+
+    label {
+      margin-top: 0px;
+      width: 120px;
+      left: -130px;
+      padding-right: 0px;
+      text-align: right;
+    }
+
+  }
+
+  &.slim-aligned button {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    background: $bgSolid;
+    width: 5%;
+    min-width: 50px;
+    text-align: center;
+    color: $whiteColor;
+    
+
+    i {
+      background: transparent;
+
+    }
+  }
+
+
+
+
+}
+
+} // end min-screen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .input-checkbox-wrap {
     width: 100%

@@ -43,7 +43,6 @@ body {
   width: 100%;
   min-width: 20em;
   font-family: $san-serif;
-  text-transform: uppercase;
 }
 
 //// SET ELEMENT TRANSITIONS
@@ -103,31 +102,7 @@ a, .cta,
 // ==========================================
 // #main
 // ==========================================
-                                              @mixin mainBlock() {
-                                                width: 100%;
-                                              }
 
-                                              @mixin setPosition( $position: left ){
-                                                @if $position == center {
-                                                  margin: 0 auto;
-                                                } @else if $position == left {
-                                                  margin: 0 auto 0 0;
-                                                } @else if $position == right {
-                                                  margin: 0 0 0 auto;
-                                                } @else {
-                                                  margin: 0 auto;
-                                                }
-                                              }
-
-                                              @mixin blockWidth( $width) {
-                                                width: auto;
-                                                max-width: $width;
-                                                @include setPosition( center );
-                                              }
-
-                                              @function setAsideWidth( $contentWidth, $mainWidth) {
-                                                @return $contentWidth - $mainWidth;
-                                              }
 
 
 #main {
@@ -152,8 +127,8 @@ a, .cta,
   .block > div > .box-wrap > .box {
     background: #fff;
     width: auto;
-    padding: $tb-box-padding $rl-box-padding;
-    margin: $tb-box-margin $rl-box-margin; 
+    padding: $box-pad;
+    margin: $box-mar; 
   }
 
 }
